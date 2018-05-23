@@ -1,4 +1,5 @@
 import Activation.ActivationFrame;
+import Network.FeedFowardNetwork;
 import Network.LossFunction;
 import Network.Weight;
 import RecordReader.TextRecordReader;

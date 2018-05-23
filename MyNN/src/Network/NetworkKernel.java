@@ -1,6 +1,7 @@
 package Network;
 import Activation.*;
 import java.util.*;
+import Listeners.*;
 
 public class NetworkKernel {
 //    private static ArrayList<Neuron> NeuronList = new ArrayList<Neuron>();
@@ -8,6 +9,7 @@ public class NetworkKernel {
 //    private static ArrayList<Double> Bias = new ArrayList<Double>();
     private Neuron NeuronMap[][];
     private double WeightMap[][];
+    private double WeightMap_backup[][];
 
     private static int input_num;
     private ArrayList<Double> inputlist = new ArrayList<Double>();
@@ -23,6 +25,7 @@ public class NetworkKernel {
     private static LossFunction lossfunction;
 
     private static double error=0;
+    private Listener Statistic;
 
     public NetworkKernel(int input, int output, int hiddenneurons, double learningrate, Weight weight, ActivationFrame activationFrame, LossFunction lossfunction){
         this.input_num=input;
@@ -60,6 +63,10 @@ public class NetworkKernel {
         }
     };
 
+    public void setListener(Listener L){
+        Statistic=L;
+    }
+
     public void feedforward(double [] inputset){
         //assume we only have 3 layers input,hidden,output
         if(layers_num==3){
@@ -95,37 +102,28 @@ public class NetworkKernel {
                 NeuronMap[1][i].setError(lossfunction.exec(inputset[input_num+i],NeuronMap[1][i].getoutput()));
                 totalerror+=NeuronMap[1][i].getError();
             }
-            System.out.println(totalerror);
+            //System.out.println(totalerror);
+            Statistic.addError(totalerror);
+            Statistic.addSampleNum();
         }
     }
 
     public void backpropagation(){
-        //cal out->hidden layer
-        //Using Partial derivative and chain derivative rule
-        //w+=w-learningrate*residual*output_hiddenlayer_neuron
-        //residual=activation_derivative*loss_derivative
-        int weight_num=0;
+        //update risiduals first
+        //residual in output layer only need to be setted once because it is only related to output and target_output
         double residual=0;
-        for(int i=0;i<NeuronMap[0].length;i++){
-            for(int j=0;j<NeuronMap[1].length;j++){
-                //residual only need to be setted once because it is only related to output and target_output
-                if(i==0) {
-                    residual = NeuronMap[1][j].execDerivative() * lossfunction.execDrivative(NeuronMap[1][j].getTarget(), NeuronMap[1][j].getoutput());
-                    NeuronMap[1][j].setResidual(residual);
-                }
-                else{
-                    residual=NeuronMap[1][j].getResidual();
-                }
-                WeightMap[1][weight_num]+=-learningrate*residual*NeuronMap[0][i].getoutput();
-            }
+        for(int j=0;j<NeuronMap[1].length;j++){
+            //residual only need to be setted once because it is only related to output and target_output
+                residual = NeuronMap[1][j].execDerivative() * lossfunction.execDrivative(NeuronMap[1][j].getTarget(), NeuronMap[1][j].getoutput());
+                NeuronMap[1][j].setResidual(residual);
         }
 
         //cal hidden->input layer
         //loss dirivative is more complex than before because hidden neurons are affected by multi output neurons
         //loss dirivative=loss_dirivative_outputs_sum
-        //loss_dirivative_output_sum=sum(residual*w)
+        //loss_dirivative_output_sum=sum(output_residual*w)
         //w+=w-learningrate*residual*input
-        weight_num=0;
+        int weight_num=0;
         int outputweight_num=0;
         for(int i=0;i<input_num;i++){
             for(int j=0;j<NeuronMap[0].length;j++){
@@ -136,14 +134,35 @@ public class NetworkKernel {
                 }
                 residual=NeuronMap[0][j].execDerivative()*sum_loss;
                 WeightMap[0][weight_num]+=-learningrate*residual*inputlist.get(i);
+                weight_num++;
             }
             outputweight_num=0;
         }
+
+        //cal out->hidden layer
+        //Using Partial derivative and chain derivative rule
+        //w+=w-learningrate*residual*output_hiddenlayer_neuron
+        //residual=activation_derivative*loss_derivative
+        weight_num=0;
+        for(int i=0;i<NeuronMap[0].length;i++){
+            for(int j=0;j<NeuronMap[1].length;j++){
+
+                residual=NeuronMap[1][j].getResidual();
+                WeightMap[1][weight_num]+= -learningrate*residual*NeuronMap[0][i].getoutput();
+                weight_num++;
+            }
+        }
+
         //init
         inputlist.clear();
     }
 
-    public void printNetwork(){
 
+    public void printNetwork(){
+        for(int i=0;i<WeightMap.length;i++){
+            for(int j=0;j<WeightMap[i].length;j++) {
+                System.out.println(WeightMap[i][j]);
+            }
+        }
     }
 }

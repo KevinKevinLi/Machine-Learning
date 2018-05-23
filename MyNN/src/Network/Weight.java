@@ -10,7 +10,7 @@ public enum Weight {
     public double init() {
         switch(this){
             case UNIFORM:
-                return Math.random();
+                return Math.random();//0->1 -1->1?
             case TEST:
                 return 1.0;
             default:
