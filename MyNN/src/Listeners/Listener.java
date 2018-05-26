@@ -22,6 +22,10 @@ public class Listener {
 
     public void printMeanSquareError(){
         interationtimes++;
-        System.out.println("Interation:"+interationtimes+ " Average Mean Square Error is "+totalError/totalSamples);
+        System.out.println("Interation:"+interationtimes+ " Mean Square Error is "+totalError/totalSamples);
+    }
+
+    public void printTestError(){
+        System.out.println("Test Total Mean Square Error is "+totalError/totalSamples);
     }
 }
