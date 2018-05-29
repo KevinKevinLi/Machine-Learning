@@ -28,4 +28,8 @@ public class Listener {
     public void printTestError(){
         System.out.println("Test Total Mean Square Error is "+totalError/totalSamples);
     }
+
+    public double getMeanError(){
+        return totalError/totalSamples;
+    }
 }

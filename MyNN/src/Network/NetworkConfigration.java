@@ -3,6 +3,8 @@ import java.util.*;
 
 import Activation.ActivationFrame;
 import LossFunction.LossFunction;
+import Network.Conponent.LayerConf;
+import Network.Conponent.Weightinit;
 
 public class NetworkConfigration {
     private static int layer_num=0;
@@ -10,37 +12,44 @@ public class NetworkConfigration {
     private static int output_num=0;
     private static double learningrate=0;
     private static double momentum=0;
-    private static Weight weight;
-    private Layer inputlayer;
-    private ArrayList<Layer> hiddenlist = new ArrayList<Layer>();
-    private Layer outputlayer;
+    private static Weightinit weightinit;
+    private LayerConf inputlayer;
+    private ArrayList<LayerConf> hiddenlist = new ArrayList<LayerConf>();
+    private LayerConf outputlayer;
 
     public NetworkConfigration(){
     }
 
-    public NetworkConfigration base(double learningrate,Weight weight){
+    public NetworkConfigration base(double learningrate){
         this.learningrate=learningrate;
-        this.weight=weight;
+        this.weightinit = weightinit;
         return this;
     }
 
-    public NetworkConfigration inputlayer(int input_num){
+    public NetworkConfigration base(double learningrate,double momentum){
+        this.learningrate=learningrate;
+        this.momentum=momentum;
+        this.weightinit = weightinit;
+        return this;
+    }
+
+    public NetworkConfigration inputlayer(int input_num,Weightinit weightinit){
         layer_num++;
         this.input_num=input_num;
-        inputlayer=new Layer(input_num);
+        inputlayer=new LayerConf(input_num,weightinit);
         return this;
     }
 
     public NetworkConfigration hiddenlayer(int hiddenneuron_num, ActivationFrame activation){
         layer_num++;
-        hiddenlist.add(new Layer(layer_num,hiddenneuron_num,activation));
+        hiddenlist.add(new LayerConf(layer_num,hiddenneuron_num,activation));
         return this;
     }
 
     public NetworkConfigration outputlayer(int output_num, ActivationFrame activation,LossFunction lossfunction){
         layer_num++;
         this.output_num=output_num;
-        outputlayer=new Layer(layer_num,output_num,activation,lossfunction);
+        outputlayer=new LayerConf(layer_num,output_num,activation,lossfunction);
         return this;
     }
 
@@ -61,22 +70,26 @@ public class NetworkConfigration {
     }
 
     public double getLearningrate(){
-        return learningrate;
+        return this.learningrate;
     }
 
-    public Weight getWeight(){
-        return this.weight;
+    public double getMomentum(){
+        return this.momentum;
     }
 
-    public Layer getInputlayer(){
+    public Weightinit getWeight(){
+        return this.weightinit;
+    }
+
+    public LayerConf getInputlayer(){
         return this.inputlayer;
     }
 
-    public ArrayList<Layer> getHiddenlayer(){
+    public ArrayList<LayerConf> getHiddenlayer(){
         return this.hiddenlist;
     }
 
-    public Layer getOutputlayer(){
+    public LayerConf getOutputlayer(){
         return this.outputlayer;
     }
 }
