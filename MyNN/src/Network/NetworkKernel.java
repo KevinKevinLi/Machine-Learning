@@ -28,7 +28,7 @@ public class NetworkKernel {
     private static double learningrate;
     private static double momentum=0.0;
     private static LossFunction lossfunction;
-    private static double bias=1.0;
+    private static double bias=0.0;
 
 //    private static double error=0;
     private Listener Statistic;
@@ -67,7 +67,11 @@ public class NetworkKernel {
         Statistic=L;
     }
 
-    public void feedforward(double [] inputset){
+    public double feedforward(double [] inputset){
+        double totalerror=0;
+        for(int i=0;i<input_num;i++){
+            inputlist.add(inputset[i]);
+        }
         //assume we only have 3 layers input,hidden,output
         if(layers_num==3){
             //cal input->hidden layer
@@ -78,13 +82,13 @@ public class NetworkKernel {
                 for(int j=0;j<input_num;j++){
                     //calculate weight*input
                     neuron_input+=NetworkLayer.getWeight(0,num)*inputset[j];
+                    //System.out.println(neuron_input+" "+NetworkLayer.getWeight(0,num));
                     num+=NetworkLayer.getHiddenNeuronsNum(0);
-                    inputlist.add(inputset[j]);
+                    //inputlist.add(inputset[j]);
                 }
-                NetworkLayer.updateNeuronOutput(0,i,neuron_input+bias);
+                NetworkLayer.updateNeuronOutput(0,i,neuron_input+NetworkLayer.getBias(0,i));
             }
             //cal hidden->output layer
-            double totalerror=0;
             for(int i=0;i<output_num;i++) {
                 //record weights number
                 int num=i;
@@ -94,7 +98,8 @@ public class NetworkKernel {
                     neuron_input+=NetworkLayer.getWeight(1,num)*NetworkLayer.getNeuronOutput(0,j);
                     num+=output_num;
                 }
-                NetworkLayer.updateNeuronOutput(1,i,neuron_input+bias);
+                NetworkLayer.updateNeuronOutput(1,i,neuron_input+NetworkLayer.getBias(1,i));
+                //System.out.println(NetworkLayer.getNeuronOutput(1,i));
                 //cal error
                 NetworkLayer.setNeuronTarget(1,i,inputset[input_num+i]);
                 NetworkLayer.setNeuronError(1,i,lossfunction.exec(inputset[input_num+i],NetworkLayer.getNeuronOutput(1,i),output_num));
@@ -104,6 +109,7 @@ public class NetworkKernel {
             Statistic.addError(totalerror);
             Statistic.addSampleNum();
         }
+        return totalerror;
     }
 
     public void backpropagation(){
@@ -134,6 +140,10 @@ public class NetworkKernel {
                     }
                     residual = NetworkLayer.getNeuronDerivative(0,j) * sum_loss;
                     NetworkLayer.updateWeight(0,weight_num,-learningrate * residual * inputlist.get(i));
+                    //update bias
+                    if(i==0){
+                        NetworkLayer.updateBias(0,weight_num,-learningrate * residual);
+                    }
                     weight_num++;
                 }
                 outputweight_num = 0;
@@ -148,6 +158,10 @@ public class NetworkKernel {
                 for (int j = 0; j < NetworkLayer.getNeuronLineLength(1); j++) {
                     residual = NetworkLayer.getNeuronResidual(1,j);
                     NetworkLayer.updateWeight(1,weight_num,-learningrate * residual * NetworkLayer.getNeuronOutput(0,i));
+                    //update bias
+                    if(i==0){
+                        NetworkLayer.updateBias(1,weight_num,-learningrate * residual);
+                    }
                     weight_num++;
                 }
             }
@@ -156,21 +170,15 @@ public class NetworkKernel {
         inputlist.clear();
     }
 
-    public void test(){
-            double totalerror=0;
-            for (int i = 0; i < output_num; i++) {
-                LossFunction lmse=LossFunction.MSE;
-                totalerror+=lmse.exec(NetworkLayer.getNeuronTarget(layers_num-2,i),NetworkLayer.getNeuronOutput(layers_num-2,i),output_num);
-            }
-            Statistic.addError(totalerror);
-            Statistic.addSampleNum();
-    }
-
-
     public void printNetwork(){
         for(int i=0;i<NetworkLayer.getWeightRowLength();i++){
             for(int j=0;j<NetworkLayer.getWeightLineLength(i);j++) {
-                System.out.println(NetworkLayer.getWeight(i,j));
+                System.out.println("("+i+","+j+") W:"+NetworkLayer.getWeight(i,j)+" M:"+NetworkLayer.getMomentum(i,j));
+            }
+        }
+        for(int i=0;i<1;i++){
+            for(int j=0;j<20;j++){
+                System.out.println(NetworkLayer.getBias(i,j));
             }
         }
     }

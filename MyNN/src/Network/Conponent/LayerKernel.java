@@ -20,6 +20,8 @@ public class LayerKernel {
     private static double momentum;
     private static double MomentumMap[][];
 
+    private static double BiasMap[][];
+
     public LayerKernel(LayerConf inputlayer, ArrayList<LayerConf> hiddenlayers, LayerConf outputlayer){
         this.hiddenlayers_num=hiddenlayers.size();
         layers_num=2+hiddenlayers_num;
@@ -48,7 +50,7 @@ public class LayerKernel {
         WeightMap=new double[layers_num-1][];
         if(hiddenlayers_num==1){
             //weight_num+=(input_num+output_num)*hiddenneurons_num[0];
-            WeightMap[0] = new double [input_num*hiddenneurons_num[0]];
+            WeightMap[0] = new double [input_num*hiddenneurons_num[0]];//plus 1 bias layer
             WeightMap[1] = new double [output_num*hiddenneurons_num[0]];
         }
         else{
@@ -70,6 +72,15 @@ public class LayerKernel {
             for(int j=0;j<WeightMap[i].length;j++) {
                 WeightMap[i][j]= weightinit_function.init();
                 //   System.out.println(WeightMap[i][j]);
+            }
+        }
+
+        //init BiasMap
+        BiasMap=new double [layers_num-1][];
+        for(int i=0;i<hiddenlayers_num+1;i++){
+            BiasMap[i]=new double [NeuronMap[i].length];
+            for(int j=0;j<BiasMap[i].length;j++){
+                BiasMap[i][j]=0;
             }
         }
 
@@ -158,5 +169,17 @@ public class LayerKernel {
     public static void useMomentumAlgorithm(double m){
         ifMomentumAlgorithm=true;
         momentum=m;
+    }
+
+    public static double getMomentum(int row,int line){
+        return MomentumMap[row][line];
+    }
+
+    public static double getBias(int row,int line){
+        return BiasMap[row][line];
+    }
+
+    public static void updateBias(int row, int line, double bias){
+        BiasMap[row][line]=bias;
     }
 }

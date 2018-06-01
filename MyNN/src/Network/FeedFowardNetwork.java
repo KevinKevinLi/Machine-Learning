@@ -52,10 +52,22 @@ public class FeedFowardNetwork {
 
     public void test(double [][]inputset){
         for(int i=0;i<inputset.length;i++){
+            //Statistic.printpara();
             net.feedforward(inputset[i]);
-            net.test();
         }
+        //net.printNetwork();
         Statistic.printTestError();
+        Statistic.init();
     }
 
+    public void predict(double [][]inputset,double distance){
+        for(int i=0;i<inputset.length;i++) {
+            //Statistic.printpara();
+            //MSE LOSS FUNCTION
+            if(Math.sqrt(net.feedforward(inputset[i]))<distance){
+                Statistic.predictsuccess();
+            }
+        }
+        Statistic.printPredict();
+    }
 }
