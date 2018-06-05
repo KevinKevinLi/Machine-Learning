@@ -11,10 +11,16 @@ public abstract class Neuron {
 
     public abstract void execOutput(double input);
 
+    public abstract void execOutput(double input,double total);
+
     public abstract double execDerivative();
 
     public double getoutput(){
         return current_output;
+    }
+
+    public double getinput(){
+        return current_input;
     }
 
     public void setError(double error){
@@ -41,5 +47,7 @@ public abstract class Neuron {
         return current_residual;
     }
 
-    public abstract void printname();
+    public abstract  void printname();
+
+    public abstract String getname();
 }

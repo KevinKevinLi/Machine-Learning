@@ -43,6 +43,7 @@ public class NetworkConfigration {
     public NetworkConfigration hiddenlayer(int hiddenneuron_num, ActivationFrame activation){
         layer_num++;
         hiddenlist.add(new LayerConf(layer_num,hiddenneuron_num,activation));
+        //System.out.println(hiddenlist.get(0).getActivation().getNeuron().getname());
         return this;
     }
 

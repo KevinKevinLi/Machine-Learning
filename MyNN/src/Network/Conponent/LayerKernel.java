@@ -19,6 +19,7 @@ public class LayerKernel {
     private static boolean ifMomentumAlgorithm=false;
     private static double momentum;
     private static double MomentumMap[][];
+    private static ArrayList<Double> SoftmaxValue=new ArrayList<Double>();
 
     private static double BiasMap[][];
 
@@ -40,6 +41,7 @@ public class LayerKernel {
         for(int i=0;i<hiddenlayers_num;i++){
             for(int j=0;j<hiddenneurons_num[i];j++) {
                 NeuronMap[i][j] = hiddenlayers.get(i).getActivation().getNeuron();
+                //NeuronMap[i][j].printname();
             }
         }
         for(int i=0;i<output_num;i++){
@@ -119,7 +121,30 @@ public class LayerKernel {
     }
 
     public static void updateNeuronOutput(int row,int line,double input){
-        NeuronMap[row][line].execOutput(input);
+        if(NeuronMap[row][line].getname().equals("Softmax")){
+            NeuronMap[row][line].execOutput(input);
+            SoftmaxValue.add(Math.exp(input));
+            //System.out.println(Math.exp(input));
+        }
+        else {
+            NeuronMap[row][line].execOutput(input);
+        }
+    }
+
+    public static void CheckUpdate(int row){
+        //NeuronMap[0][0].printname();
+        if(NeuronMap[row][0].getname().equals("Softmax")){
+            double total=0;
+            for(int i=0;i<SoftmaxValue.size();i++){
+                total+=SoftmaxValue.get(i);
+            }
+            //System.out.println(total);
+            for(int i=0;i<NeuronMap[row].length;i++){
+                //System.out.println(NeuronMap[row][i].getinput()+" "+total);
+                NeuronMap[row][i].execOutput(Math.exp(NeuronMap[row][i].getinput()),total);
+            }
+            SoftmaxValue.clear();
+        }
     }
 
     public static double getNeuronOutput(int row,int line){

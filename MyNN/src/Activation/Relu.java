@@ -10,6 +10,10 @@ public class Relu extends Neuron{
     }
 
     @Override
+    public void execOutput(double input,double total){
+    }
+
+    @Override
     public double execDerivative(){
         if(current_output==0){
             return 0;
@@ -22,5 +26,10 @@ public class Relu extends Neuron{
     @Override
     public void printname(){
         System.out.println("Relu");
+    }
+
+    @Override
+    public String getname(){
+        return "Relu";
     }
 }

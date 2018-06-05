@@ -9,9 +9,9 @@ public class LayerConf {
     private static int input_num=0;
     private static int output_num=0;
     private static int hidden_num=0;
-    private static String layer_name;
+    private String layer_name;
     private static int layer_num;
-    private static ActivationFrame activation;
+    private ActivationFrame activation;
     private static LossFunction lossfunction;
     private static Weightinit weightinit;
 
@@ -40,6 +40,7 @@ public class LayerConf {
     }
 
     public ActivationFrame getActivation(){
+        //System.out.println(layer_name+" "+activation.getNeuron().getname());
         return this.activation;
     }
 
