@@ -188,4 +188,8 @@ public class FeedForwardKernel {
             }
         }
     }
+
+    public void setLossfunction(LossFunction los){
+        this.lossfunction=los;
+    }
 }

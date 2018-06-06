@@ -16,6 +16,7 @@ public class NetworkConfigration {
     private LayerConf inputlayer;
     private ArrayList<LayerConf> hiddenlist = new ArrayList<LayerConf>();
     private LayerConf outputlayer;
+    private static LossFunction lossfunction;
 
     public NetworkConfigration(){
     }
@@ -51,6 +52,7 @@ public class NetworkConfigration {
         layer_num++;
         this.output_num=output_num;
         outputlayer=new LayerConf(layer_num,output_num,activation,lossfunction);
+        this.lossfunction=lossfunction;
         return this;
     }
 
@@ -93,4 +95,6 @@ public class NetworkConfigration {
     public LayerConf getOutputlayer(){
         return this.outputlayer;
     }
+
+    public LossFunction getLossfunction(){return this.lossfunction;}
 }

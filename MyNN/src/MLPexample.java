@@ -14,6 +14,7 @@ public class MLPexample {
         //String filepath="./data/Train_csv.csv";
         TextRecordReader TrainSet=new TextRecordReader(filepath,";");
         //filepath="./data/saturn_data_eval.csv";
+        //filepath="./data/MLP_test.csv";
         filepath="./data/Car/TestSet20%csv.csv";
         TextRecordReader TestSet=new TextRecordReader(filepath,";");
 
@@ -22,17 +23,18 @@ public class MLPexample {
         int input_num=21;
         int output_num=4;
         NetworkConfigration configuration=new NetworkConfigration()
-                .base(0.3,0.6)
-                .inputlayer(input_num,Weightinit.UNIFORM)
+                .base(0.3,0.6)//learningrate,(momentum)
+                .inputlayer(input_num,Weightinit.XAVIER)
                 .hiddenlayer(14,ActivationFrame.Sigmoid)
-                .outputlayer(output_num,ActivationFrame.Sigmoid,LossFunction.MSE)
+                //.outputlayer(output_num,ActivationFrame.Softmax,LossFunction.NegativeLogLikeliHood)
+                .outputlayer(output_num,ActivationFrame.Sigmoid,LossFunction.CrossEntropy)
                 .build();
         NewNetwork.SetConfiguration(configuration);
 
         //NewNetwork.SetConfigure(2,1,20,0.01, Weightinit.UNIFORM, ActivationFrame.Sigmoid, LossFunction.MSE);
 
         //NewNetwork.train(TrainSet.ReturnRecord(3),700);
-        NewNetwork.train(TrainSet.ReturnRecord(input_num,output_num),0.01);
+        NewNetwork.train(TrainSet.ReturnRecord(input_num,output_num),100);
         NewNetwork.test(TestSet.ReturnRecord(input_num,output_num));
        // NewNetwork.predict(TestSet.ReturnRecord(input_num,output_num),0.5);
     }

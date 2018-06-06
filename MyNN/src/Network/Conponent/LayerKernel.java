@@ -70,9 +70,15 @@ public class LayerKernel {
             }
         }
 
+        //use weight init function
         for(int i=0;i<WeightMap.length;i++){
             for(int j=0;j<WeightMap[i].length;j++) {
-                WeightMap[i][j]= weightinit_function.init();
+                if(i==0){
+                    WeightMap[i][j] = weightinit_function.init(input_num,NeuronMap[0].length);
+                }
+                else {
+                    WeightMap[i][j] = weightinit_function.init(NeuronMap[i-1].length,NeuronMap[i].length);
+                }
                 //   System.out.println(WeightMap[i][j]);
             }
         }

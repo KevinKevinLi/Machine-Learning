@@ -1,6 +1,7 @@
 package Network;
 import Listeners.*;
 
+import LossFunction.LossFunction;
 import RecordManage.RecordPolice;
 
 public class ClassificationNetwork {
@@ -25,7 +26,7 @@ public class ClassificationNetwork {
         }
         //conf.getHiddenlayer().get(0).getActivation().getNeuron().printname();
         net.setlayers(conf.getInputlayer(),conf.getHiddenlayer(),conf.getOutputlayer());
-        Statistic = new Listener();
+        Statistic = new Listener(conf.getLossfunction());
         net.setListener(Statistic);
     }
 
@@ -55,6 +56,7 @@ public class ClassificationNetwork {
     }
 
     public void test(double [][]inputset){
+        net.setLossfunction(LossFunction.Mse);
         for(int i=0;i<inputset.length;i++){
             //Statistic.printpara();
             net.feedforward(inputset[i]);
@@ -68,6 +70,7 @@ public class ClassificationNetwork {
         for(int i=0;i<inputset.length;i++) {
             //Statistic.printpara();
             //MSE LOSS FUNCTION
+            net.setLossfunction(LossFunction.Mse);
             if(Math.sqrt(net.feedforward(inputset[i]))<distance){
                 Statistic.predictsuccess();
             }

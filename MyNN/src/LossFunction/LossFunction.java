@@ -1,17 +1,23 @@
 package LossFunction;
 
 public enum LossFunction {
-    SUBTRACTION,
-    MSE;
+    Subtraction,
+    CrossEntropy,
+    NegativeLogLikeliHood,
+    Mse;
 
     private LossFunction(){}
 
     public double exec(double targetvalue,double outvalue,int outputnum) {
         switch(this){
-            case SUBTRACTION:
+            case Subtraction:
                 return (targetvalue-outvalue);
-            case MSE:
+            case Mse:
                 return (targetvalue-outvalue)*(targetvalue-outvalue)/(double)outputnum;
+            case CrossEntropy:
+                return -(targetvalue*Math.log(outvalue)+(1.0-targetvalue)*Math.log(1.0-outvalue))/(double)outputnum;
+            case NegativeLogLikeliHood:
+                return -Math.log(1.0-Math.abs(targetvalue-outvalue))/(double)outputnum;
             default:
                 throw new UnsupportedOperationException("Unknown or not supported loss function: " + this);
         }
@@ -19,10 +25,19 @@ public enum LossFunction {
 
     public double execDrivative(double targetvalue,double outvalue,int outputnum){
         switch(this){
-            case SUBTRACTION:
+            case Subtraction:
                 return 1.0;
-            case MSE:
+            case Mse:
                 return 2.0*(outvalue-targetvalue)/(double)outputnum;
+            case CrossEntropy:
+                return (-targetvalue+outvalue)/(outputnum*outvalue*(1.0-outvalue));
+            case NegativeLogLikeliHood:
+                if(targetvalue-outvalue>0) {
+                    return -1.0/ (1.0-targetvalue+outvalue);
+                }
+                else{
+                    return 1.0/ (1.0-outvalue+targetvalue);
+                }
             default:
                 throw new UnsupportedOperationException("Unknown or not supported loss function: " + this);
         }
