@@ -3,6 +3,7 @@ package Activation;
 import Activation.*;
 
 public enum ActivationFrame {
+    Linear,
     Sigmoid,
     Softmax,
     Relu;
@@ -11,6 +12,9 @@ public enum ActivationFrame {
 
     public Neuron getNeuron(){
         switch(this){
+            case Linear:
+                Linear activationLine =new Linear();
+                return activationLine;
             case Sigmoid:
                 Sigmoid activationSig =new Sigmoid();
                 return activationSig;

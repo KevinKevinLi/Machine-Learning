@@ -7,6 +7,10 @@ public class Sigmoid extends Neuron {
     public void execOutput(double input){
         current_input=input;
         current_output=1.0/(1.0+Math.exp(-input));
+        if(current_output==1){
+            //manually add bias
+            current_output=1-0.00001;
+        }
     }
 
     @Override

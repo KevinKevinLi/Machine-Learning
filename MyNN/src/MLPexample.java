@@ -24,17 +24,20 @@ public class MLPexample {
         int output_num=4;
         NetworkConfigration configuration=new NetworkConfigration()
                 .base(0.3,0.6)//learningrate,(momentum)
-                .inputlayer(input_num,Weightinit.XAVIER)
+                .inputlayer(input_num,Weightinit.XAVIER,ActivationFrame.Linear)
                 .hiddenlayer(14,ActivationFrame.Sigmoid)
+                .hiddenlayer(14,ActivationFrame.Sigmoid)
+                //.hiddenlayer(14,ActivationFrame.Sigmoid)
                 //.outputlayer(output_num,ActivationFrame.Softmax,LossFunction.NegativeLogLikeliHood)
-                .outputlayer(output_num,ActivationFrame.Sigmoid,LossFunction.CrossEntropy)
+                //.outputlayer(output_num,ActivationFrame.Sigmoid,LossFunction.CrossEntropy)
+                .outputlayer(output_num,ActivationFrame.Sigmoid,LossFunction.Mse)
                 .build();
         NewNetwork.SetConfiguration(configuration);
 
         //NewNetwork.SetConfigure(2,1,20,0.01, Weightinit.UNIFORM, ActivationFrame.Sigmoid, LossFunction.MSE);
 
         //NewNetwork.train(TrainSet.ReturnRecord(3),700);
-        NewNetwork.train(TrainSet.ReturnRecord(input_num,output_num),100);
+        NewNetwork.train(TrainSet.ReturnRecord(input_num,output_num),0.01);
         NewNetwork.test(TestSet.ReturnRecord(input_num,output_num));
        // NewNetwork.predict(TestSet.ReturnRecord(input_num,output_num),0.5);
     }

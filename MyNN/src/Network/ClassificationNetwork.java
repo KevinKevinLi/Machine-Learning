@@ -1,8 +1,7 @@
 package Network;
 import Listeners.*;
-
 import LossFunction.LossFunction;
-import RecordManage.RecordPolice;
+import Exception.*;
 
 public class ClassificationNetwork {
     private FeedForwardKernel net;
@@ -36,7 +35,14 @@ public class ClassificationNetwork {
                 net.feedforward(inputset[j]);
                 net.backpropagation();
             }
-            Statistic.printMeanSquareError();
+            try {
+                Statistic.printMeanSquareError();
+            }
+            catch (GRADIENTBOOMEXCEPTION e){
+                e.printError();
+                Statistic.init();
+                break;
+            }
             Statistic.init();
         }
         //net.printNetwork();
@@ -49,7 +55,14 @@ public class ClassificationNetwork {
                 net.feedforward(inputset[i]);
                 net.backpropagation();
             }
-            Statistic.printMeanSquareError();
+            try {
+                Statistic.printMeanSquareError();
+            }
+            catch (GRADIENTBOOMEXCEPTION e) {
+                e.printError();
+                Statistic.init();
+                break;
+            }
             flagerror=Statistic.getMeanError();
             Statistic.init();
         }while(flagerror>maxerror);

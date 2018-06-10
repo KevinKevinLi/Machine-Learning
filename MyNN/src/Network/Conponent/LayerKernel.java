@@ -1,5 +1,6 @@
 package Network.Conponent;
 
+import Activation.ActivationFrame;
 import Activation.Neuron;
 
 import java.util.ArrayList;
@@ -7,6 +8,7 @@ import java.util.ArrayList;
 public class LayerKernel {
     private static Neuron NeuronMap[][];
     private static double WeightMap[][];
+    private static double WeightMap_backup[][];
 
     private int layers_num;
     private static int hiddenlayers_num;
@@ -31,62 +33,59 @@ public class LayerKernel {
         weightinit_function=inputlayer.getWeightinit();
 
         //init neurons
-        NeuronMap=new Neuron[layers_num-1][];
-        this.hiddenneurons_num=new int [layers_num-2];
+        NeuronMap=new Neuron[layers_num][];
+        //init neurons number
+        this.hiddenneurons_num=new int [layers_num-1];
+        NeuronMap[0]=new Neuron[input_num];
         for(int i=0;i<hiddenlayers_num;i++) {
             hiddenneurons_num[i]=hiddenlayers.get(i).getHidden_num();
-            NeuronMap[i]=new Neuron[hiddenneurons_num[i]];
+            NeuronMap[i+1]=new Neuron[hiddenneurons_num[i]];
         }
-        NeuronMap[layers_num-2]=new Neuron[output_num];
-        for(int i=0;i<hiddenlayers_num;i++){
-            for(int j=0;j<hiddenneurons_num[i];j++) {
-                NeuronMap[i][j] = hiddenlayers.get(i).getActivation().getNeuron();
-                //NeuronMap[i][j].printname();
+        NeuronMap[layers_num-1]=new Neuron[output_num];
+        //init neuron activations
+        for(int i=0;i<NeuronMap.length;i++){
+            for(int j=0;j<NeuronMap[i].length;j++){
+                if(i==0){
+                    NeuronMap[i][j]=inputlayer.getActivation().getNeuron();
+                }
+                else if(i==NeuronMap.length-1){
+                    NeuronMap[i][j]=outputlayer.getActivation().getNeuron();
+                }
+                else {
+                    NeuronMap[i][j] = hiddenlayers.get(i-1).getActivation().getNeuron();
+                }
             }
-        }
-        for(int i=0;i<output_num;i++){
-            NeuronMap[hiddenlayers_num][i]=outputlayer.getActivation().getNeuron();
         }
 
         //init weight
         WeightMap=new double[layers_num-1][];
-        if(hiddenlayers_num==1){
-            //weight_num+=(input_num+output_num)*hiddenneurons_num[0];
-            WeightMap[0] = new double [input_num*hiddenneurons_num[0]];//plus 1 bias layer
-            WeightMap[1] = new double [output_num*hiddenneurons_num[0]];
-        }
-        else{
-            //weight_num+=input_num*hiddenneurons_num[0];
-            WeightMap[0] = new double [input_num*hiddenneurons_num[0]];
-            for(int i=0;i<hiddenlayers_num;i++){
-                if(i+1==hiddenlayers_num){
-                    //weight_num+=hiddenneurons_num[i]*output_num;
-                    WeightMap[i+1] = new double [output_num*hiddenneurons_num[0]];
-                }
-                else {
-                    //weight_num += hiddenneurons_num[i] * hiddenneurons_num[i + 1];
-                    WeightMap[i+1] = new double [hiddenneurons_num[i] * hiddenneurons_num[i + 1]];
-                }
-            }
-        }
 
-        //use weight init function
+        //weight_num+=input_num*hiddenneurons_num[0];
+        for(int i=0;i<layers_num-1;i++){
+            WeightMap[i] = new double [NeuronMap[i].length*NeuronMap[i+1].length];
+            //System.out.println(WeightMap[i].length+" "+NeuronMap[i].length);
+
+        }
+        //init use weight init function
         for(int i=0;i<WeightMap.length;i++){
             for(int j=0;j<WeightMap[i].length;j++) {
-                if(i==0){
-                    WeightMap[i][j] = weightinit_function.init(input_num,NeuronMap[0].length);
-                }
-                else {
-                    WeightMap[i][j] = weightinit_function.init(NeuronMap[i-1].length,NeuronMap[i].length);
-                }
+                WeightMap[i][j] = weightinit_function.init(NeuronMap[i].length,NeuronMap[i+1].length);
                 //   System.out.println(WeightMap[i][j]);
             }
         }
 
+        //init weightmap_backup
+        WeightMap_backup=new double[layers_num-1][];
+        for(int i=0;i<layers_num-1;i++){
+            WeightMap_backup[i] = new double [NeuronMap[i].length*NeuronMap[i+1].length];
+            //System.out.println(WeightMap[i].length+" "+NeuronMap[i].length);
+        }
+        cloneWeightMap();
+
         //init BiasMap
         BiasMap=new double [layers_num-1][];
         for(int i=0;i<hiddenlayers_num+1;i++){
-            BiasMap[i]=new double [NeuronMap[i].length];
+            BiasMap[i]=new double [NeuronMap[i+1].length];
             for(int j=0;j<BiasMap[i].length;j++){
                 BiasMap[i][j]=0;
             }
@@ -212,5 +211,21 @@ public class LayerKernel {
 
     public static void updateBias(int row, int line, double bias){
         BiasMap[row][line]=bias;
+    }
+
+    public static void cloneWeightMap(){
+        for(int i=0;i<WeightMap.length;i++){
+            for(int j=0;j<WeightMap[i].length;j++){
+                WeightMap_backup[i][j] = WeightMap[i][j];
+            }
+        }
+    }
+
+    public static double getBackupWeight(int row,int line){
+        return WeightMap_backup[row][line];
+    }
+
+    public static String getNeuronActivation(int row, int line){
+        return  NeuronMap[row][line].getname();
     }
 }

@@ -34,10 +34,10 @@ public class NetworkConfigration {
         return this;
     }
 
-    public NetworkConfigration inputlayer(int input_num,Weightinit weightinit){
+    public NetworkConfigration inputlayer(int input_num,Weightinit weightinit,ActivationFrame act){
         layer_num++;
         this.input_num=input_num;
-        inputlayer=new LayerConf(input_num,weightinit);
+        inputlayer=new LayerConf(input_num,weightinit,act);
         return this;
     }
 

@@ -1,6 +1,7 @@
 package Listeners;
 
 import LossFunction.LossFunction;
+import Exception.*;
 
 public class Listener {
     private static double totalError=0;
@@ -28,11 +29,12 @@ public class Listener {
         totalSamples=0.0;
     }
 
-    public static void printMeanSquareError(){
+    public static void printMeanSquareError() throws GRADIENTBOOMEXCEPTION {
         interationtimes++;
         double score=totalError / totalSamples;
+
         if(Double.isNaN(score)){
-            System.out.println("Gradient Exploded Happened!");
+            throw new GRADIENTBOOMEXCEPTION();
         }
 
         switch (lossfunction) {

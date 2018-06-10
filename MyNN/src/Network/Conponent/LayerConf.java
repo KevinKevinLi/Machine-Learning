@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class LayerConf {
     private static int input_num=0;
     private static int output_num=0;
-    private static int hidden_num=0;
+    private int hidden_num=0;
     private String layer_name;
     private static int layer_num;
     private ActivationFrame activation;
@@ -16,9 +16,10 @@ public class LayerConf {
     private static Weightinit weightinit;
 
     //InputLayer
-    public LayerConf(int input_num,Weightinit weightinit){
+    public LayerConf(int input_num,Weightinit weightinit,ActivationFrame activation){
         layer_name="InputLayer";
         this.weightinit=weightinit;
+        this.activation=activation;
         this.input_num=input_num;
         layer_num=0;
     }
