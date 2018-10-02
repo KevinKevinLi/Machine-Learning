@@ -29,6 +29,7 @@ public class FeedForwardKernel {
     private static double momentum=0.0;
     private static LossFunction lossfunction;
     private static double bias=0.0;
+    private static long seed=0;
 
 //    private static double error=0;
     private Listener Statistic;
@@ -38,20 +39,22 @@ public class FeedForwardKernel {
     public FeedForwardKernel(){
     }
 
-    public void setbase(int layer_num,int input_num,int output_num,double learningrate){
+    public void setbase(int layer_num,int input_num,int output_num,double learningrate,long seed){
         this.layers_num=layer_num;
         this.input_num=input_num;
         this.output_num=output_num;
         this.learningrate=learningrate;
+        this.seed=seed;
     }
 
     //overload
-    public void setbase(int layer_num,int input_num,int output_num,double learningrate,double momentum){
+    public void setbase(int layer_num,int input_num,int output_num,double learningrate,double momentum,long seed){
         this.layers_num=layer_num;
         this.input_num=input_num;
         this.output_num=output_num;
         this.learningrate=learningrate;
         this.momentum=momentum;
+        this.seed=seed;
     }
 
     public void setlayers(LayerConf inputlayer, ArrayList<LayerConf> hiddenlayers, LayerConf outputlayer){

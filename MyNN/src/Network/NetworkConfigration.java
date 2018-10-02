@@ -12,6 +12,7 @@ public class NetworkConfigration {
     private static int output_num=0;
     private static double learningrate=0;
     private static double momentum=0;
+    private static long seed=0;
     private static Weightinit weightinit;
     private LayerConf inputlayer;
     private ArrayList<LayerConf> hiddenlist = new ArrayList<LayerConf>();
@@ -23,21 +24,26 @@ public class NetworkConfigration {
 
     public NetworkConfigration base(double learningrate){
         this.learningrate=learningrate;
-        this.weightinit = weightinit;
         return this;
     }
 
     public NetworkConfigration base(double learningrate,double momentum){
         this.learningrate=learningrate;
         this.momentum=momentum;
-        this.weightinit = weightinit;
+        return this;
+    }
+
+    public NetworkConfigration base(double learningrate,double momentum,long seed){
+        this.learningrate=learningrate;
+        this.momentum=momentum;
+        this.seed=seed;
         return this;
     }
 
     public NetworkConfigration inputlayer(int input_num,Weightinit weightinit,ActivationFrame act){
         layer_num++;
         this.input_num=input_num;
-        inputlayer=new LayerConf(input_num,weightinit,act);
+        inputlayer=new LayerConf(input_num,weightinit,act,seed);
         return this;
     }
 
@@ -79,6 +85,8 @@ public class NetworkConfigration {
     public double getMomentum(){
         return this.momentum;
     }
+
+    public long getSeed() { return this.seed; }
 
     public Weightinit getWeight(){
         return this.weightinit;

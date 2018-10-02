@@ -16,10 +16,10 @@ public class Relu extends Neuron{
     @Override
     public double execDerivative(){
         if(current_output==0){
-            return 0;
+            return 0.0;
         }
         else {
-            return 1;
+            return 1.0;
         }
     }
 

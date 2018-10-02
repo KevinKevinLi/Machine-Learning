@@ -4,6 +4,7 @@ import Activation.ActivationFrame;
 import Activation.Neuron;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class LayerKernel {
     private static Neuron NeuronMap[][];
@@ -17,6 +18,7 @@ public class LayerKernel {
     private static int input_num;
    // private int weight_num;
     private static Weightinit weightinit_function;
+    private static long seed=0;
 
     private static boolean ifMomentumAlgorithm=false;
     private static double momentum;
@@ -31,6 +33,7 @@ public class LayerKernel {
         output_num=outputlayer.getOutput_num();
         input_num=inputlayer.getInput_num();
         weightinit_function=inputlayer.getWeightinit();
+        seed =inputlayer.getSeed();
 
         //init neurons
         NeuronMap=new Neuron[layers_num][];
@@ -67,9 +70,10 @@ public class LayerKernel {
 
         }
         //init use weight init function
+        Random random = new Random(seed);
         for(int i=0;i<WeightMap.length;i++){
             for(int j=0;j<WeightMap[i].length;j++) {
-                WeightMap[i][j] = weightinit_function.init(NeuronMap[i].length,NeuronMap[i+1].length);
+                WeightMap[i][j] = weightinit_function.init(NeuronMap[i].length,NeuronMap[i+1].length,random,seed);
                 //   System.out.println(WeightMap[i][j]);
             }
         }

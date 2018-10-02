@@ -12,23 +12,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MLPexample.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MLPexample.java">
+      <file leaf-file-name="FeedForwardKernel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Network/FeedForwardKernel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+            <state relative-caret-position="950">
+              <caret line="56" column="17" lean-forward="false" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#8608#8609#0" expanded="true" />
+                <element signature="e#8645#8646#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActivationFrame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Activation/ActivationFrame.java">
+      <file leaf-file-name="Weightinit.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Network/Conponent/Weightinit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+            <state relative-caret-position="589">
+              <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -37,74 +39,88 @@
       <file leaf-file-name="Linear.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Activation/Linear.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
+            <state relative-caret-position="418">
               <caret line="27" column="22" lean-forward="false" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-              <folding>
-                <element signature="e#327#328#0" expanded="true" />
-                <element signature="e#351#352#0" expanded="true" />
-                <element signature="e#395#396#0" expanded="true" />
-                <element signature="e#439#440#0" expanded="true" />
-                <element signature="e#483#484#0" expanded="true" />
-                <element signature="e#514#515#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MLPexample.class" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/out/production/MyNN/MLPexample.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1528592574439" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1528592574439" expanded="false" signature="113:323" ph="..." />
-                <marker date="1528592574439" expanded="true" signature="375:382" ph="{}" />
-                <marker date="1528592574439" expanded="true" signature="444:1347" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Listener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Listeners/Listener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-257">
-              <caret line="35" column="32" lean-forward="false" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#354#355#0" expanded="true" />
-                <element signature="e#391#392#0" expanded="true" />
-                <element signature="e#1920#1921#0" expanded="true" />
-                <element signature="e#2005#2006#0" expanded="true" />
-                <element signature="e#2047#2048#0" expanded="true" />
-                <element signature="e#2093#2094#0" expanded="true" />
-                <element signature="e#2130#2131#0" expanded="true" />
-                <element signature="e#2219#2220#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Plot.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Listeners/Plot.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FeedForwardKernel.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Network/FeedForwardKernel.java">
+      <file leaf-file-name="Relu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Activation/Relu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-491">
-              <caret line="78" column="9" lean-forward="true" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
+            <state relative-caret-position="133">
+              <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MLPexample.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/MLPexample.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
               <folding>
-                <element signature="e#725#733#0" expanded="true" />
-                <element signature="e#8508#8509#0" expanded="true" />
-                <element signature="e#8545#8546#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sigmoid.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Activation/Sigmoid.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LayerKernel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Network/Conponent/LayerKernel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1349">
+              <caret line="75" column="56" lean-forward="false" selection-start-line="75" selection-start-column="56" selection-end-line="75" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3982#3983#0" expanded="true" />
+                <element signature="e#4025#4026#0" expanded="true" />
+                <element signature="e#4397#4398#0" expanded="true" />
+                <element signature="e#4436#4437#0" expanded="true" />
+                <element signature="e#4489#4490#0" expanded="true" />
+                <element signature="e#4533#4534#0" expanded="true" />
+                <element signature="e#5585#5586#0" expanded="true" />
+                <element signature="e#5640#5641#0" expanded="true" />
+                <element signature="e#5713#5714#0" expanded="true" />
+                <element signature="e#5767#5768#0" expanded="true" />
+                <element signature="e#5828#5829#0" expanded="true" />
+                <element signature="e#5883#5884#0" expanded="true" />
+                <element signature="e#5954#5955#0" expanded="true" />
+                <element signature="e#6006#6007#0" expanded="true" />
+                <element signature="e#6066#6067#0" expanded="true" />
+                <element signature="e#6120#6121#0" expanded="true" />
+                <element signature="e#6168#6169#0" expanded="true" />
+                <element signature="e#6207#6208#0" expanded="true" />
+                <element signature="e#6263#6264#0" expanded="true" />
+                <element signature="e#6307#6308#0" expanded="true" />
+                <element signature="e#6372#6373#0" expanded="true" />
+                <element signature="e#6432#6433#0" expanded="true" />
+                <element signature="e#6630#6631#0" expanded="true" />
+                <element signature="e#6687#6688#0" expanded="true" />
+                <element signature="e#6740#6741#0" expanded="true" />
+                <element signature="e#6785#6786#0" expanded="true" />
+                <element signature="e#6958#6959#0" expanded="true" />
+                <element signature="e#7003#7004#0" expanded="true" />
+                <element signature="e#7056#7057#0" expanded="true" />
+                <element signature="e#7097#7098#0" expanded="true" />
+                <element signature="e#7165#7166#0" expanded="true" />
+                <element signature="e#7204#7205#0" expanded="true" />
+                <element signature="e#7492#7493#0" expanded="true" />
+                <element signature="e#7542#7543#0" expanded="true" />
+                <element signature="e#7608#7609#0" expanded="true" />
+                <element signature="e#7662#7663#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,8 +129,8 @@
       <file leaf-file-name="LayerConf.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Network/Conponent/LayerConf.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+            <state relative-caret-position="304">
+              <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -123,9 +139,12 @@
       <file leaf-file-name="NetworkConfigration.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Network/NetworkConfigration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="39" column="59" lean-forward="true" selection-start-line="39" selection-start-column="59" selection-end-line="39" selection-end-column="59" />
-              <folding />
+            <state relative-caret-position="760">
+              <caret line="45" column="62" lean-forward="false" selection-start-line="45" selection-start-column="62" selection-end-line="45" selection-end-column="62" />
+              <folding>
+                <element signature="e#2406#2407#0" expanded="true" />
+                <element signature="e#2446#2447#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -133,8 +152,8 @@
       <file leaf-file-name="ClassificationNetwork.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Network/ClassificationNetwork.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="76" column="10" lean-forward="false" selection-start-line="76" selection-start-column="10" selection-end-line="76" selection-end-column="10" />
+            <state relative-caret-position="399">
+              <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -201,22 +220,22 @@
         <option value="$PROJECT_DIR$/src/Network/FeedFowardNetwork.java" />
         <option value="$PROJECT_DIR$/src/RecordManage/RecordPolice.java" />
         <option value="$PROJECT_DIR$/src/RecordManage/TextRecordReader.java" />
-        <option value="$PROJECT_DIR$/src/Activation/Relu.java" />
         <option value="$PROJECT_DIR$/src/Activation/Neuron.java" />
         <option value="$PROJECT_DIR$/src/Activation/Softmax.java" />
-        <option value="$PROJECT_DIR$/src/Network/Conponent/Weightinit.java" />
         <option value="$PROJECT_DIR$/src/Exception/GradientExplosion.java" />
         <option value="$PROJECT_DIR$/src/Listeners/Listener.java" />
         <option value="$PROJECT_DIR$/src/Activation/Sigmoid.java" />
         <option value="$PROJECT_DIR$/src/Activation/Linear.java" />
         <option value="$PROJECT_DIR$/src/Activation/ActivationFrame.java" />
-        <option value="$PROJECT_DIR$/src/Network/NetworkConfigration.java" />
-        <option value="$PROJECT_DIR$/src/Network/Conponent/LayerConf.java" />
-        <option value="$PROJECT_DIR$/src/Network/Conponent/LayerKernel.java" />
-        <option value="$PROJECT_DIR$/src/Network/FeedForwardKernel.java" />
-        <option value="$PROJECT_DIR$/src/Network/ClassificationNetwork.java" />
         <option value="$PROJECT_DIR$/src/LossFunction/LossFunction.java" />
+        <option value="$PROJECT_DIR$/src/Network/ClassificationNetwork.java" />
+        <option value="$PROJECT_DIR$/src/Network/Conponent/LayerConf.java" />
+        <option value="$PROJECT_DIR$/src/Network/FeedForwardKernel.java" />
+        <option value="$PROJECT_DIR$/src/Network/NetworkConfigration.java" />
+        <option value="$PROJECT_DIR$/src/Network/Conponent/LayerKernel.java" />
+        <option value="$PROJECT_DIR$/src/Network/Conponent/Weightinit.java" />
         <option value="$PROJECT_DIR$/src/MLPexample.java" />
+        <option value="$PROJECT_DIR$/src/Activation/Relu.java" />
       </list>
     </option>
   </component>
@@ -226,10 +245,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="949" />
-    <option name="y" value="3" />
-    <option name="width" value="970" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="306" />
+    <option name="y" value="1" />
+    <option name="width" value="1404" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
@@ -247,8 +266,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -260,46 +278,6 @@
               <item name="MyNN" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyNN" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyNN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyNN" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="Car" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyNN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyNN" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyNN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyNN" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyNN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyNN" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="MyNN" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyNN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyNN" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="MyNN" type="462c0819:PsiDirectoryNode" />
-              <item name="Activation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyNN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyNN" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="MyNN" type="462c0819:PsiDirectoryNode" />
-              <item name="LossFunction" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MyNN" type="b2602c69:ProjectViewProjectNode" />
@@ -343,12 +321,19 @@
               <item name="Network" type="462c0819:PsiDirectoryNode" />
               <item name="Conponent" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="MyNN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyNN" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="RecordManage" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -474,14 +459,24 @@
       <workItem from="1528322525170" duration="2688000" />
       <workItem from="1528355219190" duration="2506000" />
       <workItem from="1528572631195" duration="16750000" />
+      <workItem from="1528593054282" duration="312000" />
+      <workItem from="1529043563482" duration="1416000" />
+      <workItem from="1529083462442" duration="1412000" />
+      <workItem from="1532008732373" duration="661000" />
+      <workItem from="1532060549183" duration="624000" />
+      <workItem from="1533017722143" duration="6173000" />
+      <workItem from="1533099854457" duration="993000" />
+      <workItem from="1533189304548" duration="4551000" />
+      <workItem from="1538502283001" duration="303000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162940000" />
+    <option name="totallyTimeSpent" value="179385000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="949" y="3" width="970" height="1047" extended-state="0" />
+    <frame x="306" y="1" width="1404" height="1047" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -491,19 +486,19 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18123667" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32622603" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27672955" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19020173" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39978677" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -534,13 +529,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Network/Conponent/Weightinit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Activation/ActivationFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -583,7 +571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="86" lean-forward="false" selection-start-line="10" selection-start-column="86" selection-end-line="10" selection-end-column="86" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -602,13 +589,6 @@
     <entry file="file://$PROJECT_DIR$/data/linear_data_train2.txt" />
     <entry file="file://$PROJECT_DIR$/src/OtherFunctions.java" />
     <entry file="file://$PROJECT_DIR$/data/linear_data_train.txt" />
-    <entry file="file://$PROJECT_DIR$/data/MLP_test.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/iris.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -637,13 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Activation/Relu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/saturn_data_eval.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -652,20 +625,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/saturn_data_train.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Train_csv.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Train_csv_out2.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -693,18 +652,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Network/Conponent/Weightinit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="94" lean-forward="false" selection-start-line="12" selection-start-column="94" selection-end-line="12" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/RecordManage/TextRecordReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="741">
           <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -713,26 +664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="42" column="46" lean-forward="false" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
-          <folding>
-            <marker date="1528319828837" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1528319828837" expanded="false" signature="133:199" ph="..." />
-            <marker date="1528319828837" expanded="false" signature="494:505" ph=" { " />
-            <marker date="1528319828837" expanded="false" signature="529:535" ph=" }" />
-            <marker date="1528319828837" expanded="false" signature="575:586" ph=" { " />
-            <marker date="1528319828837" expanded="false" signature="606:612" ph=" }" />
-            <marker date="1528319828837" expanded="false" signature="644:655" ph=" { " />
-            <marker date="1528319828837" expanded="false" signature="670:676" ph=" }" />
-            <marker date="1528319828837" expanded="false" signature="717:728" ph=" { " />
-            <marker date="1528319828837" expanded="false" signature="746:752" ph=" }" />
-            <marker date="1528319828837" expanded="true" signature="784:847" ph="{...}" />
-            <marker date="1528319828837" expanded="true" signature="924:1919" ph="{...}" />
-            <marker date="1528319828837" expanded="true" signature="1961:2060" ph="{...}" />
-            <marker date="1528319828837" expanded="true" signature="2100:2198" ph="{...}" />
-            <marker date="1528319828837" expanded="false" signature="2239:2250" ph=" { " />
-            <marker date="1528319828837" expanded="false" signature="2283:2289" ph=" }" />
-            <marker date="1528319828837" expanded="false" signature="2325:2336" ph=" { " />
-            <marker date="1528319828837" expanded="false" signature="2416:2422" ph=" }" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -740,10 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="4" column="58" lean-forward="false" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
-          <folding>
-            <element signature="e#103#104#0" expanded="true" />
-            <element signature="e#168#169#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -751,9 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#660#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -761,9 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#1858#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -771,82 +692,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="35" lean-forward="false" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Activation/Sigmoid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="32" column="5" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#519#520#0" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
-            <element signature="e#608#609#0" expanded="true" />
-            <element signature="e#652#653#0" expanded="true" />
-            <element signature="e#684#685#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Activation/ActivationFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
+        <state relative-caret-position="228">
           <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Network/NetworkConfigration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="39" column="59" lean-forward="true" selection-start-line="39" selection-start-column="59" selection-end-line="39" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Listeners/Plot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Listeners/Listener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-257">
-          <caret line="35" column="32" lean-forward="false" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#391#392#0" expanded="true" />
-            <element signature="e#1920#1921#0" expanded="true" />
-            <element signature="e#2005#2006#0" expanded="true" />
-            <element signature="e#2047#2048#0" expanded="true" />
-            <element signature="e#2093#2094#0" expanded="true" />
-            <element signature="e#2130#2131#0" expanded="true" />
-            <element signature="e#2219#2220#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Network/Conponent/LayerConf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Network/ClassificationNetwork.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="76" column="10" lean-forward="false" selection-start-line="76" selection-start-column="10" selection-end-line="76" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -854,90 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/MyNN/MLPexample.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1528592574439" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1528592574439" expanded="false" signature="113:323" ph="..." />
-            <marker date="1528592574439" expanded="true" signature="375:382" ph="{}" />
-            <marker date="1528592574439" expanded="true" signature="444:1347" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MLPexample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Network/Conponent/LayerKernel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="155" column="40" lean-forward="false" selection-start-line="155" selection-start-column="40" selection-end-line="155" selection-end-column="40" />
-          <folding>
-            <element signature="e#3835#3836#0" expanded="true" />
-            <element signature="e#3878#3879#0" expanded="true" />
-            <element signature="e#4250#4251#0" expanded="true" />
-            <element signature="e#4289#4290#0" expanded="true" />
-            <element signature="e#4342#4343#0" expanded="true" />
-            <element signature="e#4386#4387#0" expanded="true" />
-            <element signature="e#5438#5439#0" expanded="true" />
-            <element signature="e#5493#5494#0" expanded="true" />
-            <element signature="e#5566#5567#0" expanded="true" />
-            <element signature="e#5620#5621#0" expanded="true" />
-            <element signature="e#5681#5682#0" expanded="true" />
-            <element signature="e#5736#5737#0" expanded="true" />
-            <element signature="e#5807#5808#0" expanded="true" />
-            <element signature="e#5859#5860#0" expanded="true" />
-            <element signature="e#5919#5920#0" expanded="true" />
-            <element signature="e#5973#5974#0" expanded="true" />
-            <element signature="e#6021#6022#0" expanded="true" />
-            <element signature="e#6060#6061#0" expanded="true" />
-            <element signature="e#6116#6117#0" expanded="true" />
-            <element signature="e#6160#6161#0" expanded="true" />
-            <element signature="e#6225#6226#0" expanded="true" />
-            <element signature="e#6285#6286#0" expanded="true" />
-            <element signature="e#6483#6484#0" expanded="true" />
-            <element signature="e#6540#6541#0" expanded="true" />
-            <element signature="e#6593#6594#0" expanded="true" />
-            <element signature="e#6638#6639#0" expanded="true" />
-            <element signature="e#6811#6812#0" expanded="true" />
-            <element signature="e#6856#6857#0" expanded="true" />
-            <element signature="e#6909#6910#0" expanded="true" />
-            <element signature="e#6950#6951#0" expanded="true" />
-            <element signature="e#7018#7019#0" expanded="true" />
-            <element signature="e#7057#7058#0" expanded="true" />
-            <element signature="e#7345#7346#0" expanded="true" />
-            <element signature="e#7395#7396#0" expanded="true" />
-            <element signature="e#7461#7462#0" expanded="true" />
-            <element signature="e#7515#7516#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Activation/Linear.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="22" lean-forward="false" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-          <folding>
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#514#515#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -945,21 +714,184 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
           <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Listeners/Listener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="35" column="32" lean-forward="false" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Listeners/Plot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/MyNN/MLPexample.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/MLP_test_out2.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/MLP_test.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Train_csv.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Train_csv_out2.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Network/ClassificationNetwork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
           <folding>
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Network/Conponent/LayerConf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Network/NetworkConfigration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="45" column="62" lean-forward="false" selection-start-line="45" selection-start-column="62" selection-end-line="45" selection-end-column="62" />
+          <folding>
+            <element signature="e#2406#2407#0" expanded="true" />
+            <element signature="e#2446#2447#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Network/FeedForwardKernel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-491">
-          <caret line="78" column="9" lean-forward="true" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
+        <state relative-caret-position="950">
+          <caret line="56" column="17" lean-forward="false" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="17" />
           <folding>
-            <element signature="e#725#733#0" expanded="true" />
-            <element signature="e#8508#8509#0" expanded="true" />
-            <element signature="e#8545#8546#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#8608#8609#0" expanded="true" />
+            <element signature="e#8645#8646#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Network/Conponent/LayerKernel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1349">
+          <caret line="75" column="56" lean-forward="false" selection-start-line="75" selection-start-column="56" selection-end-line="75" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3982#3983#0" expanded="true" />
+            <element signature="e#4025#4026#0" expanded="true" />
+            <element signature="e#4397#4398#0" expanded="true" />
+            <element signature="e#4436#4437#0" expanded="true" />
+            <element signature="e#4489#4490#0" expanded="true" />
+            <element signature="e#4533#4534#0" expanded="true" />
+            <element signature="e#5585#5586#0" expanded="true" />
+            <element signature="e#5640#5641#0" expanded="true" />
+            <element signature="e#5713#5714#0" expanded="true" />
+            <element signature="e#5767#5768#0" expanded="true" />
+            <element signature="e#5828#5829#0" expanded="true" />
+            <element signature="e#5883#5884#0" expanded="true" />
+            <element signature="e#5954#5955#0" expanded="true" />
+            <element signature="e#6006#6007#0" expanded="true" />
+            <element signature="e#6066#6067#0" expanded="true" />
+            <element signature="e#6120#6121#0" expanded="true" />
+            <element signature="e#6168#6169#0" expanded="true" />
+            <element signature="e#6207#6208#0" expanded="true" />
+            <element signature="e#6263#6264#0" expanded="true" />
+            <element signature="e#6307#6308#0" expanded="true" />
+            <element signature="e#6372#6373#0" expanded="true" />
+            <element signature="e#6432#6433#0" expanded="true" />
+            <element signature="e#6630#6631#0" expanded="true" />
+            <element signature="e#6687#6688#0" expanded="true" />
+            <element signature="e#6740#6741#0" expanded="true" />
+            <element signature="e#6785#6786#0" expanded="true" />
+            <element signature="e#6958#6959#0" expanded="true" />
+            <element signature="e#7003#7004#0" expanded="true" />
+            <element signature="e#7056#7057#0" expanded="true" />
+            <element signature="e#7097#7098#0" expanded="true" />
+            <element signature="e#7165#7166#0" expanded="true" />
+            <element signature="e#7204#7205#0" expanded="true" />
+            <element signature="e#7492#7493#0" expanded="true" />
+            <element signature="e#7542#7543#0" expanded="true" />
+            <element signature="e#7608#7609#0" expanded="true" />
+            <element signature="e#7662#7663#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Network/Conponent/Weightinit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Activation/Linear.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="27" column="22" lean-forward="false" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Activation/Sigmoid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Activation/Relu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MLPexample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

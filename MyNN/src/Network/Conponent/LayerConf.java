@@ -14,13 +14,15 @@ public class LayerConf {
     private ActivationFrame activation;
     private static LossFunction lossfunction;
     private static Weightinit weightinit;
+    private static long seed;
 
     //InputLayer
-    public LayerConf(int input_num,Weightinit weightinit,ActivationFrame activation){
+    public LayerConf(int input_num,Weightinit weightinit,ActivationFrame activation,long seed){
         layer_name="InputLayer";
         this.weightinit=weightinit;
         this.activation=activation;
         this.input_num=input_num;
+        this.seed=seed;
         layer_num=0;
     }
 
@@ -65,4 +67,6 @@ public class LayerConf {
     public int getOutput_num(){
         return output_num;
     }
+
+    public long getSeed(){return seed;}
 }

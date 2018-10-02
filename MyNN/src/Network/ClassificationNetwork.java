@@ -18,10 +18,10 @@ public class ClassificationNetwork {
         output_num=conf.getOutput_num();
         input_num=conf.getInput_num();
         if(conf.getMomentum()==0.0) {
-            net.setbase(conf.getLayer_num(), conf.getInput_num(), conf.getOutput_num(), conf.getLearningrate());
+            net.setbase(conf.getLayer_num(), conf.getInput_num(), conf.getOutput_num(), conf.getLearningrate(),conf.getSeed());
         }
         else{
-            net.setbase(conf.getLayer_num(), conf.getInput_num(), conf.getOutput_num(), conf.getLearningrate(),conf.getMomentum());
+            net.setbase(conf.getLayer_num(), conf.getInput_num(), conf.getOutput_num(), conf.getLearningrate(),conf.getMomentum(),conf.getSeed());
         }
         //conf.getHiddenlayer().get(0).getActivation().getNeuron().printname();
         net.setlayers(conf.getInputlayer(),conf.getHiddenlayer(),conf.getOutputlayer());
