@@ -11,35 +11,40 @@ public class MLPexample {
         //String filepath="./data/saturn_data_train.csv";
         //String filepath="./data/iris.txt";
         //String filepath="./data/Car/TrainSet80%csv.csv";
-        String filepath="./data/Train_csv.csv";
+        String filepath="./data/Stock/AAL_1000.csv";
+        //String filepath="./data/wine/wine-80.csv";
         TextRecordReader TrainSet=new TextRecordReader(filepath,",");
         //filepath="./data/saturn_data_eval.csv";
-        filepath="./data/MLP_test.csv";
-        //filepath="./data/Car/TestSet20%csv.csv";
+        //filepath="./data/wine/wine-20.csv";
+        filepath="./data/Stock/AAL_258.csv";
         TextRecordReader TestSet=new TextRecordReader(filepath,",");
 
         ClassificationNetwork NewNetwork=new ClassificationNetwork();
 
-        int input_num=2;
+        int input_num=5;
         int output_num=1;
-        long seed=1230294;
+        long seed=54321;
         NetworkConfigration configuration=new NetworkConfigration()
-                .base(0.01,0.9,seed)//learningrate,(momentum),(time seed)
-                .inputlayer(input_num,Weightinit.UNIFORM,ActivationFrame.Linear)
-                .hiddenlayer(20,ActivationFrame.Relu)
-                //.hiddenlayer(14,ActivationFrame.Sigmoid)
-                //.hiddenlayer(8,ActivationFrame.Sigmoid)
+                .base(0.05)//learningrate,(momentum),(time seed)
+                .inputlayer(input_num,Weightinit.XAVIER,ActivationFrame.Linear)
+                .hiddenlayer(10,ActivationFrame.Sigmoid)
+                .hiddenlayer(5,ActivationFrame.Sigmoid)
+                //.hiddenlayer(4,ActivationFrame.Sigmoid)
+                //.hiddenlayer(6,ActivationFrame.Sigmoid)
+                //.hiddenlayer(4,ActivationFrame.Sigmoid)
                 //.outputlayer(output_num,ActivationFrame.Softmax,LossFunction.NegativeLogLikeliHood)
                 //.outputlayer(output_num,ActivationFrame.Sigmoid,LossFunction.CrossEntropy)
-                .outputlayer(output_num,ActivationFrame.Relu,LossFunction.Mse)
+                .outputlayer(output_num,ActivationFrame.Sigmoid,LossFunction.Mse)
                 .build();
         NewNetwork.SetConfiguration(configuration);
 
         //NewNetwork.SetConfigure(2,1,20,0.01, Weightinit.UNIFORM, ActivationFrame.Sigmoid, LossFunction.MSE);
 
         //NewNetwork.train(TrainSet.ReturnRecord(3),700);
-        NewNetwork.train(TrainSet.ReturnRecord(input_num,output_num),100);
+        NewNetwork.train(TrainSet.ReturnRecord(input_num,output_num),30000);
         NewNetwork.test(TestSet.ReturnRecord(input_num,output_num));
-       // NewNetwork.predict(TestSet.ReturnRecord(input_num,output_num),0.5);
+        //NewNetwork.predict(TestSet.ReturnRecord(input_num,output_num),0.001);
+        //customized predict
+        NewNetwork.predict(TestSet.ReturnRecord(input_num,output_num));
     }
 }

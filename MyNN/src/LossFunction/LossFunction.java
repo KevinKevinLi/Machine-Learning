@@ -4,7 +4,8 @@ public enum LossFunction {
     Subtraction,
     CrossEntropy,
     NegativeLogLikeliHood,
-    Mse;
+    Mse,
+    DoNothing;
 
     private LossFunction(){}
 
@@ -24,6 +25,8 @@ public enum LossFunction {
                 return d;
             case NegativeLogLikeliHood:
                 return -Math.log(1.0-Math.abs(targetvalue-outvalue))/(double)outputnum;
+            case DoNothing:
+                return outvalue;
             default:
                 throw new UnsupportedOperationException("Unknown or not supported loss function: " + this);
         }
