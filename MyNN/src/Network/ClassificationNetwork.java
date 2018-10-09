@@ -2,6 +2,7 @@ package Network;
 import Listeners.*;
 import LossFunction.LossFunction;
 import Exception.*;
+import java.text.DecimalFormat;
 
 public class ClassificationNetwork {
     private FeedForwardKernel net;
@@ -91,4 +92,25 @@ public class ClassificationNetwork {
         Statistic.printPredict();
     }
 
+    //continues
+    public void predict(double [][]inputset){
+        DecimalFormat df = new DecimalFormat("#.##");
+        for(int i=0;i<inputset.length;i++) {
+            net.setLossfunction(LossFunction.DoNothing);
+            double predict=net.feedforward(inputset[i]);
+            //customize
+            //start of nextday
+            System.out.print("Predict:"+df.format((predict*45.65)+13.14)+"  Actual:"+df.format((inputset[i][5]*45.65)+13.14));
+            //end of today
+            System.out.print("  Close:"+df.format(inputset[i][4]*45.45+13.02));
+            if(inputset[i][5]>inputset[i][4]&&predict>inputset[i][4]||inputset[i][5]<inputset[i][4]&&predict<inputset[i][4]){
+                System.out.println("  success");
+                Statistic.predictsuccess();
+            }
+            else{
+                System.out.println("  failed");
+            }
+        }
+        Statistic.printPredict();
+    }
 }
