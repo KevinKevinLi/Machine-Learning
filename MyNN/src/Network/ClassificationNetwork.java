@@ -7,6 +7,7 @@ import java.text.DecimalFormat;
 public class ClassificationNetwork {
     private FeedForwardKernel net;
     private Listeners.Listener Statistic;
+    private Listeners.Graph Chart;
     private int output_num=0;
     private int input_num=0;
    // private RecordPolice Police=new RecordPolice();
@@ -93,24 +94,34 @@ public class ClassificationNetwork {
     }
 
     //continues
-    public void predict(double [][]inputset){
+    public void predict(double [][]inputset,String path){
+        Chart=new Graph();
         DecimalFormat df = new DecimalFormat("#.##");
         for(int i=0;i<inputset.length;i++) {
             net.setLossfunction(LossFunction.DoNothing);
-            double predict=net.feedforward(inputset[i]);
-            //customize
-            //start of nextday
-            System.out.print("Predict:"+df.format((predict*45.65)+13.14)+"  Actual:"+df.format((inputset[i][5]*45.65)+13.14));
-            //end of today
-            System.out.print("  Close:"+df.format(inputset[i][4]*45.45+13.02));
-            if(inputset[i][5]>inputset[i][4]&&predict>inputset[i][4]||inputset[i][5]<inputset[i][4]&&predict<inputset[i][4]){
-                System.out.println("  success");
-                Statistic.predictsuccess();
-            }
-            else{
-                System.out.println("  failed");
-            }
+            double predict = net.feedforward(inputset[i]);
+            String ck=Integer.toString(i);
+            double t=inputset[i][0]*2257.48+679.28;
+            Chart.add((predict*195.6-104.01)+t,"predict",ck);
+            Chart.add((inputset[i][4]*195.6-104.01)+t,"actuall",ck);
+//            predict=predict*45.65+13.14;
+//            double actuall=(inputset[i][5]*45.65)+13.14;
+//            double close=inputset[i][4]*45.45+13.02;
+//            //customize
+//            //start of nextday
+//            System.out.print("Predict:"+df.format(predict)+"  Actual:"+df.format(actuall));
+//            //end of today
+//            System.out.print("  Close:"+df.format(close));
+//            if(actuall>=close&&predict>=close||actuall<=close&&predict<=close){
+//                System.out.println("  success");
+//                Statistic.predictsuccess();
+//            }
+//            else{
+//                System.out.println("  failed");
+//            }
+//        }
+//        Statistic.printPredict();
         }
-        Statistic.printPredict();
+        Chart.createChart(path);
     }
 }
