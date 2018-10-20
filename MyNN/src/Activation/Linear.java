@@ -15,7 +15,7 @@ public class Linear extends Neuron {
 
     @Override
     public double execDerivative(){
-        return 0;
+        return 1;
     }
 
     @Override

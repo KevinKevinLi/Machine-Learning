@@ -61,7 +61,7 @@ public class Graph {
 
             // ChartUtilities.writeChartAsPNG(out, chart, 600, 400);
 
-            ChartUtilities.writeChartAsPNG(out, jfreechart, 1200, 800);
+            ChartUtilities.writeChartAsPNG(out, jfreechart, 4000, 2000);
             out.flush();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
