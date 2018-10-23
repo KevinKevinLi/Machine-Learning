@@ -18,6 +18,8 @@ public class NetworkConfigration {
     private ArrayList<LayerConf> hiddenlist = new ArrayList<LayerConf>();
     private LayerConf outputlayer;
     private static LossFunction lossfunction;
+    private static double [][]weightmap;
+    private static double [][]biasmap;
 
     public NetworkConfigration(){
     }
@@ -59,6 +61,12 @@ public class NetworkConfigration {
         this.output_num=output_num;
         outputlayer=new LayerConf(layer_num,output_num,activation,lossfunction);
         this.lossfunction=lossfunction;
+        return this;
+    }
+
+    public NetworkConfigration setweightmap(double [][]weightmap,double [][]biasmap){
+        this.weightmap=weightmap;
+        this.biasmap=biasmap;
         return this;
     }
 
@@ -105,4 +113,8 @@ public class NetworkConfigration {
     }
 
     public LossFunction getLossfunction(){return this.lossfunction;}
+
+    public double [][] getWeightmap(){return this.weightmap;}
+
+    public double [][] getBiasMap(){return this.biasmap;}
 }

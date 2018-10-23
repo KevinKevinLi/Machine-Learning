@@ -213,6 +213,10 @@ public class LayerKernel {
         return BiasMap[row][line];
     }
 
+    public static int getBiasRowLength(){ return BiasMap.length; }
+
+    public static int getBiasLineLength(int row){return BiasMap[row].length;};
+
     public static void updateBias(int row, int line, double bias){
         BiasMap[row][line]=bias;
     }
@@ -232,4 +236,9 @@ public class LayerKernel {
     public static String getNeuronActivation(int row, int line){
         return  NeuronMap[row][line].getname();
     }
+
+    public static double[][] getWeightMap() {return WeightMap; }
+
+    public static void setWeightMap(double [][]weightmap,double [][]biasmap){ WeightMap=weightmap; BiasMap=biasmap;}
+
 }

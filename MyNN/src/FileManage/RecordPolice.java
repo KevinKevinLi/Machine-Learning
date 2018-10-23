@@ -1,4 +1,4 @@
-package RecordManage;
+package FileManage;
 import java.util.*;
 
 public class RecordPolice {

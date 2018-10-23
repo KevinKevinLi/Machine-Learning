@@ -1,4 +1,4 @@
-package RecordManage;
+package FileManage;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;

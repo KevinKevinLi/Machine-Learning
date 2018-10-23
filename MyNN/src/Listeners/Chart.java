@@ -16,10 +16,10 @@ import org.jfree.data.category.CategoryDataset;
 import org.jfree.data.general.DatasetUtilities;
 import org.jfree.data.category.DefaultCategoryDataset;
 
-public class Graph {
+public class Chart {
     private static DefaultCategoryDataset categoryDataset;
 
-    public Graph(){
+    public Chart(){
         categoryDataset = new DefaultCategoryDataset();
     }
 

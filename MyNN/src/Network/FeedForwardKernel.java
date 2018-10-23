@@ -1,29 +1,22 @@
 package Network;
-import Activation.*;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.*;
 import Listeners.*;
 import LossFunction.LossFunction;
 import Network.Conponent.LayerConf;
 import Network.Conponent.LayerKernel;
-import Network.Conponent.Weightinit;
+import java.util.Date;
+import java.text.SimpleDateFormat;
 
 public class FeedForwardKernel {
-//    private static ArrayList<Neuron> NeuronList = new ArrayList<Neuron>();
-//    private static ArrayList<Double> WeightList = new ArrayList<Double>();
-//    private static ArrayList<Double> Bias = new ArrayList<Double>();
-//    private Neuron NeuronMap[][];
-//    private double WeightMap[][];
-//    private double MomentumMap[][];
-//    private double WeightMap_backup[][];
-
     private static int input_num;
     private ArrayList<Double> inputlist = new ArrayList<Double>();
     private static int output_num;
-//    private static int hiddenneurons_num[];
-//    private int neuron_num;
-//    private int weight_num;
     private static int layers_num;
-//    private static int hiddenlayers_num;
 
     private static double learningrate;
     private static double momentum=0.0;
@@ -31,9 +24,7 @@ public class FeedForwardKernel {
     private static double bias=0.0;
     private static long seed=0;
 
-//    private static double error=0;
     private Listener Statistic;
-
     private LayerKernel NetworkLayer;
 
     public FeedForwardKernel(){
@@ -197,5 +188,77 @@ public class FeedForwardKernel {
 
     public void setLossfunction(LossFunction los){
         this.lossfunction=los;
+    }
+
+    public void setWeightmap(double [][]weightmap,double [][]biasmap){
+        NetworkLayer.setWeightMap(weightmap,biasmap);
+    }
+
+    public void savenet(String path,double error){
+        //output to file
+        FileOutputStream out = null;
+        try {
+            File outFile = new File(path);
+            if (!outFile.getParentFile().exists()) {
+                outFile.getParentFile().mkdirs();
+            }
+            out = new FileOutputStream(path);
+            //feed forward
+            StringBuilder stringb= new StringBuilder("name"+" feedfoward\n");
+            //date
+            SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss\n");//设置日期格式
+            stringb.append("date "+df.format(new Date()));
+            //test_error predicterror
+            stringb.append("testerror "+error+"\n");
+            //total layer
+            stringb.append("totallayer "+layers_num+"\n");
+            //hidden_layer_num learning_rate momentum seed
+            stringb.append("base "+learningrate+" "+momentum+" "+seed+"\n");
+            //LAYER CONFI
+            for(int i=0;i<NetworkLayer.getNeuronRowLength();i++){
+                if(i==0){
+                    stringb.append("inputlayer"+" ");
+                }
+                else if(i==NetworkLayer.getNeuronRowLength()-1){
+                    stringb.append("outputlayer"+" "+lossfunction+" ");
+                }
+                else{
+                    stringb.append("hiddenlayer"+" ");
+                }
+                stringb.append((int)NetworkLayer.getNeuronLineLength(i)+" "+NetworkLayer.getNeuronActivation(i,0)+"\n");
+            }
+            //weight map
+            for(int i=0; i<NetworkLayer.getWeightRowLength();i++){
+                stringb.append("weightmap ");
+                for(int j=0;j<NetworkLayer.getWeightLineLength(i);j++){
+                    stringb.append(NetworkLayer.getWeight(i,j)+" ");
+                }
+                stringb.append("\n");
+            }
+            //biasmap
+            for(int i=0;i<NetworkLayer.getBiasRowLength();i++){
+                stringb.append("biasmap ");
+                for(int j=0;j<NetworkLayer.getBiasLineLength(i);j++){
+                    stringb.append(NetworkLayer.getBias(i,j)+" ");
+                }
+                stringb.append("\n");
+            }
+
+            String string=stringb.toString();
+            byte[]bytes=string.getBytes();
+            out.write(bytes);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (out != null) {
+                try {
+                    out.close();
+                } catch (IOException e) {
+                    // do nothing
+                }
+            }
+        }
     }
 }

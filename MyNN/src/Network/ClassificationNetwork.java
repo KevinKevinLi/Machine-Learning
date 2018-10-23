@@ -2,12 +2,13 @@ package Network;
 import Listeners.*;
 import LossFunction.LossFunction;
 import Exception.*;
+
 import java.text.DecimalFormat;
 
 public class ClassificationNetwork {
     private FeedForwardKernel net;
     private Listeners.Listener Statistic;
-    private Listeners.Graph Chart;
+    private Listeners.Chart Chart;
     private int output_num=0;
     private int input_num=0;
    // private RecordPolice Police=new RecordPolice();
@@ -29,6 +30,10 @@ public class ClassificationNetwork {
         net.setlayers(conf.getInputlayer(),conf.getHiddenlayer(),conf.getOutputlayer());
         Statistic = new Listener(conf.getLossfunction());
         net.setListener(Statistic);
+    }
+
+    public void SetWeightMap(NetworkConfigration conf){
+        net.setWeightmap(conf.getWeightmap(),conf.getBiasMap());
     }
 
     public void train(double [][] inputset,int traintimes){
@@ -94,6 +99,7 @@ public class ClassificationNetwork {
         for(int i=0;i<inputset.length;i++){
             //Statistic.printpara();
             net.feedforward(inputset[i]);
+            Statistic.printTestError();
         }
         //net.printNetwork();
         Statistic.printTestError();
@@ -113,7 +119,7 @@ public class ClassificationNetwork {
     }
 
     public void predict(double [][]inputset,String path){
-        Chart=new Graph();
+        Chart=new Chart();
         net.setLossfunction(LossFunction.DoNothing);
         DecimalFormat df = new DecimalFormat("#.##");
         //double predict=inputset[1][0]*2257.48+679.28;
@@ -132,8 +138,7 @@ public class ClassificationNetwork {
 
     //continues
     public void predict(double [][]inputset,String path,int period,int traintimes){
-        Chart=new Graph();
-
+        Chart=new Chart();
         DecimalFormat df = new DecimalFormat("#.##");
         //double predict=inputset[1][0]*2257.48+679.28;
         for(int i=0;i<inputset.length;i++) {
@@ -151,5 +156,14 @@ public class ClassificationNetwork {
             Chart.add((inputset[i][5]*2254.22+676.53),"actuall",ck);
         }
         Chart.createChart(path);
+        //Statistic.printPredict();
+        //Statistic.printpara();
     }
+
+    public void saveas(String path) {
+        net.savenet(path,Statistic.getTestError());
+    }
+
+
+
 }

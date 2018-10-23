@@ -9,6 +9,7 @@ public class Listener {
     private static int interationtimes=0;
     private static int predict_success=0;
     private static LossFunction lossfunction;
+    private static double testerror=0;
 
     public Listener(LossFunction lossfunc){
         lossfunction=lossfunc;
@@ -56,11 +57,21 @@ public class Listener {
         }
     }
     public static void printTestError(){
-        System.out.println("Test Total Mean Square Error is "+totalError/totalSamples);
+        testerror=totalError/totalSamples;
+        System.out.println("Test Total Mean Square Error is "+testerror);
+    }
+
+    public static double getTestError(){
+        return testerror;
     }
 
     public static void printPredict(){
-        System.out.println("Predict Accuracy: "+predict_success/totalSamples);
+        if(predict_success==0){
+            System.out.println("Predict Error: " + totalError / totalSamples);
+        }
+        else {
+            System.out.println("Predict Accuracy: " + predict_success / totalSamples);
+        }
     }
 
     public static double getMeanError(){
