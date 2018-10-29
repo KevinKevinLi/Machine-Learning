@@ -118,6 +118,16 @@ public class ClassificationNetwork {
         Statistic.printPredict();
     }
 
+    public void predict(double [][]inputset){
+        for(int i=0;i<inputset.length;i++) {
+            //Statistic.printpara();
+            //MSE LOSS FUNCTION
+            net.setLossfunction(LossFunction.DoNothing);
+            double predict = net.feedforward(inputset[i])*2254.22+676.53 ;
+            System.out.println("Predict: "+predict+" Actuall: "+(inputset[i][5]*2254.22+676.53));
+        }
+    }
+
     public void predict(double [][]inputset,String path){
         Chart=new Chart();
         net.setLossfunction(LossFunction.DoNothing);
@@ -154,8 +164,12 @@ public class ClassificationNetwork {
             //double t=inputset[i+1][0]*2257.48+679.28;
             Chart.add(predict,"predict",ck);
             Chart.add((inputset[i][5]*2254.22+676.53),"actuall",ck);
+            if(predict-inputset[i][4]>0&&inputset[i][5]-inputset[i][4]>0||predict-inputset[i][4]<0&&inputset[i][5]-inputset[i][4]<0){
+                Statistic.predictsuccess();
+            }
         }
         Chart.createChart(path);
+        Statistic.printPredict();
         //Statistic.printPredict();
         //Statistic.printpara();
     }

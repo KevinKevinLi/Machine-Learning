@@ -15,6 +15,11 @@ public class Predict {
         ModelRecord model=new ModelRecord();
         model.buildfrom("./data/Network/stock1.nn",OldNetwork);
         //OldNetwork.test(TestSet.ReturnRecord(5,1));
-        //OldNetwork.saveas("./data/Network/stock2.nn");
+        double []temp={0.973758479,0.126565322,-0.147917195,0.275071035,0.979465151,0.977650845
+        };
+        double [][]octten={temp};
+        OldNetwork.predict(octten);
+        OldNetwork.saveas("./data/Network/stock2.nn");
+
     }
 }
