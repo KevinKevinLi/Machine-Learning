@@ -1,8 +1,6 @@
 package FileManage;
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.ArrayList;
 
 public class TextRecordReader {
@@ -27,6 +25,24 @@ public class TextRecordReader {
             num++;
         }
         return num;
+    }
+
+    public double[] ReturnRecord(int row) throws Exception{
+        double result[]=new double [LineNumber()];
+        FileInputStream inputStream = new FileInputStream(filepath);
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+        String str = null;
+        int i=0;
+
+        while((str = bufferedReader.readLine()) != null) {
+            String[] strarray=str.split(Delimiter);
+            result[i]=Double.valueOf(strarray[row]);
+            //System.out.println(result[i][j]);
+            record_length=strarray.length;
+            i++;
+        }
+
+        return result;
     }
 
     public double[][] ReturnRecord(int input_num,int output_num) throws Exception{
