@@ -70,7 +70,7 @@ public class Listener {
             System.out.println("Predict Error: " + totalError / totalSamples);
         }
         else {
-            System.out.println("Predict Accuracy: " + predict_success / totalSamples);
+            System.out.println("Predict Success Number: " + predict_success );
         }
     }
 

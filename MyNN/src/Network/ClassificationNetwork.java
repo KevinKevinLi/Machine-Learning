@@ -3,6 +3,7 @@ import Listeners.*;
 import LossFunction.LossFunction;
 import Exception.*;
 
+
 import java.text.DecimalFormat;
 
 public class ClassificationNetwork {
@@ -154,20 +155,26 @@ public class ClassificationNetwork {
         for(int i=0;i<inputset.length;i++) {
             //predict += (net.feedforward(inputset[i]) * 195.6 - 104.01);
             double predict=0;
-            if(i!=0&&i%period==0) {
-                net.setLossfunction(LossFunction.Mse);
-                periodtrain(inputset,i-period+1,i,traintimes);
-            }
             net.setLossfunction(LossFunction.DoNothing);
             predict = net.feedforward(inputset[i]) * 2254.22 + 676.53;
+            //predict = net.feedforward(inputset[i]);
             String ck=Integer.toString(i);
             //double t=inputset[i+1][0]*2257.48+679.28;
             Chart.add(predict,"predict",ck);
-            Chart.add((inputset[i][5]*2254.22+676.53),"actuall",ck);
-            if(predict-inputset[i][4]>0&&inputset[i][5]-inputset[i][4]>0||predict-inputset[i][4]<0&&inputset[i][5]-inputset[i][4]<0){
+            //double actuall=inputset[i][5]*195.6-104.01;
+            double actuall=inputset[i][7]* 2254.22 + 676.53;
+            Chart.add(actuall,"actuall",ck);
+            double close=inputset[i][6]* 2254.22 + 676.53;
+            if(predict-close>0&&actuall-close>0||predict-close<0&&actuall-close<0){
                 Statistic.predictsuccess();
             }
+
+            if(i!=0&&(i+1)%period==0||period==1) {
+                net.setLossfunction(LossFunction.Mse);
+                periodtrain(inputset, i - period+1, i + 1, traintimes);
+            }
         }
+        net.setLossfunction(LossFunction.Mse);
         Chart.createChart(path);
         Statistic.printPredict();
         //Statistic.printPredict();

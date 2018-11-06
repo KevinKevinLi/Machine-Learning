@@ -20,6 +20,5 @@ public class Predict {
         double [][]octten={temp};
         OldNetwork.predict(octten);
         OldNetwork.saveas("./data/Network/stock2.nn");
-
     }
 }

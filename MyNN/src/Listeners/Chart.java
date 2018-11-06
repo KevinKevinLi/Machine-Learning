@@ -45,7 +45,7 @@ public class Chart {
         LineAndShapeRenderer renderer = (LineAndShapeRenderer)plot.getRenderer();
         renderer.setBaseShapesVisible(false); // points visible
         renderer.setBaseLinesVisible(true); // line visible
-        renderer.setUseSeriesOffset(true); // offset
+        renderer.setUseSeriesOffset(false); // offset
         renderer.setBaseItemLabelGenerator(new StandardCategoryItemLabelGenerator());
         renderer.setBaseItemLabelsVisible(false);
         renderer.setBaseShapesFilled(false);
