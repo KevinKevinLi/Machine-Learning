@@ -1,10 +1,10 @@
 package FileManage;
 
 
-import LossFunction.LossFunction;
+import Network.LossFunction.LossFunction;
 import Network.Conponent.Weightinit;
 import Network.NetworkConfigration;
-import Activation.ActivationFrame;
+import Network.Activation.ActivationFrame;
 import Network.ClassificationNetwork;
 
 import java.io.*;

@@ -1,6 +1,6 @@
 package Network;
 import Listeners.*;
-import LossFunction.LossFunction;
+import Network.LossFunction.LossFunction;
 import Exception.*;
 
 
@@ -125,7 +125,7 @@ public class ClassificationNetwork {
             //MSE LOSS FUNCTION
             net.setLossfunction(LossFunction.DoNothing);
             double predict = net.feedforward(inputset[i])*2254.22+676.53 ;
-            System.out.println("Predict: "+predict+" Actuall: "+(inputset[i][5]*2254.22+676.53));
+            System.out.println("Main.Predict.Predict: "+predict+" Actuall: "+(inputset[i][5]*2254.22+676.53));
         }
     }
 

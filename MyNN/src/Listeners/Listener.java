@@ -1,6 +1,6 @@
 package Listeners;
 
-import LossFunction.LossFunction;
+import Network.LossFunction.LossFunction;
 import Exception.*;
 
 public class Listener {
@@ -67,10 +67,10 @@ public class Listener {
 
     public static void printPredict(){
         if(predict_success==0){
-            System.out.println("Predict Error: " + totalError / totalSamples);
+            System.out.println("Main.Predict.Predict Error: " + totalError / totalSamples);
         }
         else {
-            System.out.println("Predict Success Number: " + predict_success );
+            System.out.println("Main.Predict.Predict Success Number: " + predict_success );
         }
     }
 

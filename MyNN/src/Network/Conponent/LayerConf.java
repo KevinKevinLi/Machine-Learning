@@ -1,9 +1,7 @@
 package Network.Conponent;
 
-import Activation.ActivationFrame;
-import LossFunction.LossFunction;
-
-import java.util.ArrayList;
+import Network.Activation.ActivationFrame;
+import Network.LossFunction.LossFunction;
 
 public class LayerConf {
     private static int input_num=0;

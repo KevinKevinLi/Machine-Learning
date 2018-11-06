@@ -1,7 +1,6 @@
 package Network.Conponent;
 
-import Activation.ActivationFrame;
-import Activation.Neuron;
+import Network.Activation.Neuron;
 
 import java.util.ArrayList;
 import java.util.Random;

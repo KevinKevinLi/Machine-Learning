@@ -1,8 +1,8 @@
 package Network;
 import java.util.*;
 
-import Activation.ActivationFrame;
-import LossFunction.LossFunction;
+import Network.Activation.ActivationFrame;
+import Network.LossFunction.LossFunction;
 import Network.Conponent.LayerConf;
 import Network.Conponent.Weightinit;
 

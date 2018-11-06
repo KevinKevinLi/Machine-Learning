@@ -6,7 +6,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.*;
 import Listeners.*;
-import LossFunction.LossFunction;
+import Network.LossFunction.LossFunction;
 import Network.Conponent.LayerConf;
 import Network.Conponent.LayerKernel;
 import java.util.Date;
