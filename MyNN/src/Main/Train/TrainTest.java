@@ -34,11 +34,11 @@ public class TrainTest {
         //NewNetwork.SetConfigure(2,1,20,0.01, Weightinit.UNIFORM, ActivationFrame.Sigmoid, Network.LossFunction.MSE);
 
         //NewNetwork.train(TrainSet.ReturnRecord(3),700);
-        NewNetwork.train(TrainSet.ReturnRecord(input_num,output_num),20000);
+        NewNetwork.train(TrainSet.ReturnRecord(input_num,output_num),2000);
         NewNetwork.test(TestSet.ReturnRecord(input_num,output_num));
         //NewNetwork.predict(TestSet.ReturnRecord(input_num,output_num),0.001);
         //customized predict
-        NewNetwork.predict(TestSet.ReturnRecord(input_num,output_num),"./data/ChartOutput/11013.png",4,50);
-        NewNetwork.saveas("data/Network/stock1102_615.nn");
+        NewNetwork.predict(TestSet.ReturnRecord(input_num,output_num),"./data/ChartOutput/11071.png",19,50);
+        NewNetwork.saveas("data/Network/stock11071.nn");
     }
 }

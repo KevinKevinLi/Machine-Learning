@@ -2,93 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8249845-6be4-42fd-876b-b81dd9cdacce" name="Default" comment="support train while predict">
-      <change beforePath="" afterPath="$PROJECT_DIR$/data/Stock/1029/until1103.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Main/Predict/NormalizePredict.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Normalization/Units.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/data/BTSC100.csv" afterPath="$PROJECT_DIR$/data/Others/BTSC100.csv" />
-      <change beforePath="$PROJECT_DIR$/data/MLP_test.csv" afterPath="$PROJECT_DIR$/data/Others/MLP_test.csv" />
-      <change beforePath="$PROJECT_DIR$/data/MLP_test_out2.csv" afterPath="$PROJECT_DIR$/data/Others/MLP_test_out2.csv" />
-      <change beforePath="$PROJECT_DIR$/data/Network/stock2.nn" afterPath="$PROJECT_DIR$/data/Network/stock2.nn" />
-      <change beforePath="$PROJECT_DIR$/data/Stock/1029/11_1_1t.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/Stock/1029/11_1_1test.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/Stock/1029/11_1_1total.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/Stock/1029/11_1_1train.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/Stock/1029/origin1.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/Stock/1029/test1.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/Stock/1029/total1.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/Stock/1029/train1.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/Train_csv.csv" afterPath="$PROJECT_DIR$/data/Others/Train_csv.csv" />
-      <change beforePath="$PROJECT_DIR$/data/Train_csv_out2.csv" afterPath="$PROJECT_DIR$/data/Others/Train_csv_out2.csv" />
-      <change beforePath="$PROJECT_DIR$/data/iris.txt" afterPath="$PROJECT_DIR$/data/Others/iris.txt" />
-      <change beforePath="$PROJECT_DIR$/data/saturn_data_eval.csv" afterPath="$PROJECT_DIR$/data/Others/saturn_data_eval.csv" />
-      <change beforePath="$PROJECT_DIR$/data/saturn_data_train.csv" afterPath="$PROJECT_DIR$/data/Others/saturn_data_train.csv" />
-      <change beforePath="$PROJECT_DIR$/data/wine.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/.idea/misc.xml" afterPath="$PROJECT_DIR$/out/production/MyNN/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/.idea/workspace.xml" afterPath="$PROJECT_DIR$/out/production/MyNN/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Activation/ActivationFrame$1.class" afterPath="$PROJECT_DIR$/out/production/MyNN/Activation/ActivationFrame$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/FileManage/ModelRecord.class" afterPath="$PROJECT_DIR$/out/production/MyNN/FileManage/ModelRecord.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/FileManage/TextRecordReader.class" afterPath="$PROJECT_DIR$/out/production/MyNN/FileManage/TextRecordReader.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Listeners/Chart.class" afterPath="$PROJECT_DIR$/out/production/MyNN/Listeners/Chart.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Listeners/Listener$1.class" afterPath="$PROJECT_DIR$/out/production/MyNN/Listeners/Listener$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Listeners/Listener.class" afterPath="$PROJECT_DIR$/out/production/MyNN/Listeners/Listener.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/LossFunction/LossFunction$1.class" afterPath="$PROJECT_DIR$/out/production/MyNN/LossFunction/LossFunction$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Network/ClassificationNetwork.class" afterPath="$PROJECT_DIR$/out/production/MyNN/Network/ClassificationNetwork.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Network/Conponent/LayerKernel.class" afterPath="$PROJECT_DIR$/out/production/MyNN/Network/Conponent/LayerKernel.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Network/Conponent/Weightinit$1.class" afterPath="$PROJECT_DIR$/out/production/MyNN/Network/Conponent/Weightinit$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Network/FeedForwardKernel.class" afterPath="$PROJECT_DIR$/out/production/MyNN/Network/FeedForwardKernel.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Normalization/MinmaxUnit.class" afterPath="$PROJECT_DIR$/out/production/MyNN/Normalization/MinmaxUnit.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Normalization/NormApproach$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Normalization/NormApproach.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Normalization/NormConfigration.class" afterPath="$PROJECT_DIR$/out/production/MyNN/Normalization/NormConfigration.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Normalize.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Predict.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/RecursiveTrain.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/TrainTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/BTSC100.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/MLP_test.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/MLP_test_out2.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Network/stock2.nn" afterPath="$PROJECT_DIR$/out/production/MyNN/data/Network/stock2.nn" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/11_1_1t.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/11_1_1test.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/11_1_1total.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/11_1_1train.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/origin1.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/test1.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/total1.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/train1.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Train_csv.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Train_csv_out2.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/iris.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/saturn_data_eval.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/saturn_data_train.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/wine.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Activation/ActivationFrame.java" afterPath="$PROJECT_DIR$/src/Network/Activation/ActivationFrame.java" />
-      <change beforePath="$PROJECT_DIR$/src/Activation/Linear.java" afterPath="$PROJECT_DIR$/src/Network/Activation/Linear.java" />
-      <change beforePath="$PROJECT_DIR$/src/Activation/Neuron.java" afterPath="$PROJECT_DIR$/src/Network/Activation/Neuron.java" />
-      <change beforePath="$PROJECT_DIR$/src/Activation/Relu.java" afterPath="$PROJECT_DIR$/src/Network/Activation/Relu.java" />
-      <change beforePath="$PROJECT_DIR$/src/Activation/Sigmoid.java" afterPath="$PROJECT_DIR$/src/Network/Activation/Sigmoid.java" />
-      <change beforePath="$PROJECT_DIR$/src/Activation/Softmax.java" afterPath="$PROJECT_DIR$/src/Network/Activation/Softmax.java" />
-      <change beforePath="$PROJECT_DIR$/src/FileManage/ModelRecord.java" afterPath="$PROJECT_DIR$/src/FileManage/ModelRecord.java" />
-      <change beforePath="$PROJECT_DIR$/src/Listeners/Chart.java" afterPath="$PROJECT_DIR$/src/Listeners/Chart.java" />
-      <change beforePath="$PROJECT_DIR$/src/Listeners/Listener.java" afterPath="$PROJECT_DIR$/src/Listeners/Listener.java" />
-      <change beforePath="$PROJECT_DIR$/src/LossFunction/LossFunction.java" afterPath="$PROJECT_DIR$/src/Network/LossFunction/LossFunction.java" />
-      <change beforePath="$PROJECT_DIR$/src/Network/ClassificationNetwork.java" afterPath="$PROJECT_DIR$/src/Network/ClassificationNetwork.java" />
-      <change beforePath="$PROJECT_DIR$/src/Network/Conponent/LayerConf.java" afterPath="$PROJECT_DIR$/src/Network/Conponent/LayerConf.java" />
-      <change beforePath="$PROJECT_DIR$/src/Network/Conponent/LayerKernel.java" afterPath="$PROJECT_DIR$/src/Network/Conponent/LayerKernel.java" />
-      <change beforePath="$PROJECT_DIR$/src/Network/FeedForwardKernel.java" afterPath="$PROJECT_DIR$/src/Network/FeedForwardKernel.java" />
-      <change beforePath="$PROJECT_DIR$/src/Network/NetworkConfigration.java" afterPath="$PROJECT_DIR$/src/Network/NetworkConfigration.java" />
-      <change beforePath="$PROJECT_DIR$/src/Normalization/MinmaxUnit.java" afterPath="$PROJECT_DIR$/src/Normalization/MinmaxUnit.java" />
-      <change beforePath="$PROJECT_DIR$/src/Normalization/NormApproach.java" afterPath="$PROJECT_DIR$/src/Normalization/NormFrame.java" />
-      <change beforePath="$PROJECT_DIR$/src/Normalize.java" afterPath="$PROJECT_DIR$/src/Main/Train/Normalize.java" />
-      <change beforePath="$PROJECT_DIR$/src/Predict.java" afterPath="$PROJECT_DIR$/src/Main/Predict/Predict.java" />
-      <change beforePath="$PROJECT_DIR$/src/RecursiveTrain.java" afterPath="$PROJECT_DIR$/src/Main/Train/RecursiveTrain.java" />
-      <change beforePath="$PROJECT_DIR$/src/TrainTest.java" afterPath="$PROJECT_DIR$/src/Main/Train/TrainTest.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ChartOutput/1018.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ChartOutput/1021.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ChartOutput/1021pre.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ChartOutput/4line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ChartOutput/5line(2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ChartOutput/5line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Activation/ActivationFrame$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Activation/ActivationFrame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Activation/Linear.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Activation/Neuron.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Activation/Relu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Activation/Sigmoid.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Activation/Softmax.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/FileManage/ModelRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/FileManage/ModelRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Listeners/Chart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/Listeners/Chart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Listeners/Listener$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/Listeners/Listener$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Listeners/Listener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/Listeners/Listener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/LossFunction/LossFunction$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/LossFunction/LossFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Network/ClassificationNetwork.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/Network/ClassificationNetwork.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Network/Conponent/LayerConf.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/Network/Conponent/LayerConf.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Network/Conponent/LayerKernel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/Network/Conponent/LayerKernel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Network/FeedForwardKernel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/Network/FeedForwardKernel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Network/NetworkConfigration.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/Network/NetworkConfigration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Normalization/MinmaxUnit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/Normalization/MinmaxUnit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Normalization/NormFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/Normalization/NormFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Normalization/NormFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/Normalization/NormFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/1018.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/1021.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/1021pre.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/11051.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/11051.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/4line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/5line(2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/5line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Network/stock2.nn" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/data/Network/stock2.nn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Predict/Predict.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Predict/Predict.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Train/Normalize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Train/Normalize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Train/RecursiveTrain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Train/RecursiveTrain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Train/TrainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Train/TrainTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,139 +69,100 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="36" />
-          <entry key="java" value="9253" />
+          <entry key="java" value="9412" />
           <entry key="nn" value="16" />
           <entry key="txt" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="9253" />
+          <entry key="JAVA" value="9412" />
           <entry key="PLAIN_TEXT" value="118" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="csv" value="24" />
-          <entry key="java" value="81" />
-          <entry key="nn" value="11" />
-          <entry key="png" value="18" />
+          <entry key="csv" value="36" />
+          <entry key="java" value="94" />
+          <entry key="nn" value="21" />
+          <entry key="png" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSV" value="24" />
-          <entry key="Image" value="18" />
-          <entry key="JAVA" value="81" />
-          <entry key="PLAIN_TEXT" value="11" />
+          <entry key="CSV" value="36" />
+          <entry key="Image" value="21" />
+          <entry key="JAVA" value="94" />
+          <entry key="PLAIN_TEXT" value="21" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Normalize.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main/Train/Normalize.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/Network/stock11071.nn">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="TrainTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main/Train/TrainTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="40" column="22" lean-forward="false" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClassificationNetwork.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Network/ClassificationNetwork.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="150" column="16" lean-forward="false" selection-start-line="150" selection-start-column="16" selection-end-line="150" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ModelRecord.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FileManage/ModelRecord.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RecordPolice.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FileManage/RecordPolice.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TextRecordReader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FileManage/TextRecordReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NormalizePredict.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main/Predict/NormalizePredict.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RecursiveTrain.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main/Train/RecursiveTrain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Predict.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/Predict/Predict.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="18" column="95" lean-forward="false" selection-start-line="18" selection-start-column="95" selection-end-line="18" selection-end-column="95" />
-              <folding />
+            <state relative-caret-position="195">
+              <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="11051.png" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data/ChartOutput/11051.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Main/Train/Normalize.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/Stock/1029/4998_5027.csv">
+          <provider selected="true" editor-type-id="csv-text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/Stock/1029/4997.csv">
+          <provider selected="true" editor-type-id="csv-text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/Network/stock11061_temp.nn">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/Network/stock11061_afteruntil.nn">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/Network/stock11061_655.nn">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main/Train/TrainTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="41" column="55" lean-forward="true" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main/Train/RecursiveTrain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="20" column="103" selection-start-line="20" selection-start-column="103" selection-end-line="20" selection-end-column="103" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -266,14 +186,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/Network/LayerConf.java" />
+        <option value="$PROJECT_DIR$/src/Network/Conponent/Weight.java" />
         <option value="$PROJECT_DIR$/src/Network/Conponent/Layer.java" />
         <option value="$PROJECT_DIR$/src/Network/NetworkKernel.java" />
         <option value="$PROJECT_DIR$/src/Network/FeedFowardNetwork.java" />
@@ -299,6 +216,7 @@
         <option value="$PROJECT_DIR$/src/Network/Conponent/LayerKernel.java" />
         <option value="$PROJECT_DIR$/src/Network/FeedForwardKernel.java" />
         <option value="$PROJECT_DIR$/src/Network/NetworkConfigration.java" />
+        <option value="$PROJECT_DIR$/src/FileManage/ModelRecord.java" />
         <option value="$PROJECT_DIR$/data/Network/stock1.nn" />
         <option value="$PROJECT_DIR$/src/Normalize/Normalize.java" />
         <option value="$PROJECT_DIR$/src/LossFunction/LossFunction.java" />
@@ -309,22 +227,19 @@
         <option value="$PROJECT_DIR$/src/Listeners/Listener.java" />
         <option value="$PROJECT_DIR$/data/Stock/1029/origin1.csv" />
         <option value="$PROJECT_DIR$/src/Listeners/Chart.java" />
+        <option value="$PROJECT_DIR$/src/TrainTest.java" />
         <option value="$PROJECT_DIR$/src/Predict.java" />
         <option value="$PROJECT_DIR$/src/Network/ClassificationNetwork.java" />
         <option value="$PROJECT_DIR$/data/Network/stock1102_615.nn" />
         <option value="$PROJECT_DIR$/src/RecursiveTrain.java" />
         <option value="$PROJECT_DIR$/src/Normalization/NormConfigration.java" />
-        <option value="$PROJECT_DIR$/src/Normalization/NormApproach.java" />
-        <option value="$PROJECT_DIR$/src/TrainTest.java" />
-        <option value="$PROJECT_DIR$/src/Normalization/Units.java" />
         <option value="$PROJECT_DIR$/src/Normalization/MinmaxUnit.java" />
+        <option value="$PROJECT_DIR$/src/Normalization/NormApproach.java" />
         <option value="$PROJECT_DIR$/src/Normalize.java" />
-        <option value="$PROJECT_DIR$/data/Stock/1029/until1103.csv" />
-        <option value="$PROJECT_DIR$/src/MainTrain/Normalize.java" />
-        <option value="$PROJECT_DIR$/src/Normalization/NormFrame.java" />
-        <option value="$PROJECT_DIR$/src/MainPredict/NormalizePredict.java" />
-        <option value="$PROJECT_DIR$/src/MainPredict/Predict.java" />
-        <option value="$PROJECT_DIR$/src/FileManage/ModelRecord.java" />
+        <option value="$PROJECT_DIR$/src/Main/Predict/Predict.java" />
+        <option value="$PROJECT_DIR$/src/Main/Train/RecursiveTrain.java" />
+        <option value="$PROJECT_DIR$/src/Main/Train/TrainTest.java" />
+        <option value="$PROJECT_DIR$/src/Main/Train/Normalize.java" />
       </list>
     </option>
   </component>
@@ -334,27 +249,17 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="947" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -373,6 +278,30 @@
               <item name="MyNN" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
               <item name="ChartOutput" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyNN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyNN" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="Network" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyNN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyNN" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="Stock" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyNN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyNN" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="Stock" type="462c0819:PsiDirectoryNode" />
+              <item name="1029" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyNN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyNN" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MyNN" type="b2602c69:ProjectViewProjectNode" />
@@ -399,29 +328,33 @@
               <item name="Main" type="462c0819:PsiDirectoryNode" />
               <item name="Train" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="MyNN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyNN" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Network" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyNN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyNN" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Normalization" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541471101521" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541649419177" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\LK\Desktop\Github Repository\Machine Learning\Machine-Learning\MyNN\data\Others" />
-      <recent name="C:\Users\LK\Desktop\Github Repository\Machine Learning\Machine-Learning\MyNN\data\Stock\1029" />
-      <recent name="$PROJECT_DIR$/data/Stock/1029" />
-      <recent name="D:\DL4J\MyNN\data\wine" />
-      <recent name="D:\DL4J\MyNN\data" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -432,6 +365,247 @@
       <recent name="D:\DL4J\MyNN\data\Stock" />
       <recent name="D:\DL4J\MyNN\data" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/Stock/1029" />
+      <recent name="D:\DL4J\MyNN\data\wine" />
+      <recent name="D:\DL4J\MyNN\data" />
+      <recent name="D:\DL4J\MyNN\data\HayesRoth" />
+      <recent name="D:\DL4J\MyNN\data\Car" />
+    </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/misc.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/Network/stock2.nn</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/.idea/misc.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/Activation/ActivationFrame$1.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/FileManage/ModelRecord.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/FileManage/TextRecordReader.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/Listeners/Chart.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/Listeners/Listener$1.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/Listeners/Listener.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/LossFunction/LossFunction$1.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/Network/ClassificationNetwork.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/Network/Conponent/LayerKernel.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/Network/Conponent/Weightinit$1.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/Network/FeedForwardKernel.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/Normalization/MinmaxUnit.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/Normalization/NormConfigration.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/data/Network/stock2.nn</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/FileManage/ModelRecord.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Listeners/Chart.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Listeners/Listener.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Network/ClassificationNetwork.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Network/Conponent/LayerConf.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Network/Conponent/LayerKernel.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Network/FeedForwardKernel.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Network/NetworkConfigration.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Normalization/MinmaxUnit.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/ChartOutput/11051.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/Others/BTSC100.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/Others/MLP_test.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/Others/MLP_test_out2.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/Others/Train_csv.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/Others/Train_csv_out2.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/Others/iris.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/Others/saturn_data_eval.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/Others/saturn_data_train.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/Stock/1029/until1103.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/Stock/1029/until1103_origin.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/A breif description of algorithm.pdf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/Main/MainPredict/NormalizePredict.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/Main/MainPredict/Predict.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/Main/MainTrain/Normalize.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/Main/MainTrain/RecursiveTrain.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/Main/MainTrain/TrainTest.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/Normalization/NormFrame$1.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/Normalization/NormFrame.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/Normalization/Units.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/11051.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/data/Others/BTSC100.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/data/Others/MLP_test.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/data/Others/MLP_test_out2.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/data/Others/Train_csv.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/data/Others/Train_csv_out2.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/data/Others/iris.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/data/Others/saturn_data_eval.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/data/Others/saturn_data_train.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/until1103.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/until1103_origin.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Main/Predict/NormalizePredict.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Main/Predict/Predict.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Main/Train/Normalize.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Main/Train/RecursiveTrain.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Main/Train/TrainTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Network/Activation/ActivationFrame.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Network/Activation/Linear.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Network/Activation/Neuron.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Network/Activation/Relu.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Network/Activation/Sigmoid.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Network/Activation/Softmax.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Network/LossFunction/LossFunction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Normalization/NormFrame.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Normalization/Units.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/BTSC100.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/MLP_test.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/MLP_test_out2.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/Stock/1029/11_1_1t.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/Stock/1029/11_1_1test.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/Stock/1029/11_1_1total.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/Stock/1029/11_1_1train.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/Stock/1029/origin1.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/Stock/1029/test1.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/Stock/1029/total1.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/Stock/1029/train1.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/Train_csv.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/Train_csv_out2.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/iris.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/saturn_data_eval.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/saturn_data_train.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/data/wine.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/Normalization/NormApproach$1.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/Normalization/NormApproach.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/Normalize.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/Predict.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/RecursiveTrain.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/TrainTest.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/data/BTSC100.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/data/MLP_test.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/data/MLP_test_out2.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/11_1_1t.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/11_1_1test.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/11_1_1total.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/11_1_1train.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/origin1.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/test1.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/total1.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/train1.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/data/Train_csv.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/data/Train_csv_out2.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/data/iris.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/data/saturn_data_eval.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/data/saturn_data_train.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/MyNN/data/wine.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Activation/ActivationFrame.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Activation/Linear.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Activation/Neuron.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Activation/Relu.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Activation/Sigmoid.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Activation/Softmax.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/LossFunction/LossFunction.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Normalization/NormApproach.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Normalize.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Predict.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/RecursiveTrain.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/TrainTest.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -445,111 +619,88 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Predict">
+  <component name="RunManager" selected="Application.TrainTest">
+    <configuration name="Normalize (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main.Train.Normalize" />
+      <module name="MyNN" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Main.Train.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Normalize" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" runner="idea">
+      <option name="MAIN_CLASS_NAME" value="Normalize" />
+      <module name="MyNN" />
+      <extension name="coverage">
         <pattern>
           <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="Main.Train.Normalize" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="MyNN" />
-      <envs />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="NormalizePredict" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Main.Predict.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="Main.Predict.NormalizePredict" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="MyNN" />
-      <envs />
-    </configuration>
-    <configuration name="Predict" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Main.Predict.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="Predict (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main.Predict.Predict" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
       <module name="MyNN" />
-      <envs />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Main.Predict.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="RecursiveTrain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <configuration name="RecursiveTrain (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main.Train.RecursiveTrain" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
       <module name="MyNN" />
-      <envs />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Main.Train.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="TrainTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Main.Train.TrainTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
       <module name="MyNN" />
-      <envs />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Main.Train.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.TrainTest" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Normalize" />
-      <item index="2" class="java.lang.String" itemvalue="Application.RecursiveTrain" />
-      <item index="3" class="java.lang.String" itemvalue="Application.NormalizePredict" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Predict" />
+    <list>
+      <item itemvalue="Application.Normalize" />
+      <item itemvalue="Application.Predict (1)" />
+      <item itemvalue="Application.Normalize (1)" />
+      <item itemvalue="Application.RecursiveTrain (1)" />
+      <item itemvalue="Application.TrainTest" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Predict" />
-        <item index="1" class="java.lang.String" itemvalue="Application.NormalizePredict" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Normalize" />
-        <item index="3" class="java.lang.String" itemvalue="Application.RecursiveTrain" />
-        <item index="4" class="java.lang.String" itemvalue="Application.TrainTest" />
+      <list>
+        <item itemvalue="Application.TrainTest" />
+        <item itemvalue="Application.Predict (1)" />
+        <item itemvalue="Application.RecursiveTrain (1)" />
+        <item itemvalue="Application.Normalize (1)" />
+        <item itemvalue="Application.Normalize" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -606,44 +757,44 @@
       <workItem from="1541133285808" duration="11568000" />
       <workItem from="1541196237994" duration="201000" />
       <workItem from="1541392531460" duration="7963000" />
-      <workItem from="1541471421932" duration="8688000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="289394000" />
+    <option name="totallyTimeSpent" value="285871000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32748538" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25218233" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959184" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16544117" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34948453" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24969475" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3988304" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16422467" />
+      <window_info id="Structure" order="1" weight="0.24969475" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32942432" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.1255102" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39795917" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32748538" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32959184" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -656,348 +807,193 @@
     <MESSAGE value="support train while predict" />
     <option name="LAST_COMMIT_MESSAGE" value="support train while predict" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Main/Train/TrainTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="46" column="22" lean-forward="false" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/data/ChartOutput/11011.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Train/RecursiveTrain.java">
+    <entry file="file://$PROJECT_DIR$/data/Stock/1029/11_1_1total.csv" />
+    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1102_train.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManage/TextRecordReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        <state relative-caret-position="690">
+          <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Predict/Predict.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="15" column="63" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="15" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/data/Stock/1029/test1.csv" />
+    <entry file="file://$PROJECT_DIR$/data/ChartOutput/11013.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Normalization/NormFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-          <folding>
-            <element signature="e#370#371#0" expanded="false" />
-            <element signature="e#397#398#0" expanded="false" />
-            <element signature="e#3594#3595#0" expanded="false" />
-            <element signature="e#3626#3627#0" expanded="false" />
-            <element signature="e#3652#3653#0" expanded="false" />
-            <element signature="e#3680#3681#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Normalization/MinmaxUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Normalization/NormConfigration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Network/FeedForwardKernel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-208">
-          <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Network/NetworkConfigration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1273">
-          <caret line="72" column="4" lean-forward="true" selection-start-line="72" selection-start-column="4" selection-end-line="74" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/origintest.csv" />
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/train.csv" />
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/total.csv" />
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/test.csv" />
-    <entry file="file://$PROJECT_DIR$/data/Stock/AAL_258.csv" />
-    <entry file="file://$PROJECT_DIR$/src/Listeners/Listener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="72" column="54" lean-forward="false" selection-start-line="72" selection-start-column="54" selection-end-line="72" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/11_1_1train.csv" />
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/origin1.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-74818">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Listeners/Chart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="47" column="53" lean-forward="false" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/11_1_1total.csv" />
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1102_train.csv" />
-    <entry file="file://$PROJECT_DIR$/src/Network/LossFunction/LossFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/LossFunction/LossFunction.java" />
+    <entry file="file://$PROJECT_DIR$/data/Network/stock10301.nn">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data/Network/stock2.nn">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/Network/stock1.nn">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/Network/stock1102_615.nn" />
-    <entry file="file://$PROJECT_DIR$/data/Network/stock1104_650.nn" />
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1102_origin.csv" />
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1102.csv" />
-    <entry file="file://$PROJECT_DIR$/src/Network/Activation/Relu.java">
+    <entry file="file://$PROJECT_DIR$/data/Network/stock1104_635.nn">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Network/stock1102_615.nn">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        <state relative-caret-position="120">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Network/Activation/Softmax.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="35" lean-forward="false" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/data/ChartOutput/11012.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Network/Activation/Linear.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/data/ChartOutput/11041.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Network/Activation/Neuron.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Network/Activation/Sigmoid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Network/Activation/ActivationFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1105tra.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75362">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1105test.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18970">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/jre/lib/rt.jar!/sun/misc/FloatingDecimal.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Activation/Relu.java" />
+    <entry file="file://$PROJECT_DIR$/src/Activation/Linear.java" />
+    <entry file="file://$PROJECT_DIR$/src/Activation/Softmax.java" />
+    <entry file="file://$PROJECT_DIR$/src/Activation/Neuron.java" />
+    <entry file="file://$PROJECT_DIR$/src/Activation/Sigmoid.java" />
+    <entry file="file://$PROJECT_DIR$/src/Activation/ActivationFrame.java" />
+    <entry file="file://$PROJECT_DIR$/src/TrainTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/RecursiveTrain.java" />
+    <entry file="file://$PROJECT_DIR$/src/Predict.java" />
+    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1105test.csv" />
+    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1105tra.csv" />
     <entry file="file://$PROJECT_DIR$/src/Normalization/MinmaxUnit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="120">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Normalization/Units.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Normalization/NormApproach.java" />
+    <entry file="file://$PROJECT_DIR$/src/Normalize.java" />
     <entry file="file://$PROJECT_DIR$/src/Normalization/NormConfigration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/until1103.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Normalization/NormFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="61" column="20" lean-forward="false" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
+        <state relative-caret-position="-150">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
           <folding>
-            <element signature="e#370#371#0" expanded="false" />
-            <element signature="e#397#398#0" expanded="false" />
-            <element signature="e#3594#3595#0" expanded="false" />
-            <element signature="e#3626#3627#0" expanded="false" />
-            <element signature="e#3652#3653#0" expanded="false" />
-            <element signature="e#3680#3681#0" expanded="false" />
+            <element signature="e#2137#2138#0" expanded="true" />
+            <element signature="e#2165#2166#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/until1103_origin.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="153" lean-forward="true" selection-start-line="10" selection-start-column="153" selection-end-line="10" selection-end-column="153" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Predict/NormalizePredict.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/ChartOutput/11061.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Network/stock1104_650.nn">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/1029/until1103.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/ChartOutput/11062.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Network/stock11061.nn">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/1029/until1103_origin.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1102_origin.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1102.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="667">
+          <caret line="5023" column="66" lean-forward="true" selection-start-line="5023" selection-start-column="66" selection-end-line="5023" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1102_test.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Network/ClassificationNetwork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-405">
+          <caret line="86" column="13" lean-forward="true" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FileManage/RecordPolice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/data/ChartOutput/11071.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FileManage/TextRecordReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/data/Network/stock11061_655.nn">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FileManage/ModelRecord.java">
+    <entry file="file://$PROJECT_DIR$/data/Network/stock11061_temp.nn">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Network/stock11061_afteruntil.nn">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Network/stock11071.nn">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Train/TrainTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="540">
+          <caret line="41" column="55" lean-forward="true" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Train/RecursiveTrain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Train/Normalize.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="285">
+          <caret line="20" column="103" selection-start-line="20" selection-start-column="103" selection-end-line="20" selection-end-column="103" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Predict/Predict.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="18" column="95" lean-forward="false" selection-start-line="18" selection-start-column="95" selection-end-line="18" selection-end-column="95" />
-          <folding />
+        <state relative-caret-position="195">
+          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Train/TrainTest.java">
+    <entry file="file://$PROJECT_DIR$/data/Stock/1029/4998_5027.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/1029/4997.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Train/Normalize.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="40" column="22" lean-forward="false" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="405">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Network/ClassificationNetwork.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="150" column="16" lean-forward="false" selection-start-line="150" selection-start-column="16" selection-end-line="150" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/ChartOutput/11051.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
   </component>
@@ -1040,7 +1036,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>10</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1057,6 +1053,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

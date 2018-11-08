@@ -16,7 +16,7 @@ public class Predict {
         model.buildfrom("./data/Network/stock1104_650.nn",OldNetwork);
         //OldNetwork.test(TestSet.ReturnRecord(5,1));
 
-        OldNetwork.predict(TestSet.ReturnRecord(input_num,output_num),"./data/ChartOutput/11051.png",4,50);
-        OldNetwork.saveas("./data/Network/stock2.nn");
+        OldNetwork.predict(TestSet.ReturnRecord(input_num,output_num),"./data/ChartOutput/11062.png",4,50);
+        OldNetwork.saveas("data/Network/stock11061_temp.nn");
     }
 }

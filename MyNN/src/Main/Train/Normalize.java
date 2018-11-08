@@ -21,8 +21,8 @@ public class Normalize {
                 .setrow(6,minmax.exec(6))
                 .setrow(7,minmax.exec(7))
                 .process("./data/Stock/1029/1102_origin.csv")
-                .separate(0,3997,"./data/Stock/1029/1105tra.csv")
-                .separate(3998,5027,"./data/Stock/1029/1105test.csv");
+                .separate(0,3997,"./data/Stock/1029/4997.csv")
+                .separate(4998,5027,"./data/Stock/1029/4995027.csv");
         minmax.print();
     }
 }
