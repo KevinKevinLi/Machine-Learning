@@ -169,17 +169,17 @@ public class FeedForwardKernel {
     }
 
     public void printNetwork(){
-        for(int i=0;i<NetworkLayer.getWeightRowLength();i++){
+        for(int i=0;i<NetworkLayer.getWeightcolLength();i++){
             for(int j=0;j<NetworkLayer.getWeightLineLength(i);j++) {
                 System.out.println("("+i+","+j+") W:"+NetworkLayer.getWeight(i,j)+" M:"+NetworkLayer.getMomentum(i,j));
             }
         }
-        for(int i=0;i<NetworkLayer.getWeightRowLength();i++){
+        for(int i=0;i<NetworkLayer.getWeightcolLength();i++){
             for(int j=0;j<NetworkLayer.getNeuronLineLength(i+1);j++){
                 System.out.println("("+i+","+j+") B:"+NetworkLayer.getBias(i,j));
             }
         }
-        for(int i=0;i<NetworkLayer.getNeuronRowLength();i++){
+        for(int i=0;i<NetworkLayer.getNeuroncolLength();i++){
             for(int j=0;j<NetworkLayer.getNeuronLineLength(i);j++){
                 System.out.println("Neuron("+i+","+j+"): "+NetworkLayer.getNeuronActivation(i,j));
             }
@@ -215,11 +215,11 @@ public class FeedForwardKernel {
             //hidden_layer_num learning_rate momentum seed
             stringb.append("base "+learningrate+" "+momentum+" "+seed+"\n");
             //LAYER CONFI
-            for(int i=0;i<NetworkLayer.getNeuronRowLength();i++){
+            for(int i=0;i<NetworkLayer.getNeuroncolLength();i++){
                 if(i==0){
                     stringb.append("inputlayer"+" ");
                 }
-                else if(i==NetworkLayer.getNeuronRowLength()-1){
+                else if(i==NetworkLayer.getNeuroncolLength()-1){
                     stringb.append("outputlayer"+" "+lossfunction+" ");
                 }
                 else{
@@ -228,7 +228,7 @@ public class FeedForwardKernel {
                 stringb.append((int)NetworkLayer.getNeuronLineLength(i)+" "+NetworkLayer.getNeuronActivation(i,0)+"\n");
             }
             //weight map
-            for(int i=0; i<NetworkLayer.getWeightRowLength();i++){
+            for(int i=0; i<NetworkLayer.getWeightcolLength();i++){
                 stringb.append("weightmap ");
                 for(int j=0;j<NetworkLayer.getWeightLineLength(i);j++){
                     stringb.append(NetworkLayer.getWeight(i,j)+" ");
@@ -236,7 +236,7 @@ public class FeedForwardKernel {
                 stringb.append("\n");
             }
             //biasmap
-            for(int i=0;i<NetworkLayer.getBiasRowLength();i++){
+            for(int i=0;i<NetworkLayer.getBiascolLength();i++){
                 stringb.append("biasmap ");
                 for(int j=0;j<NetworkLayer.getBiasLineLength(i);j++){
                     stringb.append(NetworkLayer.getBias(i,j)+" ");

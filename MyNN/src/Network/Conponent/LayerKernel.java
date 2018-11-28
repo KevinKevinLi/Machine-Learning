@@ -106,97 +106,97 @@ public class LayerKernel {
         }
     }
 
-    public static double getWeight(int row,int line){
-        return WeightMap[row][line];
+    public static double getWeight(int col,int line){
+        return WeightMap[col][line];
     }
 
-    public static void updateWeight(int row,int line,double value){
+    public static void updateWeight(int col,int line,double value){
         if(ifMomentumAlgorithm==false) {
-            WeightMap[row][line] += value;
+            WeightMap[col][line] += value;
         }
         else{
-            MomentumMap[row][line]=momentum*MomentumMap[row][line]+value;
-            WeightMap[row][line] += MomentumMap[row][line];
+            MomentumMap[col][line]=momentum*MomentumMap[col][line]+value;
+            WeightMap[col][line] += MomentumMap[col][line];
         }
     }
 
-    public static int getWeightRowLength(){
+    public static int getWeightcolLength(){
         return WeightMap.length;
     }
 
-    public static int getWeightLineLength(int row){
-        return WeightMap[row].length;
+    public static int getWeightLineLength(int col){
+        return WeightMap[col].length;
     }
 
-    public static void updateNeuronOutput(int row,int line,double input){
-        if(NeuronMap[row][line].getname().equals("Softmax")){
-            NeuronMap[row][line].execOutput(input);
+    public static void updateNeuronOutput(int col,int line,double input){
+        if(NeuronMap[col][line].getname().equals("Softmax")){
+            NeuronMap[col][line].execOutput(input);
             SoftmaxValue.add(Math.exp(input));
             //System.out.println(Math.exp(input));
         }
         else {
-            NeuronMap[row][line].execOutput(input);
+            NeuronMap[col][line].execOutput(input);
         }
     }
 
-    public static void CheckUpdate(int row){
+    public static void CheckUpdate(int col){
         //NeuronMap[0][0].printname();
-        if(NeuronMap[row][0].getname().equals("Softmax")){
+        if(NeuronMap[col][0].getname().equals("Softmax")){
             double total=0;
             for(int i=0;i<SoftmaxValue.size();i++){
                 total+=SoftmaxValue.get(i);
             }
             //System.out.println(total);
-            for(int i=0;i<NeuronMap[row].length;i++){
-                //System.out.println(NeuronMap[row][i].getinput()+" "+total);
-                NeuronMap[row][i].execOutput(Math.exp(NeuronMap[row][i].getinput()),total);
+            for(int i=0;i<NeuronMap[col].length;i++){
+                //System.out.println(NeuronMap[col][i].getinput()+" "+total);
+                NeuronMap[col][i].execOutput(Math.exp(NeuronMap[col][i].getinput()),total);
             }
             SoftmaxValue.clear();
         }
     }
 
-    public static double getNeuronOutput(int row,int line){
-        return NeuronMap[row][line].getoutput();
+    public static double getNeuronOutput(int col,int line){
+        return NeuronMap[col][line].getoutput();
     }
 
-    public static void setNeuronTarget(int row,int line,double target){
-        NeuronMap[row][line].setTarget(target);
+    public static void setNeuronTarget(int col,int line,double target){
+        NeuronMap[col][line].setTarget(target);
     }
 
-    public static double getNeuronTarget(int row,int line){
-        return NeuronMap[row][line].getTarget();
+    public static double getNeuronTarget(int col,int line){
+        return NeuronMap[col][line].getTarget();
     }
 
-    public static void setNeuronError(int row,int line,double error){
-        NeuronMap[row][line].setError(error);
+    public static void setNeuronError(int col,int line,double error){
+        NeuronMap[col][line].setError(error);
     }
 
-    public static double getNeuronError(int row,int line){
-        return NeuronMap[row][line].getError();
+    public static double getNeuronError(int col,int line){
+        return NeuronMap[col][line].getError();
     }
 
-    public static double getNeuronRowLength(){
+    public static double getNeuroncolLength(){
         return NeuronMap.length;
     }
 
-    public static double getNeuronLineLength(int row){
-        return NeuronMap[row].length;
+    public static double getNeuronLineLength(int col){
+        return NeuronMap[col].length;
     }
 
-    public static double getNeuronDerivative(int row,int line){
-        return NeuronMap[row][line].execDerivative();
+    public static double getNeuronDerivative(int col,int line){
+        return NeuronMap[col][line].execDerivative();
     }
 
-    public static void setNeuronResidual(int row,int line,double residual){
-        NeuronMap[row][line].setResidual(residual);
+    public static void setNeuronResidual(int col,int line,double residual){
+        NeuronMap[col][line].setResidual(residual);
     }
 
-    public static double getNeuronResidual(int row,int line){
-        return NeuronMap[row][line].getResidual();
+    public static double getNeuronResidual(int col,int line){
+        return NeuronMap[col][line].getResidual();
     }
 
-    public static int getHiddenNeuronsNum(int row){
-        return hiddenneurons_num[row];
+    public static int getHiddenNeuronsNum(int col){
+        return hiddenneurons_num[col];
     }
 
     public static void useMomentumAlgorithm(double m){
@@ -204,20 +204,20 @@ public class LayerKernel {
         momentum=m;
     }
 
-    public static double getMomentum(int row,int line){
-        return MomentumMap[row][line];
+    public static double getMomentum(int col,int line){
+        return MomentumMap[col][line];
     }
 
-    public static double getBias(int row,int line){
-        return BiasMap[row][line];
+    public static double getBias(int col,int line){
+        return BiasMap[col][line];
     }
 
-    public static int getBiasRowLength(){ return BiasMap.length; }
+    public static int getBiascolLength(){ return BiasMap.length; }
 
-    public static int getBiasLineLength(int row){return BiasMap[row].length;};
+    public static int getBiasLineLength(int col){return BiasMap[col].length;};
 
-    public static void updateBias(int row, int line, double bias){
-        BiasMap[row][line]=bias;
+    public static void updateBias(int col, int line, double bias){
+        BiasMap[col][line]=bias;
     }
 
     public static void cloneWeightMap(){
@@ -228,12 +228,12 @@ public class LayerKernel {
         }
     }
 
-    public static double getBackupWeight(int row,int line){
-        return WeightMap_backup[row][line];
+    public static double getBackupWeight(int col,int line){
+        return WeightMap_backup[col][line];
     }
 
-    public static String getNeuronActivation(int row, int line){
-        return  NeuronMap[row][line].getname();
+    public static String getNeuronActivation(int col, int line){
+        return  NeuronMap[col][line].getname();
     }
 
     public static double[][] getWeightMap() {return WeightMap; }

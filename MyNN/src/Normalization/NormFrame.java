@@ -23,12 +23,12 @@ NormFrame {
         return unit;
     }
 
-    public void setpath(String filepath,String splits,int rownum){
+    public void setpath(String filepath,String splits,int colnum){
         this.filepath=filepath;
         this.splits=splits;
         switch(this){
             case MinMax:
-                unit=new MinmaxUnit(rownum);
+                unit=new MinmaxUnit(colnum);
                 break;
             case Donothing:
                 break;
@@ -42,12 +42,12 @@ NormFrame {
         this.splits=splits;
     }
 
-    public double[] exec(int row){
+    public double[] exec(int col){
         //read
         double[] record= null;
         try {
             TextRecordReader DataSet=new TextRecordReader(filepath,splits);
-            record = DataSet.ReturnRecord(row);
+            record = DataSet.ReturnRecord(col);
         }catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -57,17 +57,7 @@ NormFrame {
         }
         switch(this){
             case MinMax:
-                if(useprevious==true) {
-                    //unit.print();
-                    record= unit.exec(row,record,true);
-                    //record = newunit[0].getUnit().exec(row,record,true);
-                }
-                else if(useprevious==false){
-                    record= unit.exec(row,record);
-                }
-                else{
-                    throw new UnsupportedOperationException("Too many args in exec! ");
-                }
+                    record= unit.exec(col,record,useprevious);
                 break;
             case Donothing:
                 break;
@@ -78,10 +68,10 @@ NormFrame {
     }
 
     //overload+1
-    public double[] exec(int row,double []dataset){
+    public double[] exec(int col,double []dataset){
         switch(this){
             case MinMax:
-                dataset=unit.exec(row,dataset);
+                dataset=unit.exec(col,dataset);
                 break;
             default:
                 throw new UnsupportedOperationException("Unknown or not supported noramlization: " + this);

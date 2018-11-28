@@ -9,7 +9,7 @@ import FileManage.*;
 
 public class TrainTest {
     public static void main(String[] args) throws Exception {
-        //by default, last rows are outputs
+        //by default, last cols are outputs
         String filepath="./data/Stock/1029/1102_train.csv";
         TextRecordReader TrainSet=new TextRecordReader(filepath,",");
         filepath="./data/Stock/1029/1102_test.csv";

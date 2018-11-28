@@ -27,7 +27,7 @@ public class TextRecordReader {
         return num;
     }
 
-    public double[] ReturnRecord(int row) throws Exception{
+    public double[] ReturnRecord(int col) throws Exception{
         double result[]=new double [LineNumber()];
         FileInputStream inputStream = new FileInputStream(filepath);
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
@@ -36,7 +36,7 @@ public class TextRecordReader {
 
         while((str = bufferedReader.readLine()) != null) {
             String[] strarray=str.split(Delimiter);
-            result[i]=Double.valueOf(strarray[row]);
+            result[i]=Double.valueOf(strarray[col]);
             //System.out.println(result[i][j]);
             record_length=strarray.length;
             i++;

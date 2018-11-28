@@ -5,15 +5,15 @@ import java.io.*;
 public class NormConfigration {
     private double [][]dataset;
     private String curpath=null;
-    private int rownum;
+    private int colnum;
 
-    public NormConfigration(int rownum){
-        dataset=new double [rownum][];
-        this.rownum=rownum;
+    public NormConfigration(int colnum){
+        dataset=new double [colnum][];
+        this.colnum=colnum;
     }
 
-    public NormConfigration setrow(int row,double [] set){
-        dataset[row]=set;
+    public NormConfigration setcol(int col,double [] set){
+        dataset[col]=set;
         return this;
     }
 
