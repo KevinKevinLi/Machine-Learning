@@ -1,12 +1,13 @@
+# os.environ['KERAS_BACKEND']='tensorflow'
 import numpy as np
 np.set_printoptions(threshold=np.inf)
+# import plaidml.keras
+# plaidml.keras.install_backend()
 import tensorflow as tf
 np.random.seed(1337)  # for reproducibility
 import matplotlib.pyplot as plt
 import pandas as pd
-from keras.models import Sequential
-from keras.layers import LSTM, TimeDistributed, Dense
-from keras.optimizers import Adam
+from keras.models import load_model
 
 BATCH_START = 0
 TIME_STEPS = 5
@@ -42,6 +43,7 @@ def next_batch():
 
     # when all trainig data have been already used, it is not reorder randomly
     if index_in_epoch > num_examples:
+        print("rearrange data!")
         # finished epoch
         epochs_completed += 1
         # shuffle the data randomly
@@ -58,71 +60,47 @@ def next_batch():
     end = index_in_epoch
     # print("%f -> %f " % (start,end))
     xs = np.arange(start,start+TIME_STEPS*BATCH_SIZE)
-    return datavalue[start:end], train_labels[start:end], xs
+    return datavalue[start:end][np.newaxis,:], train_labels[start:end][np.newaxis,:], xs
 
 
-model = Sequential()
-# build a LSTM RNN
-model.add(LSTM(
-    batch_input_shape=(BATCH_SIZE, TIME_STEPS, INPUT_SIZE),       # Or: input_dim=INPUT_SIZE, input_length=TIME_STEPS,
-    output_dim=CELL_SIZE,
-    return_sequences=True,      # True: output at all steps. False: output as last step.
-    stateful=True,              # True: the final state of batch1 is feed into the initial state of batch2
-))
-# add output layer
-model.add(TimeDistributed(Dense(OUTPUT_SIZE)))
-adam = Adam(LR)
-model.compile(optimizer=adam,
-              loss='mse',)
+model = load_model('TensorGraph/Model/model11296.h5')
+
 
 str = ''
 print('Training ------------')
-for step in range(1000):
+totalcost=0;
+for step in range(100000):
     # data shape = (batch_num, steps, inputs/outputs)
     X_batch, Y_batch, xs = next_batch()
-    X_batch = tf.reshape(X_batch, [BATCH_SIZE, TIME_STEPS, INPUT_SIZE])
-    Y_batch = tf.reshape(Y_batch, [BATCH_SIZE, TIME_STEPS, OUTPUT_SIZE])
+    # print(X_batch.shape)
+    # np.reshape(X_batch,(BATCH_SIZE, TIME_STEPS, INPUT_SIZE))
+    # np.reshape(Y_batch,(BATCH_SIZE, TIME_STEPS, INPUT_SIZE))
+    # X_batch = tf.reshape(X_batch, [BATCH_SIZE, TIME_STEPS, INPUT_SIZE])
+    # Y_batch = tf.reshape(Y_batch, [BATCH_SIZE, TIME_STEPS, OUTPUT_SIZE])
     # print(X_batch.shape)
     cost = model.train_on_batch(X_batch, Y_batch)
-
+    totalcost+=cost;
     # plt.plot(xs[0, :], Y_batch[0].flatten(), 'r', xs[0, :], pred.flatten()[:TIME_STEPS], 'b--')
     # plt.ylim((-1.2, 1.2))
     # Y_batch = tf.reshape(Y_batch, [-1])
     # print(pred)
     if step % 10 == 0:
         print('train cost: ', cost)
-        pred = model.predict(X_batch, steps=1)
+        # pred = model.predict(X_batch, BATCH_SIZE)
         # Y_batch = tf.reshape(Y_batch,[-1]);
-        y = Y_batch.eval(session=tf.keras.backend.get_session())
-        print("step",step)
-        print(pred)
-        print(y)
+        # y = Y_batch.eval(session=tf.keras.backend.get_session())
+        # print("step", step)
+        # print(pred)
+        # print(y)
         # print(pred.shape)
         # plt.plot(xs, pred.flatten(), 'r')
         # plt.plot(xs, y, 'b')
         # plt.draw()
         # plt.pause(0.1)
 
-model.save('TensorGraph/Model/model1127.h5')
+    if step % 1000 == 0:
+        print('total cost--------: ', totalcost)
+        totalcost=0
 
-
-# import test data
-testpanda =pd.read_csv('DataSet/Stock/1102_origin_28.csv', usecols=[0,1,2,3,4,5,6], header=None,
-               delimiter=",", )
-testvalue = testpanda.values
-testlabelpanda = pd.read_csv('DataSet/Stock/1102_origin_28.csv', usecols=[7], header=None, delimiter=",")
-testlabelvalue = testlabelpanda.values
-# train, test, train_labels, test_labels = train_test_split(datavalue,labelvalue,test_size=0.1)
-num_test = testvalue.shape[0]
-test = np.float32(testvalue)
-test = tf.reshape(test,[-1,TIME_STEPS,INPUT_SIZE])
-print(np.array2string(test, precision=5, separator=','))
-pred = model.predict(testvalue, steps=1)
-# print(pred.shape)
-str = np.array2string(pred, precision=5, separator=',')
-with open('TensorGraph/logs/temp1123.txt', 'w') as f:
-    f.write(str)
-xs = np.arange(num_test)
-plt.plot(xs, pred.flatten())
-plt.draw()
-plt.pause(0.1)
+model.save('TensorGraph/Model/model11297.h5')
+# print("totalcost",totalcost)

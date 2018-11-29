@@ -26,7 +26,7 @@ public class NormalizePredict {
                 .setcol(5, minmax.exec(5))
                 .setcol(6, minmax.exec(6))
                 .setcol(7, minmax.exec(7))
-                .process("./data/Stock/1029/1029_1127_fac_nor.csv");
+                .process("data/Stock/1029/1102_1127_fac_nor.csv");
         minmax.print();
     }
 }
