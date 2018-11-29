@@ -23,8 +23,8 @@ public class Chart {
         categoryDataset = new DefaultCategoryDataset();
     }
 
-    public void add(double value,String colKey,String colKey){
-        categoryDataset.addValue(value, colKey, colKey);
+    public void add(double value,String rowKey,String colKey){
+        categoryDataset.addValue(value, rowKey, colKey);
     }
 
     public static void createChart(String outputPath) {

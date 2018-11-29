@@ -27,23 +27,36 @@ public class TextRecordReader {
         return num;
     }
 
-    public double[] ReturnRecord(int col) throws Exception{
-        double result[]=new double [LineNumber()];
+    public double[] ReturnRecord(int col, boolean skiprow) throws Exception{
+        double result[];
+        if(skiprow==false) {
+            result=new double[LineNumber()];
+        }
+        else{
+            result=new double[LineNumber()-1];
+        }
         FileInputStream inputStream = new FileInputStream(filepath);
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
         String str = null;
         int i=0;
 
         while((str = bufferedReader.readLine()) != null) {
-            String[] strarray=str.split(Delimiter);
-            result[i]=Double.valueOf(strarray[col]);
-            //System.out.println(result[i][j]);
-            record_length=strarray.length;
-            i++;
+            if(skiprow==true){
+                skiprow=false;
+            }
+            else {
+                String[] strarray = str.split(Delimiter);
+                result[i] = Double.valueOf(strarray[col]);
+                //System.out.println(result[i][j]);
+                record_length = strarray.length;
+                i++;
+            }
         }
 
         return result;
     }
+
+
 
     public double[][] ReturnRecord(int input_num,int output_num) throws Exception{
         FileInputStream inputStream = new FileInputStream(filepath);

@@ -8,7 +8,7 @@ public class NormalizePredict {
         int colnum = 8;
         NormFrame minmax = NormFrame.MinMax;
         String prepathin = "data/Stock/1029/1102.csv";
-        String pathin="data/Stock/1029/until1103.csv";
+        String pathin="data/Stock/1029/1029_1127_fac.csv";
         minmax.setpath(prepathin, ",", colnum);
         //record previous minmax parameter
         for(int i=0;i<colnum;i++){
@@ -26,7 +26,7 @@ public class NormalizePredict {
                 .setcol(5, minmax.exec(5))
                 .setcol(6, minmax.exec(6))
                 .setcol(7, minmax.exec(7))
-                .process("./data/Stock/1029/until1103_origin.csv");
+                .process("./data/Stock/1029/1029_1127_fac_nor.csv");
         minmax.print();
     }
 }

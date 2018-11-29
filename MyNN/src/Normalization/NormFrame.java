@@ -47,7 +47,7 @@ NormFrame {
         double[] record= null;
         try {
             TextRecordReader DataSet=new TextRecordReader(filepath,splits);
-            record = DataSet.ReturnRecord(col);
+            record = DataSet.ReturnRecord(col,false);
         }catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -86,8 +86,8 @@ NormFrame {
         double[] min=null;
         try {
             TextRecordReader DataSet=new TextRecordReader(filepath,splits);
-            sub = DataSet.ReturnRecord(front);
-            min = DataSet.ReturnRecord(later);
+            sub = DataSet.ReturnRecord(front,false);
+            min = DataSet.ReturnRecord(later,false);
         }catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
