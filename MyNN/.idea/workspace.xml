@@ -2,10 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8249845-6be4-42fd-876b-b81dd9cdacce" name="Default" comment="support train while predict">
+      <change afterPath="$PROJECT_DIR$/data/Stock/1029/0806-1128.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Stock/1029/1029_1127_fac_nor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Stock/1029/1102_1127_fac_nor.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Main/Predict/NormalizePredict.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/Main/Predict/NormalizePredict.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Main/Predict/Predict.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/Main/Predict/Predict.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Main/Train/FactorizeStock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/Main/Train/FactorizeStock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Main/Train/Normalize.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/Main/Train/Normalize.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Network/ClassificationNetwork.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/Network/ClassificationNetwork.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/1029_1127_fac_nor.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Predict/NormalizePredict.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Predict/NormalizePredict.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Predict/Predict.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Predict/Predict.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Train/FactorizeStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Train/FactorizeStock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Train/Normalize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Train/Normalize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Network/ClassificationNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Network/ClassificationNetwork.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,50 +29,70 @@
       <FILTER>Main.Train.*</FILTER>
     </SUITE>
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/data/Stock/1029/0806-1128.csv">
+                <provider selected="true" editor-type-id="csv-text-editor">
+                  <state relative-caret-position="75">
+                    <caret line="5" column="54" lean-forward="true" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-221320552">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="21" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="4" />
-          <entry key="project.open.time.6" value="4" />
+          <entry key="project.open.time.6" value="8" />
           <entry key="project.open.time.7" value="3" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="csv" value="2" />
+          <entry key="csv" value="3" />
           <entry key="dummy" value="43" />
-          <entry key="java" value="13392" />
+          <entry key="java" value="13525" />
           <entry key="nn" value="16" />
           <entry key="txt" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSV" value="2" />
-          <entry key="JAVA" value="13392" />
+          <entry key="CSV" value="3" />
+          <entry key="JAVA" value="13525" />
           <entry key="PLAIN_TEXT" value="125" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="csv" value="63" />
-          <entry key="java" value="159" />
+          <entry key="csv" value="79" />
+          <entry key="java" value="171" />
           <entry key="nn" value="21" />
-          <entry key="png" value="22" />
+          <entry key="png" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSV" value="63" />
-          <entry key="Image" value="22" />
-          <entry key="JAVA" value="159" />
+          <entry key="CSV" value="79" />
+          <entry key="Image" value="26" />
+          <entry key="JAVA" value="171" />
           <entry key="PLAIN_TEXT" value="21" />
         </counts>
       </usages-collector>
@@ -71,10 +101,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/Stock/1029/1102_1127_fac_nor.csv">
+        <entry file="file://$PROJECT_DIR$/data/Stock/1029/0806_1128_fac_nor.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+            <state relative-caret-position="313">
+              <caret line="68" column="24" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main/Predict/NormalizePredict.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -83,60 +122,69 @@
         <entry file="file://$PROJECT_DIR$/src/Main/Predict/Predict.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+              <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/Stock/1029/1102_test.csv">
-          <provider selected="true" editor-type-id="csv-text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/Network/ClassificationNetwork.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="150" column="16" selection-start-line="150" selection-start-column="16" selection-end-line="150" selection-end-column="16" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/Stock/1029/1102_train.csv">
+        <entry file="file://$PROJECT_DIR$/src/Factorize/FactorConfigration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1665">
+              <caret line="113" column="49" selection-start-line="113" selection-start-column="49" selection-end-line="113" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/Stock/1029/0806_1128_fac.csv">
           <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="-59230" />
+            <state relative-caret-position="30">
+              <caret line="2" column="67" selection-start-line="2" selection-start-column="67" selection-end-line="2" selection-end-column="67" />
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data/Stock/1029/1102.csv">
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="365">
-              <caret line="5003" column="43" lean-forward="true" selection-start-line="5003" selection-start-column="43" selection-end-line="5003" selection-end-column="43" />
+        <entry file="file://$PROJECT_DIR$/data/ChartOutput/11301.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main/Train/FactorizeStock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/Stock/1029/until1103.csv">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/Stock/1029/until1103_origin.csv">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Listeners/Chart.java">
+        <entry file="file://$PROJECT_DIR$/src/Main/Train/Normalize.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+            <state relative-caret-position="75">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding>
-                <element signature="e#845#846#0" expanded="true" />
-                <element signature="e#908#909#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main/Train/RecursiveTrain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <entry file="file://$PROJECT_DIR$/data/Stock/1029/1102.csv">
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="-43121">
+              <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -158,6 +206,7 @@
       <find>init</find>
       <find>row</find>
       <find>thcol</find>
+      <find>0.98484151740</find>
     </findStrings>
     <replaceStrings>
       <replace>col</replace>
@@ -170,7 +219,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Activation/Softmax.java" />
         <option value="$PROJECT_DIR$/src/Exception/GradientExplosion.java" />
         <option value="$PROJECT_DIR$/src/Activation/Sigmoid.java" />
         <option value="$PROJECT_DIR$/src/Activation/ActivationFrame.java" />
@@ -200,7 +248,6 @@
         <option value="$PROJECT_DIR$/data/Stock/1029/origin1.csv" />
         <option value="$PROJECT_DIR$/src/TrainTest.java" />
         <option value="$PROJECT_DIR$/src/Predict.java" />
-        <option value="$PROJECT_DIR$/src/Network/ClassificationNetwork.java" />
         <option value="$PROJECT_DIR$/data/Network/stock1102_615.nn" />
         <option value="$PROJECT_DIR$/src/RecursiveTrain.java" />
         <option value="$PROJECT_DIR$/src/Normalization/NormConfigration.java" />
@@ -209,18 +256,20 @@
         <option value="$PROJECT_DIR$/src/Main/Train/TrainTest.java" />
         <option value="$PROJECT_DIR$/src/Normalization/MinmaxUnit.java" />
         <option value="$PROJECT_DIR$/src/Normalization/Units.java" />
-        <option value="$PROJECT_DIR$/src/Main/Train/Normalize.java" />
         <option value="$PROJECT_DIR$/src/Factorize/FactorWay.java" />
         <option value="$PROJECT_DIR$/src/Main/Train/RecursiveTrain.java" />
         <option value="$PROJECT_DIR$/src/Listeners/Chart.java" />
         <option value="$PROJECT_DIR$/src/Normalization/NormFrame.java" />
         <option value="$PROJECT_DIR$/src/FileManage/TextRecordReader.java" />
-        <option value="$PROJECT_DIR$/src/Main/Train/FactorizeStock.java" />
         <option value="$PROJECT_DIR$/data/Stock/1029/1029_1127.csv" />
         <option value="$PROJECT_DIR$/src/Factorize/FactorConfigration.java" />
         <option value="$PROJECT_DIR$/data/Stock/1029/1029_1127_fac.csv" />
+        <option value="$PROJECT_DIR$/src/Main/Train/Normalize.java" />
         <option value="$PROJECT_DIR$/src/Main/Predict/NormalizePredict.java" />
+        <option value="$PROJECT_DIR$/src/Network/ClassificationNetwork.java" />
         <option value="$PROJECT_DIR$/src/Main/Predict/Predict.java" />
+        <option value="$PROJECT_DIR$/data/Stock/1029/0806_1128_fac_nor.csv" />
+        <option value="$PROJECT_DIR$/src/Main/Train/FactorizeStock.java" />
       </list>
     </option>
   </component>
@@ -231,9 +280,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="847" />
+    <option name="x" value="673" />
     <option name="y" value="23" />
-    <option name="width" value="833" />
+    <option name="width" value="1007" />
     <option name="height" value="947" />
   </component>
   <component name="ProjectView">
@@ -241,7 +290,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -332,25 +381,18 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543529682598" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543968669946" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/data/Stock/1029" />
-      <recent name="$PROJECT_DIR$/src/Main/Train" />
-      <recent name="D:\DL4J\MyNN\data\wine" />
-      <recent name="D:\DL4J\MyNN\data" />
-      <recent name="D:\DL4J\MyNN\data\HayesRoth" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -360,6 +402,13 @@
       <recent name="$PROJECT_DIR$/data/Stock/1018" />
       <recent name="D:\DL4J\MyNN\data\Stock" />
       <recent name="D:\DL4J\MyNN\data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/Stock/1029" />
+      <recent name="$PROJECT_DIR$/src/Main/Train" />
+      <recent name="D:\DL4J\MyNN\data\wine" />
+      <recent name="D:\DL4J\MyNN\data" />
+      <recent name="D:\DL4J\MyNN\data\HayesRoth" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -522,17 +571,23 @@
       <workItem from="1543437004394" duration="11651000" />
       <workItem from="1543460547699" duration="848000" />
       <workItem from="1543529020991" duration="802000" />
+      <workItem from="1543535036384" duration="165000" />
+      <workItem from="1543552118882" duration="15000" />
+      <workItem from="1543600950247" duration="2980000" />
+      <workItem from="1543613766544" duration="366000" />
+      <workItem from="1543880417654" duration="1205000" />
+      <workItem from="1543952934621" duration="171000" />
+      <workItem from="1543967268462" duration="1234000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="311533000" />
+    <option name="totallyTimeSpent" value="317669000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="847" y="23" width="833" height="947" extended-state="0" />
-    <editor active="true" />
+    <frame x="673" y="23" width="1007" height="947" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21491782" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35440415" />
       <window_info id="Structure" order="1" weight="0.24883178" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
@@ -541,7 +596,7 @@
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32865497" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31461987" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31461987" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39795917" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -574,31 +629,13 @@
     <option name="LAST_COMMIT_MESSAGE" value="support train while predict" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/Network/stock11061.nn">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/ChartOutput/11071.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Network/stock11071.nn">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Network/stock11061_temp.nn">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Network/stock11061_afteruntil.nn">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Network/stock11061_655.nn">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/Stock/1029/4997.csv">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="csv-text-editor" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data/Stock/1029/4998_5027.csv">
-      <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data/Stock/1029/4995027.csv">
       <provider selected="true" editor-type-id="csv-text-editor" />
@@ -622,13 +659,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Network/ClassificationNetwork.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="86" column="13" lean-forward="true" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -744,13 +774,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FileManage/RecordPolice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/FileManage/TextRecordReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -760,67 +783,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/ChartOutput/1128.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Train/FactorizeStock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Factorize/FactorConfigration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1665">
-          <caret line="113" column="49" selection-start-line="113" selection-start-column="49" selection-end-line="113" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Predict/NormalizePredict.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/until1103.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="csv-text-editor">
-        <state>
-          <caret selection-end-line="15" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/until1103_origin.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="csv-text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Listeners/Chart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
-          <folding>
-            <element signature="e#845#846#0" expanded="true" />
-            <element signature="e#908#909#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Train/RecursiveTrain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Normalization/NormConfigration.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -836,75 +798,188 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1102_test.csv">
+      <provider editor-type-id="csv-text-editor" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManage/RecordPolice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/1029/until1103.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state>
+          <caret selection-end-line="15" selection-end-column="90" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/1029/until1103_origin.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Listeners/Chart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/ChartOutput/11071.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Train/RecursiveTrain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/ChartOutput/1130.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1102_1127_fac_nor.csv">
+      <provider editor-type-id="csv-text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1102_train.csv">
+      <provider editor-type-id="csv-text-editor" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1029_1127.csv">
+      <provider editor-type-id="csv-text-editor">
+        <state>
+          <caret column="41" selection-start-column="41" selection-end-column="41" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="81" selection-start-line="5" selection-start-column="81" selection-end-line="5" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1029_1127_fac.csv">
+      <provider editor-type-id="csv-text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="70" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="70" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="48" selection-start-column="48" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1102_origin.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="425">
+          <caret line="5007" column="61" selection-start-line="5007" selection-start-column="61" selection-end-line="5007" selection-end-column="61" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="75405">
+          <caret line="5027" selection-start-line="5027" selection-end-line="5027" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Factorize/FactorConfigration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1665">
+          <caret line="113" column="49" selection-start-line="113" selection-start-column="49" selection-end-line="113" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Train/Normalize.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1102.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="-43121">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Network/ClassificationNetwork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="150" column="16" selection-start-line="150" selection-start-column="16" selection-end-line="150" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/1029/0806-1128.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="54" lean-forward="true" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/1029/0806_1128_fac.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="67" selection-start-line="2" selection-start-column="67" selection-end-line="2" selection-end-column="67" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Predict/NormalizePredict.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Predict/Predict.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1102_train.csv">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-59230" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1102_test.csv">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1029_1127.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="81" selection-start-line="5" selection-start-column="81" selection-end-line="5" selection-end-column="81" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/data/Stock/1029/0806_1128_fac_nor.csv">
       <provider editor-type-id="csv-text-editor">
-        <state>
-          <caret column="41" lean-forward="true" selection-start-column="41" selection-end-column="41" />
+        <state relative-caret-position="-291">
+          <caret line="28" column="145" selection-start-line="28" selection-start-column="144" selection-end-line="28" selection-end-column="145" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1029_1127_fac.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="48" selection-start-column="48" selection-end-column="48" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="70" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="70" />
+        <state relative-caret-position="313">
+          <caret line="68" column="24" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1102_1127_fac_nor.csv">
+    <entry file="file://$PROJECT_DIR$/src/Main/Train/FactorizeStock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1102_origin.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="759">
-          <caret line="5028" lean-forward="true" selection-start-line="5025" selection-end-line="5028" />
+        <state relative-caret-position="315">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1102.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="365">
-          <caret line="5003" column="43" lean-forward="true" selection-start-line="5003" selection-start-column="43" selection-end-line="5003" selection-end-column="43" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/data/ChartOutput/11301.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
   <component name="masterDetails">

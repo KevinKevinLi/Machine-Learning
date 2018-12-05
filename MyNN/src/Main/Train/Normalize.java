@@ -7,7 +7,7 @@ public class Normalize {
     public static void main(String[] args) {
         NormFrame minmax= NormFrame.MinMax;
         //NormFrame sub=NormFrame.Subtraction;
-        String pathin= "data/Stock/1029/1102.csv";
+        String pathin= "data/Stock/1029/.csv";
         //sub.setpath(pathin,",");
         int colnum=8;
         minmax.setpath(pathin,",",colnum);

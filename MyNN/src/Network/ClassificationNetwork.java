@@ -160,11 +160,26 @@ public class ClassificationNetwork {
             //predict = net.feedforward(inputset[i]);
             String ck=Integer.toString(i);
             //double t=inputset[i+1][0]*2257.48+679.28;
+
             Chart.add(predict,"predict",ck);
             //double actuall=inputset[i][5]*195.6-104.01;
             double actuall=inputset[i][7]* 2254.22 + 676.53;
             Chart.add(actuall,"actuall",ck);
             double close=inputset[i][6]* 2254.22 + 676.53;
+//            if(predict-close>0){
+//                Chart.add(1,"predict",ck);
+//            }
+//            else{
+//                Chart.add(-1,"predict",ck);
+//            }
+//
+//            if(actuall-close>0){
+//                Chart.add(1,"actuall",ck);
+//            }
+//            else{
+//                Chart.add(-1,"actuall",ck);
+//            }
+
             if(predict-close>0&&actuall-close>0||predict-close<0&&actuall-close<0){
                 Statistic.predictsuccess();
             }

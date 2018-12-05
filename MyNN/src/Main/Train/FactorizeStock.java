@@ -5,7 +5,7 @@ import Factorize.FactorConfigration;
 public class FactorizeStock {
     public static void main(String[] args) {
         int colnum=8;
-        String pathin="data/Stock/1029/1029_1127.csv";
+        String pathin="data/Stock/1029/0806-1128.csv";
         FactorConfigration confi=new FactorConfigration(pathin,",",colnum)
             .skipfirstrow()
              //open
@@ -18,12 +18,12 @@ public class FactorizeStock {
             .setcol(3,6)
             //last close
             .setcol(4,-5)
-            //cur close
-            .setcol(5,5)
             //next open
-            .setcol(6,1+colnum)
+            .setcol(5,1+colnum)
+            //cur close
+            .setcol(6,5)
             //next close
             .setcol(7,5+colnum)
-            .process("data/Stock/1029/1029_1127_fac.csv");
+            .process("data/Stock/1029/0806_1128_fac.csv");
     }
 }
