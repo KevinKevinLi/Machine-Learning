@@ -12,6 +12,7 @@ public class FactorConfigration {
     private int[][] coloffset;
     private double [][]dataset;
     private boolean skiprow=false;
+    private String []labels;
 
     public FactorConfigration(String pathin,String splits, int fin_colnum){
         this.pathin=pathin;
@@ -34,6 +35,7 @@ public class FactorConfigration {
             coloffset[2][i]=0;
         }
 
+        labels = new String[rownum];
     }
 
     public FactorConfigration skipfirstrow(){
@@ -54,6 +56,11 @@ public class FactorConfigration {
         else{
             coloffset[2][newcol]=oldcol;
         }
+        return this;
+    }
+
+    public FactorConfigration setlabel(int newcol, int oldcol) {
+        //only support last and next row now(offset one row)
         return this;
     }
 

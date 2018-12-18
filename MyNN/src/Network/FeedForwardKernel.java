@@ -73,8 +73,10 @@ public class FeedForwardKernel {
         }
         layer_number++;
         //cal input->hidden->output layer
+        //System.out.println(layers_num);
         while(layer_number<layers_num) {
             //cal hidden->output layer
+            //System.out.println(layer_number);
             for (int i = 0; i < NetworkLayer.getNeuronLineLength(layer_number); i++) {
                 //record weights number
                 int num = i;

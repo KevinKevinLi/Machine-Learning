@@ -5,16 +5,16 @@ import FileManage.*;
 
 public class RecursiveTrain {
     public static void main(String[] args) throws Exception {
-        String filepath="./data/Stock/1029/4997.csv";
+        String filepath="./data/Stock/1029/1102_train.csv";
         TextRecordReader TrainSet=new TextRecordReader(filepath,",");
-        filepath="./data/Stock/1029/4998_5027.csv";
+        filepath="./data/Stock/1029/1102_test.csv";
         TextRecordReader TestSet=new TextRecordReader(filepath,",");
 
         int input_num=7;
         int output_num=1;
         ClassificationNetwork OldNetwork=new ClassificationNetwork();
         ModelRecord model=new ModelRecord();
-        model.buildfrom("./data/Network/stock1104_650.nn",OldNetwork);
+        model.buildfrom("data/Network/stock_4_650.nn",OldNetwork);
 
         OldNetwork.train(TrainSet.ReturnRecord(input_num,output_num),20000);
         OldNetwork.test(TestSet.ReturnRecord(input_num,output_num));

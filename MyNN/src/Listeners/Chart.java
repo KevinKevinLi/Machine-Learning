@@ -28,7 +28,7 @@ public class Chart {
     }
 
     public static void createChart(String outputPath) {
-        JFreeChart jfreechart = ChartFactory.createLineChart("Main.Predict.Predict-Actuall",
+        JFreeChart jfreechart = ChartFactory.createLineChart("Main.PredictTest.PredictTest-Actuall",
                 "X",
                 "Y",
                 categoryDataset, // dataset

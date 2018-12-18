@@ -4,12 +4,12 @@ import Network.LossFunction.LossFunction;
 import Exception.*;
 
 public class Listener {
-    private static double totalError=0;
-    private static double totalSamples=0;
-    private static int interationtimes=0;
-    private static int predict_success=0;
-    private static LossFunction lossfunction;
-    private static double testerror=0;
+    private double totalError=0;
+    private  double totalSamples=0;
+    private  int interationtimes=0;
+    private  int predict_success=0;
+    private  LossFunction lossfunction;
+    private  double testerror=0;
 
     public Listener(LossFunction lossfunc){
         lossfunction=lossfunc;
@@ -23,14 +23,14 @@ public class Listener {
         totalSamples++;
     }
 
-    public static void predictsuccess(){predict_success++;}
+    public  void predictsuccess(){predict_success++;}
 
-    public static void init(){
+    public  void init(){
         totalError=0.0;
         totalSamples=0.0;
     }
 
-    public static void printMeanSquareError() throws GRADIENTBOOMEXCEPTION {
+    public  void printMeanSquareError() throws GRADIENTBOOMEXCEPTION {
         interationtimes++;
         double score=totalError / totalSamples;
 
@@ -56,29 +56,33 @@ public class Listener {
                 break;
         }
     }
-    public static void printTestError(){
+    public  void printTestError(){
         testerror=totalError/totalSamples;
         System.out.println("Test Total Mean Square Error is "+testerror);
     }
 
-    public static double getTestError(){
+    public double getTestError(){
         return testerror;
     }
 
-    public static void printPredict(){
+    public  void printPredict(){
         if(predict_success==0){
-            System.out.println("Main.Predict.Predict Error: " + totalError / totalSamples);
+            System.out.println("Main.PredictTest.PredictTest Error: " + totalError / totalSamples);
         }
         else {
-            System.out.println("Main.Predict.Predict Success Number: " + predict_success );
+            System.out.println("Main.PredictTest.PredictTest Success Number: " + predict_success );
         }
     }
 
-    public static double getMeanError(){
+    public  int getPredict(){
+        return predict_success;
+    }
+
+    public  double getMeanError(){
         return totalError/totalSamples;
     }
 
-    public static void printpara(){
+    public  void printpara(){
         System.out.println("totalerror:"+totalError+" totalsample:"+totalSamples);
     }
 }

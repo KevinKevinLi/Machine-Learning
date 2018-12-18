@@ -7,19 +7,19 @@ import Network.Conponent.LayerConf;
 import Network.Conponent.Weightinit;
 
 public class NetworkConfigration {
-    private static int layer_num=0;
-    private static int input_num=0;
-    private static int output_num=0;
-    private static double learningrate=0;
-    private static double momentum=0;
-    private static long seed=0;
-    private static Weightinit weightinit;
+    private int layer_num=0;
+    private int input_num=0;
+    private int output_num=0;
+    private double learningrate=0;
+    private double momentum=0;
+    private long seed=0;
+    private  Weightinit weightinit;
     private LayerConf inputlayer;
     private ArrayList<LayerConf> hiddenlist = new ArrayList<LayerConf>();
     private LayerConf outputlayer;
-    private static LossFunction lossfunction;
-    private static double [][]weightmap;
-    private static double [][]biasmap;
+    private  LossFunction lossfunction;
+    private double [][]weightmap;
+    private double [][]biasmap;
 
     public NetworkConfigration(){
     }
