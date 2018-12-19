@@ -186,9 +186,16 @@ public class ClassificationNetwork {
         System.out.println("********** Statistic **********");
         //Statistic.printPredict();
         //Statistic.printpara();
+        Statistic.init();
         for(int i=0;i<record.length;i++){
             // print predict close
-            System.out.println(record[i][0]);
+            if(i==record.length-1){
+                System.out.println("prediction close for today: "+record[i][0]);
+            }
+            else {
+                System.out.println(record[i][0]);
+            }
+            Statistic.addSampleNum();
         }
         Chart.createChart(path);
         Statistic.printPredict();

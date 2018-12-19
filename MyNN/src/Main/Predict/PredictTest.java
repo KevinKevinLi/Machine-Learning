@@ -8,7 +8,7 @@ public class PredictTest {
     public static void main(String[] args) throws Exception {
         int input_num=7;
         int output_num=1;
-        String filepath= "data/Stock/1029/1102_1217_fac_nor.csv";
+        String filepath= "data/Stock/Formal/1005_1219_fac_nor.csv";
         //String filepath= "data/Stock/1029/1102_test.csv";
         TextRecordReader TestSet=new TextRecordReader(filepath,",");
 

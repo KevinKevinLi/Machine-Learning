@@ -70,7 +70,7 @@ public class Listener {
             System.out.println("Main.PredictTest.PredictTest Error: " + totalError / totalSamples);
         }
         else {
-            System.out.println("Main.PredictTest.PredictTest Success Number: " + predict_success );
+            System.out.println("Main.PredictTest.PredictTest Success Number: " + predict_success +"/"+(int)totalSamples);
         }
     }
 
