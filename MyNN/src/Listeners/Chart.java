@@ -27,7 +27,7 @@ public class Chart {
         categoryDataset.addValue(value, rowKey, colKey);
     }
 
-    public static void createChart(String outputPath) {
+    public static void createChart(String outputPath, int width, int height) {
         JFreeChart jfreechart = ChartFactory.createLineChart("Main.PredictTest.PredictTest-Actuall",
                 "X",
                 "Y",
@@ -61,7 +61,7 @@ public class Chart {
 
             // ChartUtilities.writeChartAsPNG(out, chart, 600, 400);
 
-            ChartUtilities.writeChartAsPNG(out, jfreechart, 4000, 2000);
+            ChartUtilities.writeChartAsPNG(out, jfreechart, width, height);
             out.flush();
         } catch (FileNotFoundException e) {
             e.printStackTrace();

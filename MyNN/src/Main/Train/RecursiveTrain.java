@@ -1,5 +1,6 @@
 package Main.Train;
 
+import Listeners.ChartType;
 import Network.ClassificationNetwork;
 import FileManage.*;
 
@@ -18,7 +19,8 @@ public class RecursiveTrain {
 
         OldNetwork.train(TrainSet.ReturnRecord(input_num,output_num),20000);
         OldNetwork.test(TestSet.ReturnRecord(input_num,output_num));
-        OldNetwork.predict(TestSet.ReturnRecord(input_num,output_num),"./data/ChartOutput/11061.png",21,50);
+        OldNetwork.chart(ChartType.Zero_base,"./data/ChartOutput/temp.png");
+        OldNetwork.predict(TestSet.ReturnRecord(input_num,output_num),21,50);
         OldNetwork.saveas("data/Network/stock11061.nn");
     }
 }

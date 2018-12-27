@@ -14,6 +14,11 @@ public class FactorConfigration {
     private boolean skiprow=false;
     private String []labels;
 
+    //date labels
+    private boolean ifdate=false;
+    private int datepos=0;
+    private String []date_labels;
+
     public FactorConfigration(String pathin,String splits, int fin_colnum){
         this.pathin=pathin;
         this.splits=splits;
@@ -59,8 +64,9 @@ public class FactorConfigration {
         return this;
     }
 
-    public FactorConfigration setlabel(int newcol, int oldcol) {
-        //only support last and next row now(offset one row)
+    public FactorConfigration setdate(int col) {
+        datepos=col;
+        ifdate=true;
         return this;
     }
 
@@ -90,6 +96,7 @@ public class FactorConfigration {
             int end=0;
             for (int i = 0; i < coloffset[0].length; i++) {
                 record = DataSet.ReturnRecord(coloffset[2][i],skiprow);
+
                 // System.out.println(record.length);
                 if(coloffset[0][i]==start_flag){
                     start=start_flag-1;
@@ -107,6 +114,24 @@ public class FactorConfigration {
                     dataset[k][i]=record[j];
                 }
             }
+            if(ifdate==true){
+                int offset=0;
+                date_labels=new String[end_flag-start_flag+flag];
+                if(datepos>=0&&datepos<=fin_colnum-1){
+                    start=start_flag;
+                    end=end_flag;
+                }
+                else{
+                    offset = datepos/(fin_colnum);
+                    start=start_flag+offset;
+                    end=end_flag+offset;
+                }
+                String temp[] = DataSet.ReturnStr(datepos-offset*(fin_colnum),skiprow);
+                for(int i=start,j=0;i<end;i++,j++){
+                    date_labels[j]=temp[i];
+                }
+            }
+
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -118,6 +143,9 @@ public class FactorConfigration {
             BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(fos));
             for (int i = 0; i < dataset.length; i++) {
                 StringBuilder str=new StringBuilder();
+                if(ifdate==true){
+                    str.append(date_labels[i]+",");
+                }
                 for(int j=0;j<dataset[0].length;j++) {
                     str.append(dataset[i][j]+",");
                 }

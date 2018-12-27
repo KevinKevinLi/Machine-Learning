@@ -2,6 +2,7 @@ package Main.Predict;
 
 import FileManage.ModelRecord;
 import FileManage.TextRecordReader;
+import Listeners.ChartType;
 import Network.ClassificationNetwork;
 
 public class RecursivePredict {
@@ -29,7 +30,8 @@ public class RecursivePredict {
         model.buildfrom("./data/Network/stock1102_train_100k.nn", OldNetwork);
         //OldNetwork.test(TestSet.ReturnRecord(5,1));
 
-        OldNetwork.predict(TestSet.ReturnRecord(input_num, output_num), "./data/ChartOutput/1206_new.png", i, 50);
+        OldNetwork.chart(ChartType.Zero_base,"./data/ChartOutput/temp.png");
+        OldNetwork.predict(TestSet.ReturnRecord(input_num,output_num), i, 50);
         //OldNetwork.saveas("data/Network/stock_before1204.nn");
         return OldNetwork.getpredict();
     }

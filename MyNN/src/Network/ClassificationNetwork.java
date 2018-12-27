@@ -2,18 +2,16 @@ package Network;
 import Listeners.*;
 import Network.LossFunction.LossFunction;
 import Exception.*;
-
-
 import java.text.DecimalFormat;
-import java.util.*;
 
 public class ClassificationNetwork {
     private FeedForwardKernel net;
     private Listeners.Listener Statistic;
-    private Listeners.Chart Chart;
     private int output_num=0;
     private int input_num=0;
-   // private RecordPolice Police=new RecordPolice();
+    // private RecordPolice Police=new RecordPolice();
+    private ChartType Chart;
+    private String chartpath;
 
     public ClassificationNetwork(){
     }
@@ -130,28 +128,16 @@ public class ClassificationNetwork {
         }
     }
 
-    public void predict(double [][]inputset,String path){
-        Chart=new Chart();
-        net.setLossfunction(LossFunction.DoNothing);
-        DecimalFormat df = new DecimalFormat("#.##");
-        //double predict=inputset[1][0]*2257.48+679.28;
-        for(int i=0;i<inputset.length;i++) {
-            //predict += (net.feedforward(inputset[i]) * 195.6 - 104.01);
-            double predict=0;
-            predict = net.feedforward(inputset[i]) * 2254.22 + 676.53;
-            String ck=Integer.toString(i);
-            //double t=inputset[i+1][0]*2257.48+679.28;
-            Chart.add(predict,"predict",ck);
-            Chart.add((inputset[i][5]*2254.22+676.53),"actuall",ck);
-//
-        }
-        Chart.createChart(path);
+    public void chart(ChartType Chart, String outpath){
+        this.Chart=Chart;
+        this.chartpath=outpath;
     }
 
     //continues
-    public void predict(double [][]inputset,String path,int period,int traintimes){
-        Chart=new Chart();
+    public void predict(double [][]inputset, int period, int traintimes){
+
         double record[][]=new double[inputset.length][3];
+        int []sta=new int[inputset.length];
 
         DecimalFormat df = new DecimalFormat("#.##");
         for(int i=0;i<inputset.length;i++) {
@@ -161,18 +147,20 @@ public class ClassificationNetwork {
             double predict = net.feedforward(inputset[i]) * 2254.22 + 676.53;
             double close=inputset[i][6]* 2254.22 + 676.53;
             double actuall=inputset[i][7]* 2254.22 + 676.53;
-            Chart.add(predict-close,"predict",ck);
-            if(actuall>0) {
-                Chart.add(actuall - close, "actuall", ck);
-            }
-            Chart.add(0,"base",ck);
+            Chart.feed(predict, actuall, close, ck);
 
             record[i][0] = predict;
             record[i][1] = actuall;
             record[i][2] = close;
 
             if(actuall>0) {
-                if (predict - close > 0 && actuall - close > 0 || predict - close < 0 && actuall - close < 0) {
+                if(actuall - close > 0){
+                    sta[i]=1;
+                }
+                else{
+                    sta[i]=-1;
+                }
+                if (Math.signum(predict-close)==Math.signum(actuall-close)) {
                     Statistic.predictsuccess();
                 }
             }
@@ -190,15 +178,19 @@ public class ClassificationNetwork {
         for(int i=0;i<record.length;i++){
             // print predict close
             if(i==record.length-1){
-                System.out.println("prediction close for today: "+record[i][0]);
+                System.out.println("predict close for today: "+record[i][0]);
             }
             else {
                 System.out.println(record[i][0]);
             }
             Statistic.addSampleNum();
         }
-        Chart.createChart(path);
+        Chart.draw(chartpath);
         Statistic.printPredict();
+
+//        for(int i=0;i<sta.length;i++){
+//            System.out.println(sta[i]);
+//        }
     }
 
     public int getpredict(){
@@ -208,7 +200,4 @@ public class ClassificationNetwork {
     public void saveas(String path) {
         net.savenet(path,Statistic.getTestError());
     }
-
-
-
 }

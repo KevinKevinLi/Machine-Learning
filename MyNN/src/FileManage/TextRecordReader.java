@@ -52,11 +52,36 @@ public class TextRecordReader {
                 i++;
             }
         }
-
         return result;
     }
 
+    public String[] ReturnStr(int col, boolean skiprow) throws Exception{
+        String result[];
+        if(skiprow==false) {
+            result=new String[LineNumber()];
+        }
+        else{
+            result=new String[LineNumber()-1];
+        }
+        FileInputStream inputStream = new FileInputStream(filepath);
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+        String str = null;
+        int i=0;
 
+        while((str = bufferedReader.readLine()) != null) {
+            if(skiprow==true){
+                skiprow=false;
+            }
+            else {
+                String[] strarray = str.split(Delimiter);
+                result[i] = strarray[col];
+                //System.out.println(result[i][j]);
+                record_length = strarray.length;
+                i++;
+            }
+        }
+        return result;
+    }
 
     public double[][] ReturnRecord(int input_num,int output_num) throws Exception{
         FileInputStream inputStream = new FileInputStream(filepath);

@@ -8,13 +8,14 @@ import java.io.IOException;
 public enum
 NormFrame {
     MinMax,
-    Donothing,
+    Copy,
     Subtraction,
     Addition;
 
     private String filepath,splits;
     private Units unit;
     private boolean useprevious=false;
+    private int shift=0;
 
     private NormFrame(){
     }
@@ -30,7 +31,8 @@ NormFrame {
             case MinMax:
                 unit=new MinmaxUnit(colnum);
                 break;
-            case Donothing:
+            case Copy:
+                unit=new CopyUnit(colnum);
                 break;
             default:
                 throw new UnsupportedOperationException("Unknown or not supported noramlization: " + this);
@@ -57,9 +59,40 @@ NormFrame {
         }
         switch(this){
             case MinMax:
-                    record= unit.exec(col,record,useprevious);
+                if(shift!=0){
+                    unit.setshift(shift);
+                }
+                record= unit.exec(col,record,useprevious);
                 break;
-            case Donothing:
+            case Copy:
+                record= unit.exec(col,record);
+                break;
+            default:
+                throw new UnsupportedOperationException("Unknown or not supported noramlization: " + this);
+        }
+        return record;
+    }
+
+    //overload+0
+    //copy string
+    public String[] exec(int col, String label_name){
+        //read
+        String[] record= null;
+        try {
+            TextRecordReader DataSet=new TextRecordReader(filepath,splits);
+            record = DataSet.ReturnStr(col,false);
+        }catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
+        switch(this){
+            case MinMax:
+                throw new UnsupportedOperationException("bad entry of normalization: " + this);
+            case Copy:
+                record= unit.exec(col,record);
                 break;
             default:
                 throw new UnsupportedOperationException("Unknown or not supported noramlization: " + this);
@@ -115,6 +148,11 @@ NormFrame {
 
     public void useprevious(){
         useprevious=true;
+    }
+
+    public void useprevious(int shift){
+        useprevious=true;
+        this.shift=shift;
     }
 
     public void print(){

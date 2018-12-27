@@ -5,6 +5,7 @@ public class MinmaxUnit extends Units{
     private double min[];
     private double dif[];
     private int colnum;
+    private int shift;
 
     MinmaxUnit(int colnum){
         max=new double[colnum];
@@ -16,6 +17,7 @@ public class MinmaxUnit extends Units{
             dif[i] = 0;
         }
         this.colnum=colnum;
+        this.shift=0;
     }
 
     @Override
@@ -40,7 +42,7 @@ public class MinmaxUnit extends Units{
     public double[] exec(int col,double []record,boolean useprevious) {
         if(useprevious==true) {
             for (int i = 0; i < record.length; i++) {
-                record[i] = (record[i] - min[col]) / dif[col];
+                record[i] = (record[i] - min[col-shift]) / dif[col-shift];
             }
         }
         else{
@@ -48,6 +50,17 @@ public class MinmaxUnit extends Units{
         }
         return record;
     }
+
+    @Override
+    public String[] exec(int col,String []record){
+        return record;
+    }
+
+    @Override
+    public void setshift(int shift){
+        this.shift=shift;
+    }
+
 
     @Override
     public void print(){
