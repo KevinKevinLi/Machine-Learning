@@ -2,172 +2,150 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8249845-6be4-42fd-876b-b81dd9cdacce" name="Default" comment="support train while predict">
-      <change afterPath="$PROJECT_DIR$/src/Listeners/ChartType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Stock/Dow30/1005_now.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Stock/Dow30/981013_181008.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Stock/Nasdaq/1005_now.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Stock/Nasdaq/981013_181008.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Stock/Russell2000/1005_now.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Stock/Russell2000/981013_181008.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Stock/SP500/1005_now_fac.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Stock/SP500/1005_now_fac_nor.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Stock/SP500/981013_181008.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/Predict/Factorize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/Predict/Normalize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/Predict/Predict.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/Train/Factorize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/Train/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/Train/Train.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SP500/Train/Normalize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Car/TrainSet60%csv.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ChartOutput/10301.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ChartOutput/11011.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ChartOutput/11012.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ChartOutput/11013.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ChartOutput/11021211_temp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ChartOutput/1102_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ChartOutput/11041.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ChartOutput/11051.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ChartOutput/11061.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ChartOutput/11062.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ChartOutput/11071.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ChartOutput/1128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ChartOutput/1130.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ChartOutput/11301.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ChartOutput/1204_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ChartOutput/1204_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ChartOutput/1204_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ChartOutput/1204_20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ChartOutput/1204_21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ChartOutput/1204_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ChartOutput/1204_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ChartOutput/1206_new.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/ChartOutput/temp.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/ChartOutput/temp.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/HayesRoth/Lanmi20.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/HayesRoth/Lanmi40.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/HayesRoth/Lanmi60.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/HayesRoth/Lanmi80.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Network/stock10301.nn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Network/stock1102_615.nn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Network/stock1104_635.nn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Network/stock11061.nn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Network/stock11061_afteruntil.nn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Network/stock11061_temp.nn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Network/stock11071.nn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Network/stock1207temp.nn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Network/stock1207temp2.nn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Network/stock_30_682.nn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Network/stock_before1204.nn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Network/stock_temp.nn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Others/BTSC100.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Others/MLP_test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Others/MLP_test_out2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Others/Train_csv.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Others/Train_csv_out2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Others/iris.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Others/saturn_data_eval.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Others/saturn_data_train.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Stock/1018/HLVC-O-Test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Stock/1018/HLVC-O-Train.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Stock/1018/OHLVC-O-Test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Stock/1018/OHLVC-O-Train.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Stock/1018/OHLVCC-19Test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Stock/1018/OHLVCC-19train.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Stock/1018/OHLVCC-O-Test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Stock/1018/OHLVCC-O-Train.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Stock/1018/stock_history.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Stock/1018/wenbo1018test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Stock/1018/wenbo1018test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Stock/1018/wenbo1018train.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Stock/1018/wenbo1018train.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Stock/Formal/1005_1219.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Stock/Formal/1005_1219.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Stock/Formal/1005_1219_fac.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Stock/Formal/1005_1219_fac.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Stock/Formal/1005_1219_fac_nor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Stock/Formal/1005_1219_fac_nor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/wine/wine-20.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/wine/wine-20.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/wine/wine-30.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/wine/wine-30.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/wine/wine-70.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/wine/wine-70.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/wine/wine-80.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/wine/wine-80.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Stock/1029/0806-1128.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Stock/Test/0806-1128.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Stock/1029/0806_1128_fac.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Stock/Test/0806_1128_fac.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Stock/1029/0806_1128_fac_nor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Stock/Test/0806_1128_fac_nor.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Stock/1029/1029_1127.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Stock/Test/1029_1127.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Stock/1029/1029_1127_fac.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Stock/Test/1029_1127_fac.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Stock/1029/1029_1127_fac_nor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Stock/Test/1029_1127_fac_nor.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Stock/1029/1102.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Stock/Test/1102.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Stock/1029/1102_1217_fac_nor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Stock/Test/1102_1217_fac_nor.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Stock/1029/1102_origin.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Stock/Test/1102_origin.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Stock/1029/1102_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Stock/Test/1102_test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Stock/1029/1102_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Stock/Test/1102_train.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Stock/1029/1127_1217.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Stock/Test/1127_1217.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Stock/1029/1127_1217_fac.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Stock/Test/1127_1217_fac.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Stock/1029/1127_1217_fac_nor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Stock/Test/1127_1217_fac_nor.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Stock/1029/12041211.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Stock/Test/12041211.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Stock/1029/12111217.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Stock/Test/12111217.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Stock/1029/4995027.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Stock/Test/4995027.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Stock/1029/4997.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Stock/Test/4997.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Stock/1029/4998_5027.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Stock/Test/4998_5027.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Stock/1029/randomtest.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Stock/Test/randomtest.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Stock/1029/until1103_origin.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Stock/Test/until1103_origin.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Stock/Formal/1005_1219.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/Stock/SP500/1005_now.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Stock/Formal/1005_1219_fac.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Stock/Formal/1005_1219_fac_nor.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyNN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Factorize/FactorConfigration.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/Factorize/FactorConfigration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/FileManage/TextRecordReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/FileManage/TextRecordReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Listeners/Chart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/Listeners/Chart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Main/Predict/NormalizePredict.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/Main/Predict/NormalizePredict.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Main/Predict/PredictTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/Main/Predict/PredictTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Main/Predict/RecursivePredict.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/Main/Predict/RecursivePredict.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Main/Train/FactorizeStock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Main/Train/RecursiveTrain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/Main/Train/RecursiveTrain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Network/ClassificationNetwork.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/Network/ClassificationNetwork.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Car/TrainSet60%csv.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/10301.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/11011.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/11012.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/11013.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/11021211_temp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/1102_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/11041.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/11051.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/11061.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/11062.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/11071.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/1128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/1130.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/11301.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/1204_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/1204_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/1204_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/1204_20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/1204_21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/1204_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/1204_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/1206_new.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Exception/GRADIENTBOOMEXCEPTION.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Factorize/FactorConfigration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/FileManage/ModelRecord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/FileManage/RecordPolice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/FileManage/TextRecordReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Listeners/Chart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Listeners/ChartType$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Listeners/ChartType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Listeners/Interface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Listeners/Listener$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Listeners/Listener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Main/Predict/FactorizeStock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Main/Predict/NormalizePredict.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Main/Predict/PredictTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Main/Predict/RecursivePredict.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Main/Train/Normalize.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/Main/Train/Normalize.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Main/Train/RecursiveTrain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Main/Train/TrainTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Network/Activation/ActivationFrame$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Network/Activation/ActivationFrame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Network/Activation/Linear.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Network/Activation/Neuron.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Network/Activation/Relu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Network/Activation/Sigmoid.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Network/Activation/Softmax.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Network/ClassificationNetwork.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Network/Conponent/LayerConf.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Network/Conponent/LayerKernel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Network/Conponent/Weightinit$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Network/Conponent/Weightinit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Network/FeedForwardKernel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Network/LossFunction/LossFunction$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Network/LossFunction/LossFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Network/NetworkConfigration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Normalization/CopyUnit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Normalization/MinmaxUnit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Normalization/NormConfigration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Normalization/NormFrame$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Normalization/NormFrame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/Normalization/Units.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/temp.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/data/ChartOutput/temp.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/HayesRoth/Lanmi20.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/HayesRoth/Lanmi40.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/HayesRoth/Lanmi60.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/HayesRoth/Lanmi80.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Network/stock10301.nn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Network/stock1102_615.nn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Network/stock1104_635.nn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Network/stock11061.nn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Network/stock11061_afteruntil.nn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Network/stock11061_temp.nn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Network/stock11071.nn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Network/stock1207temp.nn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Network/stock1207temp2.nn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Network/stock_30_682.nn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Network/stock_before1204.nn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Network/stock_temp.nn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Others/BTSC100.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Others/MLP_test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Others/MLP_test_out2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Others/Train_csv.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Others/Train_csv_out2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Others/iris.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Others/saturn_data_eval.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Others/saturn_data_train.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1018/HLVC-O-Test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1018/HLVC-O-Train.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1018/OHLVC-O-Test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1018/OHLVC-O-Train.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1018/OHLVCC-19Test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1018/OHLVCC-19train.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1018/OHLVCC-O-Test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1018/OHLVCC-O-Train.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1018/stock_history.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1018/wenbo1018test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1018/wenbo1018test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1018/wenbo1018train.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1018/wenbo1018train.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/Formal/1005_1219.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/data/Stock/Formal/1005_1219.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/Formal/1005_1219_fac.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/data/Stock/Formal/1005_1219_fac.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/Formal/1005_1219_fac_nor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyNN/data/Stock/Formal/1005_1219_fac_nor.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/wine/wine-20.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/wine/wine-20.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/wine/wine-30.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/wine/wine-30.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/wine/wine-70.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/wine/wine-70.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/wine/wine-80.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/wine/wine-80.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Factorize/FactorConfigration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factorize/FactorConfigration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileManage/TextRecordReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileManage/TextRecordReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Listeners/Chart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Listeners/Chart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Predict/NormalizePredict.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Predict/NormalizePredict.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Predict/PredictTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Predict/PredictTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Predict/RecursivePredict.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Predict/RecursivePredict.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Train/FactorizeStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Predict/FactorizeStock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Train/RecursiveTrain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Train/RecursiveTrain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Network/ClassificationNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Network/ClassificationNetwork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Normalization/NormConfigration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Normalization/NormConfigration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/0806-1128.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/0806_1128_fac.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/0806_1128_fac_nor.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/1029_1127.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/1029_1127_fac.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/1029_1127_fac_nor.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/1102.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/1102_1217_fac_nor.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/1102_origin.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/1102_test.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/1102_train.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/1127_1217.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/1127_1217_fac.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/1127_1217_fac_nor.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/12041211.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/12111217.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/4995027.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/4997.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/4998_5027.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/randomtest.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/1029/until1103_origin.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/Formal/1005_1219.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/Formal/1005_1219_fac.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyNN/data/Stock/Formal/1005_1219_fac_nor.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exception/GRADIENTBOOMEXCEPTION.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Exception/GRADIENTBOOMEXCEPTION.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Factorize/FactorConfigration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Factorize/FactorConfigration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileManage/ModelRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/FileManage/ModelRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileManage/RecordPolice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/FileManage/RecordPolice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileManage/TextRecordReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/FileManage/TextRecordReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Listeners/Chart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Listeners/Chart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Listeners/ChartType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Listeners/ChartType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Listeners/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Listeners/Interface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Listeners/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Listeners/Listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Predict/FactorizeStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SP500/Predict/Factorize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Predict/NormalizePredict.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SP500/Predict/Normalize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Predict/PredictTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SP500/Predict/PredictTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Predict/RecursivePredict.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SP500/Predict/RecursivePredict.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Train/Normalize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Train/Normalize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Train/RecursiveTrain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SP500/Train/RecursiveTrain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Train/TrainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SP500/Train/TrainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Network/Activation/ActivationFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Network/Activation/ActivationFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Network/Activation/Linear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Network/Activation/Linear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Network/Activation/Neuron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Network/Activation/Neuron.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Network/Activation/Relu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Network/Activation/Relu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Network/Activation/Sigmoid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Network/Activation/Sigmoid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Network/Activation/Softmax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Network/Activation/Softmax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Network/ClassificationNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Network/ClassificationNetwork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Network/Conponent/LayerConf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Network/Conponent/LayerConf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Network/Conponent/LayerKernel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Network/Conponent/LayerKernel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Network/Conponent/Weightinit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Network/Conponent/Weightinit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Network/FeedForwardKernel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Network/FeedForwardKernel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Network/LossFunction/LossFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Network/LossFunction/LossFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Network/NetworkConfigration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Network/NetworkConfigration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Normalization/CopyUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Normalization/CopyUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Normalization/MinmaxUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Normalization/MinmaxUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Normalization/NormConfigration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Normalization/NormConfigration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Normalization/NormFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Normalization/NormFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Normalization/Units.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Normalization/Units.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -181,97 +159,13 @@
       <FILTER>Main.Train.*</FILTER>
     </SUITE>
   </component>
-  <component name="DockManager">
-    <window id="2">
-      <content type="file-editors">
-        <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/Network/ClassificationNetwork.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="281">
-                    <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
-                    <folding>
-                      <element signature="imports" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/Network/Activation/ActivationFrame.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="30">
-                    <caret line="2" selection-start-line="2" selection-end-line="3" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/Stock/1029/1102.csv">
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" rowLines="3" />
-          </provider>
-          <provider selected="true" editor-type-id="csv-text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/Stock/1029/1102_test.csv">
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" rowLines="3" />
-          </provider>
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="7650">
-              <caret line="510" selection-start-line="510" selection-end-line="510" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/Stock/1029/1102_train.csv">
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" rowLines="3" />
-          </provider>
-          <provider selected="true" editor-type-id="csv-text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/Stock/1029/1102_origin.csv">
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" rowLines="3" />
-          </provider>
-          <provider selected="true" editor-type-id="csv-text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main/Predict/FactorizeStock.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Main/Predict/PredictTest.java">
+        <entry file="file://$PROJECT_DIR$/src/Main/Predict/Predict.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+            <state relative-caret-position="669">
+              <caret line="61" column="80" selection-start-line="61" selection-start-column="80" selection-end-line="61" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -280,38 +174,96 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Normalization/NormConfigration.java">
+        <entry file="file://$PROJECT_DIR$/data/Stock/Dow30/1005_now.csv">
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="-309" />
+          </provider>
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" rowLines="3" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main/Train/Factorize.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="25" />
+            <state relative-caret-position="684">
+              <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main/Train/TrainTest.java">
+        <entry file="file://$PROJECT_DIR$/src/Main/Train/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+            <state relative-caret-position="744">
+              <caret line="67" column="81" selection-start-line="67" selection-start-column="81" selection-end-line="67" selection-end-column="81" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FileManage/TextRecordReader.java">
+        <entry file="file://$PROJECT_DIR$/src/Main/Train/Normalize.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+            <state relative-caret-position="255">
+              <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Normalization/NormFrame.java">
+        <entry file="file://$PROJECT_DIR$/data/Stock/Nasdaq/981013_181008.csv">
+          <provider selected="true" editor-type-id="csv-text-editor" />
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" rowLines="3" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/Stock/Dow30/981013_181008.csv">
+          <provider selected="true" editor-type-id="csv-text-editor" />
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" rowLines="3" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main/Train/Train.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="15">
+              <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/Stock/Test/1102_origin.csv">
+          <provider selected="true" editor-type-id="csv-text-editor" />
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" rowLines="3" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/Stock/Test/1102_test.csv">
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="7650">
+              <caret line="510" selection-start-line="510" selection-end-line="510" />
+            </state>
+          </provider>
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" rowLines="3" />
           </provider>
         </entry>
       </file>
@@ -345,36 +297,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Normalize/Normalize.java" />
-        <option value="$PROJECT_DIR$/src/LossFunction/LossFunction.java" />
-        <option value="$PROJECT_DIR$/src/Standardization/Method.java" />
-        <option value="$PROJECT_DIR$/src/Normalization/Method.java" />
-        <option value="$PROJECT_DIR$/src/Normalization/Normalize.java" />
-        <option value="$PROJECT_DIR$/data/Stock/1029/origin1.csv" />
-        <option value="$PROJECT_DIR$/src/TrainTest.java" />
-        <option value="$PROJECT_DIR$/src/Predict.java" />
-        <option value="$PROJECT_DIR$/data/Network/stock1102_615.nn" />
-        <option value="$PROJECT_DIR$/src/RecursiveTrain.java" />
-        <option value="$PROJECT_DIR$/src/Normalization/NormApproach.java" />
-        <option value="$PROJECT_DIR$/src/Normalize.java" />
-        <option value="$PROJECT_DIR$/src/Normalization/MinmaxUnit.java" />
-        <option value="$PROJECT_DIR$/src/Normalization/Units.java" />
-        <option value="$PROJECT_DIR$/src/Factorize/FactorWay.java" />
-        <option value="$PROJECT_DIR$/src/Normalization/NormFrame.java" />
-        <option value="$PROJECT_DIR$/data/Stock/1029/1029_1127.csv" />
-        <option value="$PROJECT_DIR$/data/Stock/1029/1029_1127_fac.csv" />
-        <option value="$PROJECT_DIR$/src/Main/Train/Normalize.java" />
-        <option value="$PROJECT_DIR$/data/Stock/1029/0806_1128_fac_nor.csv" />
-        <option value="$PROJECT_DIR$/data/Stock/1029/1029_1127_fac_nor.csv" />
-        <option value="$PROJECT_DIR$/data/Stock/1029/1102_1127_fac_nor.csv" />
-        <option value="$PROJECT_DIR$/src/Main/Predict/Predict.java" />
-        <option value="$PROJECT_DIR$/data/Network/stock1102_train_100k.nn" />
-        <option value="$PROJECT_DIR$/src/Network/FeedForwardKernel.java" />
-        <option value="$PROJECT_DIR$/src/FileManage/ModelRecord.java" />
-        <option value="$PROJECT_DIR$/src/Network/NetworkConfigration.java" />
-        <option value="$PROJECT_DIR$/src/Main/Train/TrainTest.java" />
-        <option value="$PROJECT_DIR$/data/Stock/1029/randomtest.csv" />
-        <option value="$PROJECT_DIR$/data/Stock/1029/1127_1204.csv" />
         <option value="$PROJECT_DIR$/data/Stock/1029/1102_1204_fac_nor.csv" />
         <option value="$PROJECT_DIR$/data/Stock/1029/1127_1211.csv" />
         <option value="$PROJECT_DIR$/data/Stock/1029/1102_1211_fac_nor.csv" />
@@ -384,33 +306,62 @@
         <option value="$PROJECT_DIR$/src/Main/Train/FactorizeStock.java" />
         <option value="$PROJECT_DIR$/src/Listeners/Listener.java" />
         <option value="$PROJECT_DIR$/data/Stock/Formal/temp.csv" />
-        <option value="$PROJECT_DIR$/data/Stock/Formal/1005_1219.csv" />
         <option value="$PROJECT_DIR$/src/Main/Predict/RecursivePredict.java" />
-        <option value="$PROJECT_DIR$/src/Main/Train/RecursiveTrain.java" />
-        <option value="$PROJECT_DIR$/src/Network/ClassificationNetwork.java" />
         <option value="$PROJECT_DIR$/src/Listeners/Chart.java" />
-        <option value="$PROJECT_DIR$/src/Listeners/ChartType.java" />
-        <option value="$PROJECT_DIR$/src/Main/Predict/PredictTest.java" />
-        <option value="$PROJECT_DIR$/src/FileManage/TextRecordReader.java" />
         <option value="$PROJECT_DIR$/src/Factorize/FactorConfigration.java" />
         <option value="$PROJECT_DIR$/src/Normalization/NormConfigration.java" />
-        <option value="$PROJECT_DIR$/src/Main/Predict/NormalizePredict.java" />
+        <option value="$PROJECT_DIR$/src/Normalization/NormFrame.java" />
+        <option value="$PROJECT_DIR$/src/Normalization/Units.java" />
+        <option value="$PROJECT_DIR$/src/Normalization/CopyUnit.java" />
+        <option value="$PROJECT_DIR$/src/Normalization/MinmaxUnit.java" />
+        <option value="$PROJECT_DIR$/src/Listeners/ChartType.java" />
         <option value="$PROJECT_DIR$/src/Main/Predict/FactorizeStock.java" />
+        <option value="$PROJECT_DIR$/src/Main/Predict/NormalizePredict.java" />
+        <option value="$PROJECT_DIR$/src/FileManage/TextRecordReader.java" />
+        <option value="$PROJECT_DIR$/src/Main/Train/TrainTest.java" />
+        <option value="$PROJECT_DIR$/src/Main/Train/RecursiveTrain.java" />
+        <option value="$PROJECT_DIR$/src/Network/ClassificationNetwork.java" />
+        <option value="$PROJECT_DIR$/src/Main/Predict/PredictTest.java" />
+        <option value="$PROJECT_DIR$/data/Stock/Formal/1005_1219.csv" />
+        <option value="$PROJECT_DIR$/src/SP500Main/Train/Normalize.java" />
+        <option value="$PROJECT_DIR$/src/SP500/Train/Normalize.java" />
+        <option value="$PROJECT_DIR$/src/Russell2000/Factorize.java" />
+        <option value="$PROJECT_DIR$/data/Stock/Russell2000/981014_181004_fac.csv" />
+        <option value="$PROJECT_DIR$/data/Stock/Russell2000/981014_181004.csv" />
+        <option value="$PROJECT_DIR$/data/Stock/Test/1102.csv" />
+        <option value="$PROJECT_DIR$/src/SP500/Predict/Factorize.java" />
+        <option value="$PROJECT_DIR$/src/Core/Network/ClassificationNetwork.java" />
+        <option value="$PROJECT_DIR$/src/Russell2000/Train/Factorize.java" />
+        <option value="$PROJECT_DIR$/src/Russell2000/Train/Train.java" />
+        <option value="$PROJECT_DIR$/src/Russell2000/Predict/Factorize.java" />
+        <option value="$PROJECT_DIR$/src/SP500/Predict/Normalize.java" />
+        <option value="$PROJECT_DIR$/src/Russell2000/Train/Normalize.java" />
+        <option value="$PROJECT_DIR$/src/Core/Normalization/NormFrame.java" />
+        <option value="$PROJECT_DIR$/src/Core/FileManage/TextRecordReader.java" />
+        <option value="$PROJECT_DIR$/src/Russell2000/Train/Test.java" />
+        <option value="$PROJECT_DIR$/src/Russell2000/Predict/Normalize.java" />
+        <option value="$PROJECT_DIR$/src/Russell2000/Predict/Predict.java" />
+        <option value="$PROJECT_DIR$/src/Main/Train/Factorize.java" />
+        <option value="$PROJECT_DIR$/src/Main/Train/Normalize.java" />
+        <option value="$PROJECT_DIR$/src/Main/Train/Train.java" />
+        <option value="$PROJECT_DIR$/src/Main/Predict/Normalize.java" />
+        <option value="$PROJECT_DIR$/src/Main/Predict/Factorize.java" />
+        <option value="$PROJECT_DIR$/src/Main/Train/Test.java" />
+        <option value="$PROJECT_DIR$/src/Main/Predict/Predict.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="788" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="210" />
     <option name="y" value="23" />
-    <option name="width" value="938" />
-    <option name="height" value="973" />
+    <option name="width" value="849" />
+    <option name="height" value="945" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -427,6 +378,12 @@
               <item name="MyNN" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyNN" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="Network" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyNN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyNN" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
               <item name="Stock" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -434,14 +391,7 @@
               <item name="MyNN" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
               <item name="Stock" type="462c0819:PsiDirectoryNode" />
-              <item name="1029" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyNN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyNN" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="Stock" type="462c0819:PsiDirectoryNode" />
-              <item name="Formal" type="462c0819:PsiDirectoryNode" />
+              <item name="Dow30" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MyNN" type="b2602c69:ProjectViewProjectNode" />
@@ -479,37 +429,48 @@
               <item name="Main" type="462c0819:PsiDirectoryNode" />
               <item name="Train" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="MyNN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyNN" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="SP500" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545787888261" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547231899026" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/Stock/Nasdaq" />
+      <recent name="$PROJECT_DIR$/data/Stock/Dow30" />
+      <recent name="$PROJECT_DIR$/data/Stock/SP500" />
+      <recent name="$PROJECT_DIR$/data/Stock/Russell2000" />
+      <recent name="$PROJECT_DIR$/data/Stock/Temp" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Russell2000.Train" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data/Stock/1029" />
       <recent name="C:\Users\LK\Desktop\Github Repository\Machine Learning\Machine-Learning\MyNN\data\Stock\1029" />
       <recent name="$PROJECT_DIR$/data/Stock/1018" />
       <recent name="D:\DL4J\MyNN\data\Stock" />
-      <recent name="D:\DL4J\MyNN\data" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/data/Stock/Fomal" />
-      <recent name="$PROJECT_DIR$/data/Stock/1029" />
-      <recent name="$PROJECT_DIR$/src/Main/Train" />
-      <recent name="D:\DL4J\MyNN\data\wine" />
       <recent name="D:\DL4J\MyNN\data" />
     </key>
   </component>
@@ -525,9 +486,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PredictTest">
-    <configuration name="FactorizeStock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main.Predict.FactorizeStock" />
+  <component name="RunManager" selected="Application.Predict">
+    <configuration name="Factorize" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main.Train.Factorize" />
+      <module name="MyNN" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Main.Train.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Normalize" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main.Predict.Normalize" />
       <module name="MyNN" />
       <extension name="coverage">
         <pattern>
@@ -539,8 +513,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NormalizePredict" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main.Predict.NormalizePredict" />
+    <configuration name="Predict" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main.Predict.Predict" />
       <module name="MyNN" />
       <extension name="coverage">
         <pattern>
@@ -552,12 +526,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PredictTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main.Predict.PredictTest" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main.Train.Test" />
       <module name="MyNN" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Main.Predict.*" />
+          <option name="PATTERN" value="Main.Train.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -565,25 +539,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RecursivePredict" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main.Predict.RecursivePredict" />
+    <configuration name="Train" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main.Train.Train" />
       <module name="MyNN" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Main.Predict.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TrainTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main.Train.TrainTest" />
-      <module name="MyNN" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Main.Predict.*" />
+          <option name="PATTERN" value="Main.Train.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -592,19 +553,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.PredictTest" />
-      <item itemvalue="Application.TrainTest" />
-      <item itemvalue="Application.NormalizePredict" />
-      <item itemvalue="Application.FactorizeStock" />
-      <item itemvalue="Application.RecursivePredict" />
+      <item itemvalue="Application.Predict" />
+      <item itemvalue="Application.Normalize" />
+      <item itemvalue="Application.Factorize" />
+      <item itemvalue="Application.Train" />
+      <item itemvalue="Application.Test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PredictTest" />
-        <item itemvalue="Application.NormalizePredict" />
-        <item itemvalue="Application.FactorizeStock" />
-        <item itemvalue="Application.RecursivePredict" />
-        <item itemvalue="Application.TrainTest" />
+        <item itemvalue="Application.Predict" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Train" />
+        <item itemvalue="Application.Factorize" />
+        <item itemvalue="Application.Normalize" />
       </list>
     </recent_temporary>
   </component>
@@ -698,7 +659,22 @@
       <workItem from="1545772089925" duration="6619000" />
       <workItem from="1545780664699" duration="7708000" />
       <workItem from="1545807418891" duration="296000" />
-      <workItem from="1545894825918" duration="275000" />
+      <workItem from="1545894825918" duration="6050000" />
+      <workItem from="1545947538553" duration="5409000" />
+      <workItem from="1545954256626" duration="704000" />
+      <workItem from="1546376148176" duration="761000" />
+      <workItem from="1546556449743" duration="1491000" />
+      <workItem from="1546810149321" duration="385000" />
+      <workItem from="1546885252498" duration="1986000" />
+      <workItem from="1546906678653" duration="1102000" />
+      <workItem from="1546917360239" duration="2936000" />
+      <workItem from="1547004309299" duration="658000" />
+      <workItem from="1547020959082" duration="42000" />
+      <workItem from="1547076359866" duration="1490000" />
+      <workItem from="1547157945382" duration="21375000" />
+      <workItem from="1547229963357" duration="1699000" />
+      <workItem from="1547231703345" duration="199000" />
+      <workItem from="1547232565467" duration="534000" />
     </task>
     <servers />
   </component>
@@ -708,12 +684,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="396517000" />
+    <option name="totallyTimeSpent" value="443063000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="788" y="23" width="938" height="973" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3950893" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2026862" />
       <window_info id="Structure" order="1" weight="0.24883178" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
@@ -721,14 +697,14 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32690126" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49888393" weight="0.23269013" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39766082" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4944238" weight="0.3266979" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.65179676" weight="0.16881594" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993804" weight="0.3969555" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5011161" side_tool="true" visible="true" weight="0.23269013" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.3263158" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.3482032" side_tool="true" visible="true" weight="0.14693877" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.4969021" weight="0.32590857" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32959184" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
@@ -753,309 +729,382 @@
     <MESSAGE value="support train while predict" />
     <option name="LAST_COMMIT_MESSAGE" value="support train while predict" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Core/Normalization/NormFrame.java</url>
+          <line>8</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/ChartOutput/11021211_100k_12.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/ChartOutput/1204_5.png" />
-    <entry file="file://$PROJECT_DIR$/data/ChartOutput/1204_20.png" />
-    <entry file="file://$PROJECT_DIR$/data/ChartOutput/11021211_100k_4.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/ChartOutput/11021211_100k_3.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Network/stock150k_4_651.nn">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/ChartOutput/11021211_100k_20.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/ChartOutput/11021211_150k_4.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Network/stock100k_20_678.nn">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Network/stock1207temp2.nn" />
-    <entry file="file://$PROJECT_DIR$/data/Network/stock1102_train_100k.nn">
+    <entry file="file://$PROJECT_DIR$/src/SP500/Train/RecursiveTrain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        <state relative-caret-position="330">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/ChartOutput/1204_4.png" />
-    <entry file="file://$PROJECT_DIR$/data/ChartOutput/11021211_150k_3.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/ChartOutput/11021211_100k_5.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/12111217.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="2" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1029_1127_fac.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Predict/PridictNextDay.java" />
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1029_1127_fac_nor.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="csv-text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/ChartOutput/11021211_150k_5.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1127_1217_fac.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/ChartOutput/11021211_temp.png" />
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1127_1217_fac_nor.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1127_1217.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1029_1127.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Listeners/Listener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
-          <folding>
-            <element signature="e#508#509#0" expanded="true" />
-            <element signature="e#538#539#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Stock/Formal/temp.csv" />
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1102_1217_fac_nor.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="151" selection-start-line="46" selection-start-column="151" selection-end-line="46" selection-end-column="151" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Listeners/Chart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Listeners/ChartType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="45" column="52" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/ChartOutput/temp.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Predict/RecursivePredict.java">
+    <entry file="file://$PROJECT_DIR$/src/SP500/Predict/RecursivePredict.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="33" column="70" selection-start-line="33" selection-start-column="70" selection-end-line="33" selection-end-column="70" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Train/Normalize.java">
+    <entry file="file://$PROJECT_DIR$/data/Stock/Russell2000/981014_181004_fac.csv" />
+    <entry file="file://$PROJECT_DIR$/data/Stock/Russell2000/981014_181004.csv" />
+    <entry file="file://$PROJECT_DIR$/src/SP500/Predict/Factorize.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="180">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Train/RecursiveTrain.java">
+    <entry file="file://$PROJECT_DIR$/src/SP500/Train/TrainTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="69" selection-start-line="22" selection-start-column="69" selection-end-line="22" selection-end-column="69" />
+        <state relative-caret-position="542">
+          <caret line="42" column="5" selection-start-line="10" selection-start-column="4" selection-end-line="42" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/Stock/Formal/1005_1219_fac_nor.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="162">
-          <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Stock/Formal/1005_1219.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="825">
-          <caret line="55" column="32" lean-forward="true" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Factorize/FactorConfigration.java">
+    <entry file="file://$PROJECT_DIR$/src/SP500/Train/Normalize.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="146" column="45" selection-start-line="146" selection-start-column="45" selection-end-line="146" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Stock/Formal/1005_1219_fac.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-273" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Normalization/MinmaxUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Predict/NormalizePredict.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1102.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1102_test.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="7650">
-          <caret line="510" selection-start-line="510" selection-end-line="510" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1102_train.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Stock/1029/1102_origin.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Normalization/NormConfigration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Train/TrainTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FileManage/TextRecordReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Normalization/NormFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Network/Activation/ActivationFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Network/ClassificationNetwork.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+        <state relative-caret-position="345">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="24" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Predict/FactorizeStock.java">
+    <entry file="file://$PROJECT_DIR$/data/Stock/Russell2000/981013_181008_test.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="-14881" />
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/Russell2000/981013_181008_train.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="-59401" />
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/ChartOutput/Russell.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/Temp/temp.csv" />
+    <entry file="file://$PROJECT_DIR$/data/Stock/Temp/temp_train.csv" />
+    <entry file="file://$PROJECT_DIR$/data/Stock/SP500/1005_now_fac.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="374">
+          <caret line="51" column="93" selection-start-line="51" selection-start-column="93" selection-end-line="51" selection-end-column="93" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/SP500/1005_now_fac_nor.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="569">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/Normalization/NormFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        <state relative-caret-position="310">
+          <caret line="57" column="34" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
+          <folding>
+            <element signature="e#1097#1098#0" expanded="true" />
+            <element signature="e#1122#1123#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Predict/PredictTest.java">
+    <entry file="file://$PROJECT_DIR$/src/Core/FileManage/TextRecordReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="52" column="57" selection-start-line="52" selection-start-column="57" selection-end-line="52" selection-end-column="57" />
+          <folding>
+            <element signature="e#871#872#0" expanded="true" />
+            <element signature="e#909#910#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/SP500/1005_now.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="569">
+          <caret line="66" column="32" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Network/Russell_train_200k.nn">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Network/Russell_200k_4_50.nn">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/Russell2000/1005_now_fac.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="-136">
+          <caret line="16" column="100" selection-start-line="16" selection-start-column="100" selection-end-line="16" selection-end-column="100" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/Russell2000/981013_181008_fac_nor.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="629">
+          <caret line="128" selection-start-line="128" selection-end-line="128" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SP500/Predict/Normalize.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SP500/Predict/PredictTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26">
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/Russell2000/1005_now_fac_nor.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="-62">
+          <caret line="19" column="93" selection-start-line="19" selection-start-column="93" selection-end-line="19" selection-end-column="93" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/ChartOutput/temp.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/Russell2000/1005_now.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/Dow30/981013_181008_test.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/Dow30/981013_181008_train.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/Russell2000/981013_181008_fac.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/Dow30/981013_181008_fac.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/Nasdaq/1005_now.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="-436" />
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/SP500/981013_181008.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/SP500/981013_181008_fac.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/Test/1102.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="2054">
+          <caret line="5027" column="94" selection-start-line="5027" selection-start-column="94" selection-end-line="5027" selection-end-column="94" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/Test/1102_train.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/SP500/981013_181008_fac_nor.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Predict/Factorize.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Predict/Normalize.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
-          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/Network/ClassificationNetwork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2070">
+          <caret line="143" column="16" selection-start-line="143" selection-start-column="16" selection-end-line="143" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/Russell2000/981013_181008.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/Nasdaq/981013_181008.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/Dow30/981013_181008.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/Test/1102_origin.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/Test/1102_test.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="7650">
+          <caret line="510" selection-start-line="510" selection-end-line="510" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Train/Normalize.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Train/Factorize.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Stock/Dow30/1005_now.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="-309" />
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Train/Train.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Train/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="744">
+          <caret line="67" column="81" selection-start-line="67" selection-start-column="81" selection-end-line="67" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Predict/Predict.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="669">
+          <caret line="61" column="80" selection-start-line="61" selection-start-column="80" selection-end-line="61" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
