@@ -1,0 +1,3 @@
+date info only preserve day of week
+    modelname   modeltype       dataname        trainfile   validfile   timestep    target      batchsize   epoch   timecost    accuracy1   accuracy2   loss       varliss
+    m1.h5       rnn-mul->one    980101190212    first90%    last10%     3           1           128         295     little      238/528     264/528     4.7667e-05 1.2089e-04

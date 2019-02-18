@@ -1,0 +1,4 @@
+add next open as a new col
+    modelname   modeltype       dataname        trainfile   validfile   timestep    target      batchsize   epoch   timecost    accuracy1   accuracy2   loss       varliss
+    m1.h5       rnn-mul->one    980101190212    first90%    last10%     3           1           128         295     little      289/528     274/528     4.2631e-05 9.5568e-05
+    m2                                                                                                                          237         281
