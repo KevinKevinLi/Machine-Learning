@@ -5,28 +5,28 @@ import Core.Normalization.NormFrame;
 
 public class Normalize {
     public static void main(String[] args) throws Exception {
-        String prepathin = "data/Stock/";
-        String pathin= "data/Stock/";
+        String prepathin = "data/Stockv2/";
+        String pathin= "data/Stockv2/";
         switch(args[0]) {
             case "1":
-                //SP500
-                prepathin+="SP500/981013_181008_fac.csv";
-                pathin+="SP500/1005_now_fac";
+                //Sp500
+                prepathin+="Sp500/980101_190118_fac.csv";
+                pathin+="Sp500/190118_now_fac";
                 break;
             case "2":
                 //Russell
-                prepathin+="Russell2000/981013_181008_fac.csv";
-                pathin+="Russell2000/1005_now_fac";
+                prepathin+="Russell2000/980101_190118_fac.csv";
+                pathin+="Russell2000/190118_now_fac";
                 break;
             case "3":
                 //Dow30
-                prepathin+="Dow30/981013_181008_fac.csv";
-                pathin+="Dow30/1005_now_fac";
+                prepathin+="Dow30/980101_190118_fac.csv";
+                pathin+="Dow30/190118_now_fac";
                 break;
             case "4":
                 //Dow30
-                prepathin+="Nasdaq/981013_181008_fac.csv";
-                pathin+="Nasdaq/1005_now_fac";
+                prepathin+="Nasdaq/980101_190118_fac.csv";
+                pathin+="Nasdaq/190118_now_fac";
                 break;
         }
         //colnum exclude date

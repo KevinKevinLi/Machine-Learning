@@ -14,6 +14,8 @@ public class ClassificationNetwork {
     private String chartpath;
     private String []labels;
     private boolean iflabel=false;
+    private double data_dif=1.0;
+    private double data_min=0.0;
 
     public ClassificationNetwork(){
     }
@@ -126,7 +128,7 @@ public class ClassificationNetwork {
             //MSE LOSS FUNCTION
             net.setLossfunction(LossFunction.DoNothing);
             double predict = net.feedforward(inputset[i])*2254.22+676.53 ;
-            System.out.println("SP500.PredictTest.PredictTest: "+predict+" Actuall: "+(inputset[i][5]*2254.22+676.53));
+            System.out.println("Sp500.PredictTest.PredictTest: "+predict+" Actuall: "+(inputset[i][5]*2254.22+676.53));
         }
     }
 
@@ -138,6 +140,12 @@ public class ClassificationNetwork {
     public void setlabels(String []labels){
         this.labels=labels;
         iflabel=true;
+    }
+
+
+    public void reductdata(double dif, double min){
+        data_dif=dif;
+        data_min=min;
     }
 
     //continues
@@ -152,9 +160,9 @@ public class ClassificationNetwork {
             String ck=Integer.toString(i);
 
             net.setLossfunction(LossFunction.DoNothing);
-            double predict = net.feedforward(inputset[i]) * 2254.22 + 676.53;
-            double close=inputset[i][6]* 2254.22 + 676.53;
-            double actuall=inputset[i][7]* 2254.22 + 676.53;
+            double predict = net.feedforward(inputset[i]) * data_dif + data_min;
+            double close=inputset[i][6]* data_dif + data_min;
+            double actuall=inputset[i][7]* data_dif + data_min;
             Chart.feed(predict, actuall, close, ck);
 
             record[i][0] = predict;

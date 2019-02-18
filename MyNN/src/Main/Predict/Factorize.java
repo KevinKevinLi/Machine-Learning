@@ -4,19 +4,19 @@ import Core.Factorize.FactorConfigration;
 
 public class Factorize {
     public static void main(String[] args) {
-        String pathin="data/Stock/";
+        String pathin= "data/Stockv2/";
         switch(args[0]) {
             case "1":
-                pathin+="SP500/1005_now";
+                pathin+="Sp500/190118_now";
                 break;
             case "2":
-                pathin+="Russell2000/1005_now";
+                pathin+="Russell2000/190118_now";
                 break;
             case "3":
-                pathin+="Dow30/1005_now";
+                pathin+="Dow30/190118_now";
                 break;
             case "4":
-                pathin+="Nasdaq/1005_now";
+                pathin+="Nasdaq/190118_now";
                 break;
         }
         //colnum except date

@@ -1,7 +1,6 @@
 package Main.Train;
 
 import Core.FileManage.TextRecordReader;
-import Core.Listeners.ChartType;
 import Core.Network.Activation.ActivationFrame;
 import Core.Network.ClassificationNetwork;
 import Core.Network.Conponent.Weightinit;
@@ -15,6 +14,7 @@ public class Train {
         Scanner scan = new Scanner(System.in);
         System.out.println("Choose a Stock Number: 1.Sp500 2.Ressull2000 3.Dow30 4.Nasdaq :");
 
+
         if(scan.hasNext()) {
 
             String []strs =new String[3];
@@ -22,24 +22,29 @@ public class Train {
 
             Factorize.main(strs);
             Normalize.main(strs);
-            String filepath="data/Stock/";
-            String new_model="data/Network/";
+            //stock v1
+//            String filepath= "data/Stockv1/";
+//            String new_model="data/Network/Stockv1";
+            //stock v2
+            String filepath= "data/Stockv2/";
+            String new_model="data/Network/Stockv2/";
+
 
             switch(strs[0]){
                 case "1":
-                    filepath+="SP500/981013_181008_train.csv";
-                    new_model+="SP500_train_200k.nn";
+                    filepath+="Sp500/980101_190118_train.csv";
+                    new_model+="Sp500_train_200k.nn";
                     break;
                 case "2":
-                    filepath+="Russell2000/981013_181008_train.csv";
+                    filepath+="Russell2000/980101_190118_train.csv";
                     new_model+="Russell_train_200k.nn";
                     break;
                 case "3":
-                    filepath+="Dow30/981013_181008_train.csv";
-                    new_model+="Dow_train_200k.nn";
+                    filepath+="Dow30/980101_190118_train.csv";
+                    new_model+="Dow30_train_200k.nn";
                     break;
                 case "4":
-                    filepath+="Nasdaq/981013_181008_train.csv";
+                    filepath+="Nasdaq/980101_190118_train.csv";
                     new_model+="Nasdaq_train_200k.nn";
                     break;
             }

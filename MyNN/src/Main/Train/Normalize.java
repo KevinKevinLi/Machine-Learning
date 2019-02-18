@@ -8,23 +8,23 @@ public class Normalize {
         //colnum include date
         int colnum = 9;
 
-        String pathin= "data/Stock/";
+        String pathin= "data/Stockv2/";
         switch(args[0]) {
             case "1":
-                //SP500
-                pathin+="SP500/981013_181008";
+                //Sp500
+                pathin+="Sp500/980101_190118";
                 break;
             case "2":
                 //Russell
-                pathin+="Russell2000/981013_181008";
+                pathin+="Russell2000/980101_190118";
                 break;
             case "3":
                 //Dow30
-                pathin+="Dow30/981013_181008";
+                pathin+="Dow30/980101_190118";
                 break;
             case "4":
-                //Dow30
-                pathin+="Nasdaq/981013_181008";
+
+                pathin+="Nasdaq/980101_190118";
                 break;
         }
 
@@ -44,8 +44,8 @@ public class Normalize {
                 .setcol(7, minmax.exec(7))
                 .setcol(8, minmax.exec(8))
                 .process(pathin+"_fac_nor.csv")
-                .separate(0,3997, pathin+"_train.csv")
-                .separate(3998,5027, pathin+"_test.csv");
+                .separate(0,4779, pathin+"_train.csv")
+                .separate(4780,5293, pathin+"_test.csv");
         minmax.print();
     }
 }

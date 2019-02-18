@@ -67,10 +67,10 @@ public class Listener {
 
     public  void printPredict(){
         if(predict_success==0){
-            System.out.println("SP500.PredictTest.PredictTest Error: " + totalError / totalSamples);
+            System.out.println("Sp500.PredictTest.PredictTest Error: " + totalError / totalSamples);
         }
         else {
-            System.out.println("SP500.PredictTest.PredictTest Success Number: " + predict_success +"/"+(int)totalSamples);
+            System.out.println("Sp500.PredictTest.PredictTest Success Number: " + predict_success +"/"+(int)totalSamples);
         }
     }
 

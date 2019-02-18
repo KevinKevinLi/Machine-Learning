@@ -1,25 +1,24 @@
 package Main.Train;
 
 import Core.Factorize.FactorConfigration;
-import java.util.Scanner;
 
 public class Factorize {
     public static void main(String[] args) {
         //colnum except date
         int colnum=8;
-        String pathin="data/Stock/";
+        String pathin= "data/Stockv2/";
         switch(args[0]) {
             case "1":
-                pathin+="SP500/981013_181008";
+                pathin+="Sp500/980101_190118";
                 break;
             case "2":
-                pathin+="Russell2000/981013_181008";
+                pathin+="Russell2000/980101_190118";
                 break;
             case "3":
-                pathin+="Dow30/981013_181008";
+                pathin+="Dow30/980101_190118";
                 break;
             case "4":
-                pathin+="Nasdaq/981013_181008";
+                pathin+="Nasdaq/980101_190118";
                 break;
         }
         FactorConfigration confi=new FactorConfigration(pathin+".csv",",",colnum)

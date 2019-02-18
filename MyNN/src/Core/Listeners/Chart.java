@@ -26,7 +26,7 @@ public class Chart {
     }
 
     public static void createChart(String outputPath, int width, int height) {
-        JFreeChart jfreechart = ChartFactory.createLineChart("SP500.PredictTest.PredictTest-Actuall",
+        JFreeChart jfreechart = ChartFactory.createLineChart("Sp500.PredictTest.PredictTest-Actuall",
                 "X",
                 "Y",
                 categoryDataset, // dataset

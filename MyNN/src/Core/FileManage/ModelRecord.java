@@ -12,7 +12,7 @@ import java.io.*;
 public class ModelRecord {
     public ModelRecord(){};
 
-    public void buildfrom(String path, ClassificationNetwork oldnet) {
+    public void buildfrom(String path, ClassificationNetwork oldnet) throws Exception{
         NetworkConfigration configuration = new NetworkConfigration();
 
         int layersnum=0;
@@ -24,6 +24,10 @@ public class ModelRecord {
         int curbiasnum=0;
 
         File file = new File(path);
+        if(!file.exists()){
+            throw new Exception("File "+path+" not exist!");
+        }
+
         BufferedReader reader = null;
         try {
             reader = new BufferedReader(new FileReader(file));
